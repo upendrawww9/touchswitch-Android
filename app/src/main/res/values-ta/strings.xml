@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="device">டிவைஸ்</string>
+    <string name="device_id">ஐடி :</string>
+    <string name="device_name">நேம் :</string>
+    <string name="onlook_status">ஸ்டேடஸ் :</string>
+    <string name="wifi_strength">வைஃபை :</string>
+
+
+    <string name="motion_dect_autobuzz_subhead">மோஷன் டிடெக்ட்  ஆட்டோ பஸர்</string>
+    <string name="motion_dect_autolight_subhead">மோஷன் டிடெக்ட்  ஆட்டோ லைட்</string>
+    <string name="battery_strength">மின்கலம்</string>
+    <string name="lowbattery_alert">லோ பேட்டரி அலர்ட்</string>
+
+    <string name="fire_dect_autobuzz_head">ஃபயர் டிடெக்ட் ஆட்டோ பஸர்</string>
+
+    <string name="fire_dect_autobuzz_subhead">ஃபயர் டிடெக்ட் ஆட்டோ பஸர்</string>
+
+    <string name="device_fire">அன்று தீ கண்டறியப்பட்டது </string>
+
+
+    <string name="dark_theme">நைட் தீம் </string>
+    <string name="light_theme">டே தீம்</string>
+    <string name="pushy_fire_alert">ஃபயர் அலர்ட்</string>
+    <string name="title_alarm">மொபைல் அலாரம்</string>
+    <string name="mobile_noti">அறிவிப்பு அமைப்புகள்</string>
+
+
+
+
+    <string name="motion_sensor">மோஷன் சென்சார்</string>
+    <string name="led">எல்இடி</string>
+    <string name="light_1">லைட்</string>
+    <string name="light_2">பிளக்</string>
+    <string name="light_3">	சைரன்</string>
+    <string name="settings">செட்டப்</string>
+    <string name="alerts">அலர்ட்ஸ்</string>
+    <string name="device_status">ஆன்லுக் டிவைஸ் ஸ்டேடஸ் </string>
+    <!-- Dashboard Menu End -->
+    <!-- Light Control -->
+    <string name="title_light_one">ஹோம் லைட்</string>
+    <string name="light_control">லைட் கண்ட்ரோல்</string>
+    <string name="light_status">லைட் ஸ்டேடஸ்</string>
+    <string name="light_activate">ஆக்டிவேட்</string>
+    <string name="light_deactivate">டிஆக்டிவேட்</string>
+    <string name="light_offtime">ஆப் டைம் </string>
+    <string name="light_ontime">ஆன் டைம்</string>
+    <string name="light_remote_timer1running">டைமர் 1-ஸ்டார்ட்</string>
+    <string name="light_remote_timer1stopped">டைமர் 1-ஸ்டாப்</string>
+    <string name="light_remote_timer2running">டைமர் 2-ஸ்டார்ட்</string>
+    <string name="light_remote_timer2stopped">டைமர் 2-ஸ்டாப்</string>
+    <string name="light_on">ஆன்</string>
+    <string name="light_off">ஆப்</string>
+    <string name="device_offline">டிவைஸ் ஆப்லைன்</string>
+    <string name="select_time">செலக்ட் டைம்</string>
+    <string name="valid_on_time">செலக்ட் வேலிட் ஆன் டைம்</string>
+    <string name="valid_off_time">செலக்ட் வேலிட் ஆப் டைம்</string>
+    <string name="message_device_offline">உங்கள் சாதனம் ஆஃப்லைனில் உள்ளது, தயவுசெய்து மீண்டும் முயற்சிக்கவும்</string>
+    <!-- Light Control End-->
+
+    <!-- Bottom Menu -->
+    <string name="title_others">மோர்</string>
+    <string name="title_add_device">டிவைஸ்</string>
+    <string name="title_home">ஹோம்</string>
+    <!-- Bottom Menu End -->
+    <!-- general -->
+    <string name="no_internet_connection">இணைய இணைப்பு இல்லை</string>
+
+    <string name="no_internet_title">இணைய இணைப்பு இல்லை</string>
+    <string name="status_updated_successfully">ஸ்டேடஸ் அப்டேடட் சக்சஸ்ஃபுலி</string>
+    <string name="status_website">வெப்சைட் நாட் ரீச்சபிபில், ப்ளீஸ் செக் இன்டர்நெட்</string>
+    "<string name="no_internet">இணைய இணைப்பு கிடைக்கவில்லை,\n   இணைய இணைப்பை இயக்கவும்</string>"
+    <string name="button_try_again">ட்ரை அகைன்</string>
+    <string name="button_setting">வைஃபை சரிபார்க்கவும்</string>
+    <!-- general End -->
+
+    <!-- Theme switch -->
+
+
+
+
+    <string name="not_for_demo">டெமோவிற்கு அல்ல</string>
+
+
+    <!-- Theme switch end -->
+    <string name="title_minutes">நிமிடங்கள்</string>
+    <string name="title_seconds">விநாடிகள்</string>
+
+    <!-- extra 2 end -->
+
+    <!--pushy alert-->
+
+    <string name="pushy_connection_alert">ஆன்லுக் இணைப்பு அலர்ட்</string>
+    <string name="pushy_motion_alert">மோஷன் அலர்ட்</string>
+    <string name="pushy_vibration_alert">அதிர்வு அலர்ட்</string>
+    <string name="pushy_time">அலர்ட் நேரம்</string>
+    <string name="onlook_cube">ஆன்லுக்</string>
+
+    <string name="onlook_sub">ஆன்லுக் சந்தா முடிவடைகிறது</string>
+    <string name="sub_end">தேதி</string>
+    <!--pushy alert end-->
+
+    <!-- Others Menu -->
+    <string name="title_emergency_number">அவசர தொலைபேசி எண்</string>
+    <string name="title_change_user_password">பயனர் கடவுச்சொல்லை மாற்றவும்</string>
+    <string name="share_my_app">ஷேர் மை ஆப்</string>
+    <string name="share_my_dev">எனது சாதனத்தைப் பகிரவும்</string>
+
+    <string name="stop_share">பகிர்வதை நிறுத்துங்கள்</string>
+    <string name="share_note">குறிப்பு: ஒரு நாளுக்கு நீங்கள் சாதனத்தை மற்றவருக்குப் பகிரலாம். பகிர் ஐகானைக் கிளிக் செய்வதன் மூலம் உள்நுழைவு மற்றும் கடவுச்சொல்லின் சாதன விவரங்களைப் பகிரவும்.</string>
+
+    <string name="share_mobile">பெறுநரின் மொபைல் எண்</string>
+
+    <string name="share_stop">நிலை: சாதனப் பகிர்வு நிறுத்தப்பட்டது</string>
+    <string name="share_start">நிலை: சாதனப் பகிர்வு தொடங்கப்பட்டது</string>
+
+    <string name="please_enter_valid_mobile"  >செல்லுபடியாகும் 10 இலக்க மொபைல் எண்ணை உள்ளிடவும்</string>
+
+
+    <string name="rate_app_title">Rate App</string>
+    <string name="rate_app_message">If you are enjoying our app, please take a moment to rate it on PlayStore. Thanks for your support!</string>
+    <string name="rate_btn_pos">Rate Now</string>
+    <string name="rate_btn_neg">Remind me later</string>
+    <string name="rate_btn_nut">No, Thanks</string>
+
+    <string name="youtube_text"> Youtube உதவி</string>
+    <string name="whatalert"> Whatsapp இல் அறிவிப்பு எச்சரிக்கைகள் </string>
+    <string name="whatsnumber">	Whatsapp எண்ணை 98458xxxxx	</string>
+    <string name="whatstitle">	Whatsapp எச்சரிக்கைகள்	</string>
+    <string name="sendalerts">	Whatsapp விழிப்பூட்டல்களை அனுப்பவும்	</string>
+    <string name="stopalerts"> Whatsapp விழிப்பூட்டல்களை அனுப்புவதை நிறுத்துங்கள் </string>
+
+    <string name="alertnote">	குறிப்பு: பிரீமியம் சேவை. வேண்டுகோளுக்கு கிடைக்கும்.	</string>
+    <string name="alertvalidity">	குறிப்பு: ஒரு நாள் செல்லுபடியாகும். நிர்வாகம் நிர்வகிக்கப்படுகிறது.	</string>
+
+
+
+    <string name="family_login">ஆன்லுக் பேமிலி லாகின்</string>
+    <string name="title_download_reports">டவுன்லோட் ரிப்போர்ட்ஸ்</string>
+    <string name="buzz">பஸர் அலர்ட் பெறுங்கள்</string>
+    <string name="language">மொழி/En/అ/आ/ಎ/ক/എ/ગુ/म</string>
+    <string name="siren">சைரன் அலர்ட் செட்டப்</string>
+    <string name="vibratehead">அதிர்வு சென்சார் கன்ட்ரோல்</string>
+    <string name="vibrate">அதிர்வு அலர்ட் செட்டப்</string>
+    <string name="vibrate_activate">ஆக்டிவேட் அதிர்வு </string>
+    <string name="vibrate_setup">அதிர்வு அமைப்பு</string>
+
+
+
+    <string name="help">ஆன்லுக் ஹெல்ப்</string>
+    <string name="offers">சலுகைகள் / அறிவிப்புகள்</string>
+    <string name="logout">லாகவுட்</string>
+    <string name="addcust">Add Customer</string>
+    <string name="webcust">View Customers</string>
+
+    <!-- Others Menu user account -->
+    <string name="user_account">பயனர் கணக்கு</string>
+    <string name="change_password">சேஞ் பாஸ்வர்ட்</string>
+    <!-- Others Menu Family Login -->
+    <string name="alert_ops_login">அலர்ட்ஸ் ஆபரேட்டர் லாகின்</string>
+    <string name="light_ops_login">லைட் ஆபரேட்டர் லாகின்</string>
+    <string name="family_light_loginpass">பேமிலி லாகின் பாஸ்:</string>
+    <string name="family_member_email">பேமிலி மெம்பெர் ஈமெயில் :</string>
+    <string name="create_member">கிரியேட் மெம்பெர் :</string>
+    <string name="family_member_note"> Note: ஒரே ஒரு குடும்ப உறுப்பினர் மற்றும் ஒரே ஒரு முறை மட்டுமே நீங்கள் ஒரு உறுப்பினரைச் சேர்க்க முடியும். புரோ பயன்முறையில் மட்டுமே கூடுதல் உறுப்பினரை மின்னஞ்சல் கோரிக்கை மூலம் சேர்க்க முடியும்</string>"
+    <string name="family_login_note">குறிப்பு: பயன்பாட்டை பதிவிறக்கம் செய்ய உங்கள் குடும்ப உறுப்பினரிடம் கூருங்கல் மற்றும் ஒளியை மட்டும் கட்டுப்படுத்த இந்த கடவுச்சொல்லுடன் உள்நுழைக</string>
+
+    <string name="family_member_light_login">லாகின் : member@onlook.in</string>
+    <string name="family_member_status">பேமிலி மெம்பெர் ஸ்டேட்டஸ் :</string>
+    <string name="family_member_status_info">பேமிலி மெம்பெர் ஸ்டேடஸ் இன்ஃபோ</string>
+    <!-- Others Menu Emergency Number -->
+
+    <string name="hint_emergency_number">98xxx-xxxxx</string>
+    <string name="button_edit">எடிட் நம்பர்</string>
+    <string name="button_call_now">கால் நவ்</string>
+    <string name="button_save_now">எண்ணைச் சேமிக்கவும் </string>
+    <!-- Others Menu Download report -->
+    <string name="title_confirm_download_report">பதிவிறக்க அறிக்கையை உறுதிப்படுத்தவும்</string>
+    <string name="dialog_message">மின்னஞ்சல் மற்றும் பதிவிறக்க அறிக்கைகளை அனுப்ப விரும்புகிறீர்களா?</string>
+    <string name="button_yes">எஸ்</string>
+    <string name="button_no">நோ</string>
+
+    <string name="not_ebable">இந்த பயனருக்கு அனுமதியில்லை</string>
+
+    <!-- Others Menu Buzzer/siren -->
+    <string name="buzzer">பஸர்</string>
+    <string name="buzzer_control">பஸர் கண்ட்ரோல்</string>
+    <string name="buzzer_status">பஸர் ஸ்டேடஸ்</string>
+
+    <string name="buzzer_on">ஆன்</string>
+    <string name="buzzer_off">ஆப்</string>
+
+    <string name="high">உயர்</string>
+    <string name="medium">நடுத்தர</string>
+    <string name="low">குறைந்த</string>
+
+    <!-- Others Menu Logout -->
+    <string name="logout_title">டைட்டில் லாகவுட்</string>
+    <string name="logout_message">நீங்கள் லாகவுட் செய்ய விரும்புகிறீர்களா?</string>
+
+    <!-- Others Menu End -->
+
+    <!-- Motion Sensor  -->
+    <string name="sensor_timer">மோஷன் சென்சார் டைமர்</string>
+    <string name="motion_offtime">ஆப்  டைம்</string>
+    <string name="motion_ontime">ஆன் டைம்</string>
+    <string name="timer_running">சென்சார் ரன்னிங்</string>
+    <string name="timer_stopped">சென்சார் ஸ்டாப்ட்</string>
+    <string name="timer_always">நாள் முழுவதும் விழிப்பூட்டல்கள்</string>
+
+    <string name="timer_or">	---அல்லது---</string>
+
+
+    <string name="motion_activate">ஆக்டிவேட்</string>
+    <string name="motion_deactivate">டிஆக்டிவேட்</string>
+    <string name="motion_set_info">1) அனைத்து சென்சார் விழிப்பூட்டல்களையும் நிறுத்த சென்சார் செயலிழக்கச் செய்யவும். \n2) நேர ஸ்லாட்டைப் பெறும் விழிப்பூட்டல்களை மாற்ற, "DEACTIVATE" என்பதைக் கிளிக் செய்து, "எல்லா நாளும் எச்சரிக்கைகள்" என்ற தேர்வுப்பெட்டியைத் தேர்வுநீக்கவும், இப்போது நேரம் மற்றும் ஓய்வு நேரத்தை மாற்றி, "செயல்படுத்து" என்பதைக் கிளிக் செய்யவும். \n3) "நாள் முழுவதும் எச்சரிக்கைகள்" பெற, சென்சார் செயலிழக்கச் செய்து, "நாள் முழுவதும் எச்சரிக்கைகள்" என்ற தேர்வுப்பெட்டியைத் தேர்ந்தெடுத்து, "செயல்படுத்து" பொத்தானைக் கிளிக் செய்யவும்.</string>
+    <string name="motion_alerttype">அலர்ட் டைப்</string>
+    <string name="motion_notiemail">நோட்டிபிகேஷன் ஈமெயில்</string>
+    <string name="motion_allow_email"> ஈமெயில் அனுமதிக்கவும்</string>
+    <string name="motion_notitone">நோட்டிபிகேஷன் தொனி</string>
+    <string name="motion_ringtone">ரிங் தொனி</string>
+    <string name="motion_mob_noti">மொபைல் நோட்டிபிகேஷன்</string>
+    <string name="motion_auto_time">ஆட்டோ லைட்</string>
+    <string name="motion_auto_buzz">ஆட்டோ பஸர்</string>
+    <string name="motion_pow_alt">பவர் அலர்ட்</string>
+    <string name="motion_mot_alt">மோஷன் அலர்ட்</string>
+    <string name="motion_vib_alt">அதிர்வு அலர்ட்</string>
+    <string name="vibration">அதிர்வு</string>
+    <string name="motion_email_noti">மோஷன் ஈமெயில் நோட்டிபிகேஷன்</string>
+    <string name="motion_magic">மேஜிக்</string>
+    <string name="motion_fire">ஃபயர்</string>
+    <string name="motion_night">நைட்</string>
+    <string name="motion_forest">ஃபாரஸ்ட்</string>
+    <string name="motion_phoneringer">போன் ரிங்கர்</string>
+    <string name="motion_jazz">ஜாஸ்</string>
+    <string name="motion_wakeup">வேக்கப்</string>
+    <string name="motion_long_night">லாங் நைட்</string>
+    <string name="motion_blockall">பிளாக் ஆல் நோட்டிபிகேஷன்ஸ்</string>
+    <string name="motion_sil_alert">சைலண்ட் அலர்ட்</string>
+    <string name="motion_noti_alert">நோட்டிபிகேஷன் அலர்ட்</string>
+    <string name="motion_ringer_alert">ரிங்கர் அலர்ட்</string>
+    <string name="motion_vibration_alertnoti">அதிர்வு அலர்ட்</string>
+    <string name="motion_autolight">ஆட்டோ லைட்</string>
+    <string name="motion_dect_autolight_head">மோஷன் கண்டறியப்பட்டது ஆட்டோ லைட்</string>
+    <string name="motion_autobuzzer">ஆட்டோ பஸர்</string>
+    <string name="motion_dect_autobuzz_head">மோஷன் கண்டறியப்பட்டது ஆட்டோ பஸர்</string>
+
+    <string name="motion_autoled">மோஷன் ஆட்டோ எல்இடி</string>
+    <string name="motion_dect_autoled_head">மோஷன் கண்டறியப்பட்டஆட்டோ எல்இடி</string>
+    <string name="motion_dect_autoled_subhead">மோஷன் கண்டறியப்பட்டஆட்டோ எல்இடி</string>
+
+
+    <!-- Motion Sensor End -->
+
+    <!-- LED Control -->
+    <string name="title_led">மல்டி கலர் எல்இடி</string>
+    <string name="led_control">எல்இடி கண்ட்ரோல்</string>
+    <string name="led_status">எல்இடி ஸ்டேடஸ் </string>
+    <string name="led_on">ஆன்</string>
+    <string name="led_off">ஆஃப்</string>
+    <string name="led_wheel">கலர் வீல்</string>
+    <string name="led_scheme">வண்ணத் ஸ்கீம் தேர்ந்தெடுக்கவும்</string>
+    <string name="led_brightness">பிரைட்னஸ்</string>
+    <string name="led_speed">வேகம்</string>
+    <string name="led_speed_info">வேகமாக (-) மெதுவாக</string>
+    <string name="please_wait">தயவுசெய்து காத்திருங்கள்</string>
+    <!-- LED Control END-->
+    <!-- SETUP-->
+    <string name="setup_loc_name">டிவைஸ் லொகேஷன் நேம்</string>
+    <string name="setup_hint_name">டிவைஸ் ஹின்ட் நேம்</string>
+    <string name="setup_update">அப்டேட்</string>
+    <string name="setup_time_alert_setup">அப்டேட்</string>
+    <string name="setup_timing_alert_settings">மோஷன் அலர்ட் செட்டப்</string>
+    <string name="setup_motion_sensitivity">மோஷன் சென்சிட்டிவிட்டி செட்டப்</string>
+    <string name="setup_setup">செட்டப்</string>
+
+
+    <string name="wifi_name">வைஃபை  நேம்</string>
+
+    <string name="setup_wifi_and_hot_spot_settings">வைஃபை அண்ட் ஹாட்ஸ்பாட் செட்டப்</string>
+    <string name="message_update_device_name_success">உங்கள் சாதனத்தின் பெயர் வெற்றிகரமாக புதுப்பிக்கப்பட்டது!</string>
+
+    <!-- SETUP END-->
+
+    <!-- WIFI AND HOTSPOT ALERT MODE -->
+    <string name="wifi_heading">வைஃபை அண்ட் ஹாட்ஸ்பாட் செட்டப்</string>
+    <string name="wifi_hotspot_setup">ஹாட்ஸ்பாட் செட்டப்</string>
+    <string name="wifi_hotspot_setup2">ஸ்டெப் : டர்ன் ஆன் ஹாட்ஸ்பாட், கன்ஃபிகர்</string>
+    <string name="wifi_hotspot_netname">ஹாட்ஸ்பாட் நேம்</string>
+    <string name="wifi_hotspot_password">ஹாட்ஸ்பாட் பாஸ்வ்ர்ட்</string>
+    <string name="wifi_hotspot_desc">Note: மேலே உள்ள நெட்வொர்க் பெயர் மற்றும் பாஸ்வ்ர்ட்டுடன் மொபைல் ஹாட்ஸ்பாட்டை உள்ளமைக்கவும், மேலும் பாதுகாப்பை WPA2 PSK பயன்முறையாகவும் அமைக்கவும்.</string>
+    <string name="wifi_hotspot_btn">ஹாட்ஸ்பாட் செட்டப்</string>
+    <string name="wifi_hotspot_continue">ஆன்லுக் டிவைசை பவர் செய்து, கீழே தொடரவும் பொத்தானைக் கிளிக் செய்க.</string>
+    <string name="wifi_hotspot_continue2">Step 2 :ஆன்லுக் டிவைசை மீட்டமைத்து, தொடரவும் பொத்தானைக் கிளிக் செய்க.</string>
+
+    <string name="wifi_hotspot_btn_continue">தொடரவும்</string>
+    <string name="wifi_setup">செட்டப் வைஃபை</string>
+    <string name="wifi_status">ஸ்டேடஸ் :</string>
+    <string name="wifi_setup_text">நீண்ட கால பயன்பாட்டிற்கு வைஃபை நெட்வொர்க் விவரங்களை வழங்கவும்</string>
+    <string name="wifi_found">வைஃபை கண்டறியப்பட்டது</string>
+    <string name="wifi_found_check">வைஃபை நெட்ஒர்க், செக் என்டரிங் 3 சாய்ஸ்</string>
+    <string name="wifi_network_name">வைஃபை நெட்ஒர்க் நேம்</string>
+    <string name="wifi_network_password">வைஃபை பாஸ்வ்ர்ட்</string>
+    <string name="wifi_btn_submit">சப்மிட்</string>
+
+
+    <!-- WIFI AND HOTSPOT ALERT MODE END -->
+
+
+    <!-- Motion Sensor Sensitivity -->
+
+    <string name="reset">ஆன்லுக் சாதனத்தை ரீஸ்டார்ட் செய்யவும் </string>
+
+    <string name="device_restarted">ரீஸ்டார்ட் கோரிக்கை அனுப்பப்பட்டது </string>
+
+    <string name="motion_sensivity">மோஷன் சென்சிட்டிவிட்டி கண்ட்ரோல் செட்டப்</string>
+    <string name="motion_sensivity_head">மோஷன் சென்சார் சென்சிட்டிவிட்டி</string>
+    <string name="motion_sensivity_status">ஆன்லுக் ஸ்டேடஸ்</string>
+    <string name="motion_sensivity_offline">ஆப்லைன்</string>
+    <string name="motion_sensivity_online">ஆன்லைன்</string>
+    <string name="motion_sensivity_changebar">பட்டியை மாற்றி பொத்தானைக் கிளிக் செய்க</string>
+    <string name="motion_sensivity_desc">சென்சிட்டிவிட்டி</string>
+    <string name="motion_sensivity_button">புதுப்பிக்கவும்</string>
+
+
+
+    <!-- Motion Sensor Sensitivity END -->
+
+
+    <!-- SIREN Control -->
+
+    <string name="siren_control">சைரன் கண்ட்ரோல்</string>
+    <string name="siren_status">சைரன் ஸ்டேடஸ்</string>
+
+    <!-- PLUG Control -->
+    <string name="title_plug_one">ஹோம் பிளக் / லைட் 2/சைரன்</string>
+    <string name="plug_control">பிளக் கண்ட்ரோல்</string>
+    <string name="plug_status">பிளக்  ஸ்டேடஸ்</string>
+    <string name="plug_offtime">ஆப் டைம்</string>
+    <string name="plug_ontime">ஒன டைம்</string>
+    <string name="plug_remote_timer1running"> டைமர் 1-ரன்னிங்</string>
+    <string name="plug_remote_timer1stopped"> டைமர் 1-ஸ்டாப்ட்</string>
+    <string name="plug_remote_timer2running"> டைமர் 2-ரன்னிங்</string>
+    <string name="plug_remote_timer2stopped"> டைமர் 2-ஸ்டாப்ட்</string>
+    <string name="plug_on">ஆன்</string>
+    <string name="plug_off">ஆஃப்</string>
+    <string name="plug_deactivate">டிஆக்டிவேட்</string>
+    <string name="plug_activate">ஆக்டிவேட்</string>
+    <string name="valid_plug_on_time">செலக்ட் பிளக் ஆன் தடவை</string>
+    <string name="valid_plug_off_time">செலக்ட் பிளக் ஆஃப் தடவை</string>
+
+    <!-- PLUG Control END -->
+
+    <!-- LOGIN -->
+
+    <string name="hint_user_email">பயனர் ஈமெயில்</string>
+    <string name="password">பாஸ்வர்ட்</string>
+    <string name="login">லாகின்</string>
+    <string name="sign_up">சைனப்</string>
+    <string name="sign_in">சைனின்</string>
+    <string name="forgot_your_password">பாஸ்வர்ட் ஞாபகமில்லை</string>
+    <string name="don_t_have_an_account">ஆல்ரெடி அக்கவுண்ட் உள்ளதா?</string>
+
+    <!-- LOGIN END -->
+
+    <!-- ADD NEW DEVICE INFO -->
+    <string name="newdev_add_head">ஆன்லுக் டிவைஸ் சேர்க்கவும்</string>
+    <string name="scan_description">பயன்பாட்டில் டிவைசை சேர்க்கவும், ஆன்லுக் டிவைசில் உள்ள பார்கோடை ஸ்கேன் செய்யவும் \n\n ஸ்கேன் செய்ய பொத்தானைக் கிளிக் செய்க.</string>
+    <string name="button_scan_barcode">ஸ்கேன் பார்கோட்</string>
+    <string name="not_proper_device">தவரான டிவைஸ் ஐடி, தயவுசெய்து மீண்டும் முயற்சிக்கவும்</string>
+    <!-- ADD NEW DEVICE END -->
+
+    <!-- extra 2 start -->
+
+    <string name="valid_device_name">டிவைஸ் இருப்பிட பெயரை உள்ளிடவும்</string>
+    <string name="message_update_motion_value">மோஷன் உணர்திறன் உள்ளமைவு வெற்றிகரமாக மாற்றப்பட்டது.</string>
+    <string name="valid_wifi_name">ஹாட்ஸ்பாட் / வைஃபை நெட்வொர்க் பெயரை உள்ளிடவும்</string>
+    <string name="valid_wifi_name_pass">ஹாட்ஸ்பாட் / வைஃபை பெயர் மற்றும் பாஸ்வர்ட் உள்ளிடவும்</string>
+    <string name="valid_wifi_password">குறைந்தபட்சம் 8 எழுத்து ஹாட்ஸ்பாட் / வைஃபை பாஸ்வர்ட் உள்ளிடவும்</string>
+    <string name="btn_update">புதுப்பிப்பு</string>
+    <string name="message_emergency_no_success">அவசர எண் வெற்றிகரமாக புதுப்பிக்கப்பட்டது!</string>
+    <string name="valid_emergency_number">அவசர அழைப்பு எண்ணை உள்ளிடவும்</string>
+    <string name="app_build">ஆப் பில்ட்</string>
+    <string name="app_version">ஆப் வெர்சன்</string>
+    <string name="message_add_family_exist">மின்னஞ்சல் ஏற்கனவே உள்ளது. நிர்வாகியைத் தொடர்பு கொள்ளுங்கள்.</string>
+    <string name="message_add_family_no_mobile">புதிய உறுப்பினர் சேர்க்கை தோல்வியுற்றது. நிர்வாகியைத் தொடர்பு கொள்ளுங்கள்.</string>
+    <string name="message_add_family_no_head">நீங்கள் புதிய உறுப்பினரைச் சேர்க்க முடியாது.</string>
+    <string name="message_add_family_same">உங்களை நீங்களே சேர்க்க முடியாது</string>
+    <string name="message_login">பயனர் உள்நுழைவு வெற்றி!</string>
+    <string name="title_emergency">அவசர அழைப்பு</string>
+    <string name="title_family_member">குடும்ப உறுப்பினர் உள்நுழைவு</string>
+    <string name="downloading_files">கோப்புகளைப் பதிவிறக்குகிறது</string>
+    <string name="str_default_rationale_message">எங்களுக்கு இந்த அனுமதி தேவை. தயவுசெய்து அனுமதிக்கவும்.</string>
+    <string name="str_rationale_message">தேவையான அனுமதி</string>
+    <string name="str_possitive_button">ஓகே</string>
+    <string name="str_negative_button">கேன்சல்</string>
+    <string name="forgot_password_head">பாஸ்வர்ட் மறந்துவிட்டீர்களா?</string>
+    <string name="forgot_password_text" >மேலும் வழிமுறைகளைப் பெற உங்கள் மின்னஞ்சல் முகவரியை இங்கே உள்ளிடவும்.</string>
+    <string name="button_recover_my_account" >தொடரவும்</string>
+    <string name="message_login_fail">உள்நுழைவு தோல்வி! செல்லுபடியாகும் பயனர் மின்னஞ்சல் மற்றும் பாஸ்வர்டை உள்ளிடவும்.</string>
+    <string name="online">அன்று</string>
+    <string name="offline">ஆஃப்</string>
+    <string name="planned">பிளான்ட்</string>
+    <string name="device_online">உங்கள் டிவைஸ் ஆன்லைனில் உள்ளது</string>
+    <string name="device_motion">டிவைஸ் மோஷன் </string>
+    <string name="device_vibration">டிவைஸ் அதிர்வு</string>
+    <string name="devicealert_offline">டிவைஸ் அதிர்வு ஆஃப்லைன்</string>
+
+
+    <string name="language_heading" >உங்கள் விருப்பமான மொழியைத் தேர்வுசெய்யவும்</string>
+    <string name="contact_language_error_head"  >மொழி பிழை</string>
+    <string name="contact_language_support"  >நீங்கள் மொழிபயன்பாடு தவறான இருப்பதை கண்டறிந்தால் தயவுசெய்து எங்களுக்குத் தெரிவிக்கவும். மொழிபெயர்ப்பு பயன்பாட்டு நோக்கத்திற்காக மட்டுமே.\n\nமுன்னேற்றத்தில் வளர்ச்சி</string>
+    <string name="continue_language"  >தமிழில் தொடருங்கள்</string>
+    <string name="alert_off">அலர்ட்ஸ் ஆப்</string>
+    <string name="blocked">பிலாக் செய்யப்பட்டுள்து</string>
+    <string name="silent_mode">அமைதி மோடு</string>
+    <string name="ring_mode">ரிங் மோடு</string>
+    <string name="vibration_mode">அதிர்வு மோடு</string>
+    <string name="please_enter_mobile">தயவு செய்து மொபைல் எண்ணை உள்ளிடவும்</string>
+    <string name="please_enter_password">தயவு செய்து பாஸ்வர்ட் உள்ளிடவும்</string>
+    <string name="please_enter_valid_password">பாஸ்வர்ட் குறைந்தபட்சம் 2 எழுத்துக்கள் நீளமாக இருக்க வேண்டும்.</string>
+    <string name="confirm_password" >பாஸ்வர்ட்டை உறுதிப்படுத்தவும்</string>
+
+    <string name="message_device_add">டிவைஸ் வெற்றிகரமாக சேர்க்கப்பட்டது</string>
+    <string name="wifi_planned_desc">வைஃபை செட்டிங்ஸ்சை கிளிக் செய்க</string>
+    <string name="message_complete">மெஸ்ஸேஜ் கம்ப்ளீட்</string>
+    <string name="message_nodevice">நோ டிவைஸ் பவுண்ட்</string>
+    <string name="btn_view_more_on_web_browser">வுயூ மோர் ஆன் வெப்ரௌசர்</string>
+    <string name="wifi_noti">நோட்டிபிகேஷன் செட்டப்</string>
+    <string name="wifi_noti_info">அறிவிப்பு அமைப்பை அமைக்க உள்நுழைக</string>
+    <string name="wifi_noti_ok">ஓகே</string>
+    <string name="wifi_wifi_confi">டிவைஸ் வைஃபை உள்ளமைவு</string>
+    <string name="wifi_noti_restart">டிவைஸ்சை மறுதொடக்கம் செய்து சரி என்பதைக் கிளிக் செய்க</string>
+    <string name="wifi_wifi_confiwith">டிவைஸ் வைஃபை கட்டமைக்கப்பட்டுள்ளது</string>
+    <string name="title_my_device">எனது டிவைஸ் தகவல்</string>
+    <string name="selected_language" >மொழி</string>
+    <string name="selected_language_head">Tamil</string>
+
+
+</resources>
+

@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="bizmessage.in.touchswitch">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="oppo.permission.OPPO_COMPONENT_SAFE"/>
+    <uses-permission android:name="com.huawei.permission.external_app_settings.USE_COMPONENT"/>
+
+
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <queries>
+        <package android:name="com.tplink.iot" />
+        <package android:name="com.xiaomi.smarthome" />
+        <package android:name="com.mcu.IVMS" />
+        <package android:name="com.mcu.IVMSHD" />
+
+
+    </queries>
+
+
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="oppo.permission.OPPO_COMPONENT_SAFE" />
+    <uses-permission android:name="com.huawei.permission.external_app_settings.USE_COMPONENT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" tools:node="remove"/>
+
+    <application
+        android:name="bizmessage.in.touchswitch.app.OnlookApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="false"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+
+        <!-- [START fcm_default_icon] -->
+        <!-- Set custom default icon. This is used when no icon is set for incoming notification messages.
+             See README(https://goo.gl/l4GJaQ) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_bulb_off" />
+        <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <!-- [END fcm_default_icon] -->
+        <!-- [START fcm_default_channel] -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+        <!-- [END fcm_default_channel] -->
+
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode" />
+
+        <activity
+            android:name="bizmessage.in.touchswitch.ui.auth.SplashActivity"
+            android:label="@string/app_name"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+
+        <activity
+            android:name="bizmessage.in.touchswitch.MainActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="bizmessage.in.touchswitch.ui.others.ShareDevice"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="bizmessage.in.touchswitch.ui.auth.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="bizmessage.in.touchswitch.ui.others.Language"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="bizmessage.in.touchswitch.ui.auth.RegistrationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="bizmessage.in.touchswitch.ui.auth.ForgotPasswordActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="bizmessage.in.touchswitch.permissionManagerViews.PermissionManagerActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.Transparent" />
+
+        <activity
+            android:name="bizmessage.in.touchswitch.ui.alerts.AlertListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="bizmessage.in.touchswitch.ui.help.HelpActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="bizmessage.in.touchswitch.ui.mydevice.MyDeviceActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="bizmessage.in.touchswitch.ui.settings.SettingsActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="bizmessage.in.touchswitch.ui.others.youtube.YoutubeHelp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="bizmessage.in.touchswitch.ui.others.FamilyMemberActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="bizmessage.in.touchswitch.ui.others.UserAccountActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="bizmessage.in.touchswitch.ui.others.ContactUsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="bizmessage.in.touchswitch.ui.others.AddCustomer"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="bizmessage.in.touchswitch.ui.others.Dealerclients"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="bizmessage.in.touchswitch.ui.others.EmergencyCalling"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="bizmessage.in.touchswitch.ui.others.Whatsalert"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="bizmessage.in.touchswitch.ui.settings.TimeAlertSettingActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="bizmessage.in.touchswitch.ui.settings.WifiAndHotSpotActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="bizmessage.in.touchswitch.ui.settings.MotionControlSettingsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="bizmessage.in.touchswitch.ui.settings.LedActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="bizmessage.in.touchswitch.ui.settings.SirenActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="bizmessage.in.touchswitch.ui.settings.VibrationCtrl"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="bizmessage.in.touchswitch.ui.settings.LightOneActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="bizmessage.in.touchswitch.ui.settings.PlugActivity"
+            android:screenOrientation="portrait" />
+
+
+
+        <activity
+            android:name="bizmessage.in.touchswitch.notification.MySwipeclose"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name=".notification.PushReceiver"
+            android:exported="true">
+            <intent-filter>
+                <!-- Do not modify this -->
+                <action android:name="pushy.me" />
+            </intent-filter>
+            <intent-filter>
+                <!-- Do not modify this -->
+                <action android:name="pushy.me" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".notification.RingtonePlayingService" android:stopWithTask="false"/>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="bizmessage.in.touchswitch.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+
+        <service
+            android:name="me.pushy.sdk.services.PushyFirebaseService"
+            android:exported="true"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- Incoming push notifications will invoke the following BroadcastReceiver -->
+        <receiver
+            android:name=".ui.settings.PushReceiver"
+            android:exported="false">
+            <intent-filter>
+                <!-- Do not modify this -->
+                <action android:name="pushy.me" />
+            </intent-filter>
+            <intent-filter>
+                <!-- Do not modify this -->
+                <action android:name="pushy.me" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Pushy Update Receiver -->
+        <!-- Do not modify - internal BroadcastReceiver that restarts the listener service -->
+        <receiver
+            android:name="me.pushy.sdk.receivers.PushyUpdateReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <!-- Pushy Boot Receiver -->
+        <!-- Do not modify - internal BroadcastReceiver that restarts the listener service -->
+        <receiver
+            android:name="me.pushy.sdk.receivers.PushyBootReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+            </intent-filter>
+        </receiver>
+
+        <!-- Pushy Socket Service -->
+        <!-- Do not modify - internal service -->
+        <service android:name="me.pushy.sdk.services.PushySocketService" android:stopWithTask="false" />
+
+        <!-- Pushy Job Service (added in Pushy SDK 1.0.35) -->
+        <!-- Do not modify - internal service -->
+        <service
+            android:name="me.pushy.sdk.services.PushyJobService"
+            android:exported="true"
+            android:stopWithTask="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <service
+            android:name=".notification.MyFirebaseMessagingService"
+            android:stopWithTask="false"
+            android:exported="false">
+
+            <intent-filter android:priority="100">
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:directBootAware="true"
+            android:enabled="true"
+            android:exported="true"
+            android:name=".MillionBootReceiver" android:stopWithTask="false">
+            <intent-filter>
+
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".location.LocationUpdatesService"
+            android:stopWithTask="false"
+            android:enabled="true"
+            android:exported="true" />
+
+    </application>
+
+</manifest>

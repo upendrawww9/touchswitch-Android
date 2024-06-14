@@ -1,0 +1,434 @@
+<resources>
+
+
+    <string name="device"  >डिवाइस</string>
+<string name="device_id">डआईडी : </string>
+<string name="device_name">स्थान : </string>
+<string name="onlook_status">स्टेटस :</string>
+<string name="wifi_strength">वाईफाई: </string>
+    <string name="battery_strength">बैटरी : </string>
+    <string name="lowbattery_alert">ऑनलुक में कम बैटरी</string>
+
+
+    <string name="motion_sensor">मोशन सेंसर</string>
+<string name="led">एल.ई.डी</string>
+<string name="light_1">लाइट</string>
+<string name="light_2">प्लग</string>
+    <string name="light_3">	सायरन</string>
+<string name="settings">सेटप</string>
+<string name="alerts">अलर्टस</string>
+<string name="device_status">ऑनलुक डिवाइस स्टेटस</string>
+<!-- Dashboard Menu End -->
+<!-- Light Control -->
+<string name="title_light_one">होम लाइट</string>
+<string name="light_control">लाइट कण्ट्रोल</string>
+<string name="light_status">लाइट स्थिति</string>
+<string name="light_activate">एक्टिवटे</string>
+<string name="light_deactivate">डीएक्टिवेट</string>
+<string name="light_offtime">ऑफ टाइम</string>
+<string name="light_ontime">ऑन टाइम</string>
+<string name="light_remote_timer1running">टाइमर १ -शुरू कर दिया है</string>
+<string name="light_remote_timer1stopped"> टाइमर १ -स्टोप्पड़</string>
+<string name="light_remote_timer2running"> टाइमर २ -शुरू कर दिया है</string>
+<string name="light_remote_timer2stopped">टाइमर २ -स्टोप्पड़</string>
+<string name="light_on">ऑन</string>
+<string name="light_off">ऑफ</string>
+<string name="device_offline">डिवाइस ऑफलाइन</string>
+<string name="select_time">सेलेक्ट टाइम</string>
+<string name="valid_on_time">सेलेक्ट लाइट ऑन टाइम</string>
+<string name="valid_off_time">सेलेक्ट लाइट ऑफ टाइम</string>
+<string name="message_device_offline">आपका ऑन लुक डिवाइस ऑफ़लाइन है, कृपया बाद में पुन: प्रयास करें।</string>
+<!-- Light Control End-->
+
+<!-- Bottom Menu -->
+<string name="title_others">मोर</string>
+<string name="title_add_device">डिवाइस</string>
+<string name="title_home">होम</string>
+<!-- Bottom Menu End -->
+<!-- general -->
+<string name="no_internet_title">इंटरनेट कनेक्शन उपलब्ध नहीं है</string>
+
+<string name="status_updated_successfully">स्थिति सफलतापूर्वक अपडेट की गई</string>
+<string name="status_website">वेबसाइट उपलब्ध नहीं है, कृपया इंटरनेट चेक करें</string>
+<string name="no_internet">इंटरनेट कनेक्शन उपलब्ध नहीं है,\nकृपया इंटरनेट कनेक्शन चालू करें</string>
+<string name="button_try_again">पुनः प्रयास करें</string>
+<string name="button_setting">वाईफाई की जांच करें</string>
+<!-- general End -->
+<!-- Others Menu -->
+<string name="title_emergency_number">आपातकालीन फोन नंबर</string>
+    <string name="title_alarm">मोबाइल अलार्म</string>
+    <string name="mobile_noti">अधिसूचना सेटिंग्स</string>
+<string name="title_change_user_password">पासवर्ड बदलें</string>
+<string name="share_my_app">ऐप शेयर करें</string>
+    <string name="share_my_dev">मेरा डिवाइस साझा करें</string>
+<string name="family_login">ऑनलुक फॅमिली लॉगिन</string>
+<string name="title_download_reports">डाउनलोड रिपोर्ट्स</string>
+<string name="buzz">अधिसूचना परीक्षण</string>
+<string name="language">भाषा: /En/అ/ক/ಎ/அ/എ/ગુ/म</string>
+<string name="siren">बजर अलर्ट सेटअप</string>
+    <string name="vibratehead">वाइब्रेशन सेंसर नियंत्रण</string>
+    <string name="vibrate">वाइब्रेशन चेतावनी सेटअप</string>
+    <string name="vibrate_activate">एक्टिवटे वाइब्रेशन </string>
+    <string name="vibrate_setup">वाइब्रेशन सेटअप </string>
+
+    <string name="share_stop">स्थिति : डिवाइस साझाकरण रोक दिया गया</string>
+    <string name="share_start">स्थिति : डिवाइस साझा करना प्रारंभ किया गया</string>
+
+    <string name="please_enter_valid_mobile"  >कृपया मान्य 10 अंकों का मोबाइल नंबर दर्ज करें</string>
+
+
+
+    <string name="help">ओनलूक हेल्प</string>
+<string name="offers">मेरे ऑफ़र और सूचना</string>
+<string name="logout">लॉगआउट</string>
+    <string name="addcust">Add Customer</string>
+
+    <string name="webcust">View Customers</string>
+
+<!-- Others Menu user account -->
+<string name="user_account">यूजर पासवर्ड बदले</string>
+ <string name="change_password">पासवर्ड बदले</string>
+<string name="confirm_password" >पासवर्ड की पुष्टि कीजिये</string>
+
+<!-- Others Menu Family Login -->
+<string name="alert_ops_login">अलर्टस ऑपरेटर लॉगिन</string>
+<string name="light_ops_login">लाइट ऑपरेटर लॉगिन</string>
+<string name="family_light_loginpass">पासवर्ड</string>
+<string name="family_member_email">फॅमिली मेंबर ईमेल</string>
+<string name="create_member">क्रिएट मेंबर</string>
+<string name="family_member_note">नोट: केवल एक परिवार के सदस्य को जोड़ा जा सकता है। अतिरिक्त परिवार के सदस्यों को एक ईमेल अनुरोध द्वारा प्रो मोड में जोड़ा जा सकता है।</string>
+<string name="family_login_note">नोट: अपने परिवार के सदस्य को केवल प्रकाश नियंत्रित करने के लिए इस पासवर्ड से डाउनलोड करने और लॉगिन करने के लिए कहें</string>
+
+<string name="family_member_light_login">लॉगिन : member@onlook.in</string>
+<string name="family_member_status">स्टेटस :</string>
+<string name="family_member_status_info">परिवार के सदस्य को जोड़ा गया है</string>
+<!-- Others Menu Emergency Number -->
+<string name="hint_emergency_number">98xxx-xxxxx</string>
+<string name="button_edit">एडिट नंबर</string>
+<string name="button_call_now">कॉल नाउ</string>
+    <string name="button_save_now">"संख्या सहेजें"</string>
+<!-- Others Menu Download report -->
+<string name="title_confirm_download_report">कन्फर्म डाउनलोड रिपोर्ट</string>
+<string name="dialog_message">क्या आप ईमेल भेज कर रिपोर्ट पाना चाहते हैं</string>
+<string name="button_yes">हाँ</string>
+<string name="button_no">नहीं</string>
+
+    <string name="not_ebable">इस उपयोगकर्ता के लिए सक्षम नहीं है</string>
+
+    <!-- Others Menu Buzzer/siren -->
+<string name="buzzer">बज़र</string>
+<string name="buzzer_control">बज़र कण्ट्रोल</string>
+<string name="buzzer_status">बज़र इस</string>
+
+<string name="buzzer_on">ऑन</string>
+<string name="buzzer_off">ऑफ</string>
+
+<!-- Others Menu Logout -->
+<string name="logout_title">कन्फर्म लॉगआउट</string>
+<string name="logout_message">क्या आप लॉगआउट करना चाहते हैं?</string>
+
+<!-- Others Menu End -->
+
+<!-- Motion Sensor  -->
+
+<string name="sensor_timer">मोशन सेंसर टाइमर</string>
+<string name="motion_offtime">ऑफ टाइम</string>
+<string name="motion_ontime">ऑन टाइम</string>
+<string name="timer_running">सेंसर रनिंग</string>
+<string name="timer_stopped">सेंसर स्टोप्पड़</string>
+<string name="timer_always">पूरे दिन अलर्ट</string>
+    <string name="timer_or">	---या---</string>
+
+    <string name="high">उच्च</string>
+    <string name="medium">मध्यम</string>
+    <string name="low">कम</string>
+
+
+<string name="motion_activate">एक्टिवटे</string>
+<string name="motion_deactivate">डीएक्टिवेट</string>
+<string name="motion_set_info">1) सभी सेंसर अलर्ट को रोकने के लिए सेंसर को निष्क्रिय करें। \n2) समय स्लॉट प्राप्त करने वाले अलर्ट बदलने के लिए, "निष्क्रिय करें" पर क्लिक करें, "पूरे दिन अलर्ट" चेकबॉक्स को अनचेक करें, अब समय और बंद समय पर बदलें और "सक्रिय करें" पर क्लिक करें। \n3) "पूरे दिन अलर्ट" प्राप्त करने के लिए, सेंसर को निष्क्रिय करें और चेकबॉक्स "अलर्ट ऑल डे" का चयन करें और "सक्रिय करें" बटन पर क्लिक करें।</string>
+<string name="motion_alerttype">अलर्ट टाइप</string>
+<string name="motion_notiemail">नोटिफिकेशन ईमेल</string>
+<string name="motion_allow_email">ईमेल नोटिफिकेशन की अनुमति दें</string>
+<string name="motion_notitone">नोटिफिकेशन टोन</string>
+<string name="motion_ringtone">रिंग टोन</string>
+<string name="motion_mob_noti">मोबाइल नोटिफिकेशन</string>
+<string name="motion_auto_time">ऑटो लाइट</string>
+<string name="motion_auto_buzz">ऑटो बज़र</string>
+<string name="motion_pow_alt">पावर अलर्ट</string>
+<string name="motion_mot_alt">मोशन अलर्ट</string>
+<string name="motion_vib_alt">वाइब्रेशन अलर्ट</string>
+    <string name="vibration">वाइब्रेशन</string>
+
+<string name="motion_email_noti">ईमेल नोटिफिकेशन की अनुमति दें</string>
+<string name="motion_magic">मैजिक</string>
+<string name="motion_fire">फायर</string>
+<string name="motion_night">नाईट</string>
+<string name="motion_forest">फारेस्ट</string>
+<string name="motion_phoneringer">फ़ोन रिंगर</string>
+<string name="motion_jazz">जाज़</string>
+<string name="motion_wakeup">वेक अप</string>
+<string name="motion_long_night">लॉन्ग नाईट</string>
+<string name="motion_blockall">सभी नोटिफिकेशन ब्लॉक करें</string>
+<string name="motion_sil_alert">साइलेंट अलर्ट</string>
+<string name="motion_noti_alert">नोटिफिकेशन अलर्ट</string>
+<string name="motion_ringer_alert">रिंगर अलर्ट</string>
+<string name="motion_vibration_alertnoti">वाइब्रेशन अलर्ट</string>
+<string name="motion_autolight">ऑटो लाइट</string>
+<string name="motion_dect_autolight_head">मोशन डेटेक्टेड ऑटो लाइट</string>
+<string name="motion_dect_autolight_subhead">लाइट चालू रखें</string>
+<string name="motion_autobuzzer">ऑटो बज़र</string>
+<string name="motion_dect_autobuzz_head">मोशन डेटेक्टेड ऑटो बज़र</string>
+<string name="motion_dect_autobuzz_subhead">बज़र चालू रखें</string>
+
+    <string name="fire_dect_autobuzz_subhead">	अलार्म चालू रहेगा</string>
+    <string name="fire_alt"> फायर अलर्ट (टेस्ट मोड)</string>
+    <string name="fire_dect_autobuzz_head">ऑटो फायर अलार्म</string>
+
+
+    <string name="motion_autoled">	ऑटो बहु रंग एलईडी</string>
+    <string name="motion_dect_autoled_head">	मोशन डिटेक्ट एलईडी</string>
+    <string name="motion_dect_autoled_subhead">	एलईडी चालू रहेगा</string>
+
+
+<!-- Motion Sensor End -->
+
+<!-- LED Control -->
+<string name="title_led">मल्टी कलर एल.ई.डी</string>
+<string name="led_control">एल.ई.डी कण्ट्रोल</string>
+<string name="led_status">एल.ई.डी स्थिति</string>
+<string name="led_on">ऑन</string>
+<string name="led_off">ऑफ</string>
+<string name="led_wheel">कलर व्हील</string>
+<string name="led_scheme">कलर स्कीम चुने</string>
+<string name="led_brightness">ब्राइटनेस</string>
+    <string name="led_speed">स्पीड</string>
+    <string name="led_speed_info">तेज (-) धीमी</string>
+
+<string name="please_wait">कृपया प्रतीक्षा करें</string>
+
+<!-- LED Control END-->
+<!-- SETUP-->
+<string name="setup_loc_name">डिवाइस लोकेशन नाम</string>
+<string name="setup_hint_name">डडिवाइस स्थान</string>
+<string name="setup_update">अपडेट</string>
+<string name="setup_time_alert_setup">अपडेट</string>
+<string name="setup_timing_alert_settings">मोशन अलर्ट सेटअप</string>
+<string name="setup_motion_sensitivity">मोशन सेंसिटिविटी सेटअप</string>
+<string name="setup_setup">सेटअप</string>
+    <string name="wifi_name">वाईफ़ाई नाम</string>
+
+<string name="setup_wifi_and_hot_spot_settings">वाईफाई एंड हॉटस्पॉट सेटअप</string>
+<string name="message_update_device_name_success">आपके डिवाइस का नाम अपडेट हो चूका है</string>
+
+<!-- SETUP END-->
+
+<!-- WIFI AND HOTSPOT ALERT MODE -->
+<string name="wifi_heading">वाईफाई एंड हॉटस्पॉट सेटअप</string>
+<string name="wifi_hotspot_setup">हॉटस्पॉट सेटअप</string>
+<string name="wifi_hotspot_setup2">चरण1:हॉटस्पॉट कॉन्फ़िगर करके चालू करे</string>
+<string name="wifi_hotspot_netname">हॉटस्पॉट नाम</string>
+<string name="wifi_hotspot_password">हॉटस्पॉट पासवर्ड</string>
+<string name="wifi_hotspot_desc">Note: मोबाइल हॉटस्पॉट को ऊपर दिए हुए नेटवर्क नाम और पासवर्ड के साथ कॉन्फ़िगर करें और WPA2 PSK मोड के रूप में भी सेट करें।</string>
+<string name="wifi_hotspot_btn">हॉटस्पॉट सेटअप</string>
+<string name="wifi_hotspot_continue">पावर ऑन ऑनलुक डिवाइस और नीचे कंटिन्यू बटन पर क्लिक करें।</string>
+<string name="wifi_hotspot_continue2">चरण 2 : ऑनलुक डिवाइस को रीसेट करें और कंटिन्यू बटन पर क्लिक करें।</string>
+
+    <string name="wifi_hotspot_btn_continue">कंटिन्यू</string>
+<string name="wifi_setup">सेटअप वाईफाई</string>
+<string name="wifi_status">ऑनलुक स्टेटस : </string>
+<string name="wifi_setup_text">देर तक उपयोग के लिए वाईफाई नेटवर्क कि जानकारी दे</string>
+<string name="wifi_found">नेटवर्क्स अवेलेबल</string>
+<string name="wifi_found_check">.३ अक्षर लिखिए</string>
+<string name="wifi_network_name">वाईफाई नेटवर्क नाम</string>
+<string name="wifi_network_password">वाईफाई पासवर्ड</string>
+<string name="wifi_btn_submit">सबमिट</string>
+
+
+<!-- WIFI AND HOTSPOT ALERT MODE END -->
+
+
+<!-- Motion Sensor Sensitivity -->
+
+    <string name="reset">ऑनलुक डिवाइस रीसेट करें </string>
+
+    <string name="device_restarted">पुनः प्रारंभ अनुरोध भेजा गया</string>
+
+
+
+<string name="motion_sensivity">मोशन सेंसिटिविटी कण्ट्रोल सेटअप</string>
+<string name="motion_sensivity_head">मोशन सेंसर सेंसिटिविटी</string>
+<string name="motion_sensivity_status">ओनलूक स्टेटस</string>
+<string name="motion_sensivity_offline">ऑफलाइन</string>
+<string name="motion_sensivity_online">ऑनलाइन</string>
+<string name="motion_sensivity_changebar">बार बदलें और बटन पर क्लिक करें</string>
+<string name="motion_sensivity_desc">सेंसिटिविटी</string>
+<string name="motion_sensivity_button">अपडेट</string>
+
+<!-- Motion Sensor Sensitivity END -->
+
+
+    <!-- SIREN Control -->
+
+    <string name="siren_control">मोहिनी नियंत्रण</string>
+    <string name="siren_status">सायरन इसो</string>
+
+<!-- PLUG Control -->
+<string name="title_plug_one">होम प्लग / लाइट २/मोहिनी</string>
+<string name="plug_control">प्लग कण्ट्रोल</string>
+<string name="plug_status">प्लग स्थिति</string>
+<string name="plug_offtime">ऑफ टाइम</string>
+<string name="plug_ontime">ऑन टाइम</string>
+<string name="plug_remote_timer1running">टाइमर १ -शुरू कर दिया है</string>
+<string name="plug_remote_timer1stopped">टाइमर १ -स्टोप्पड़</string>
+<string name="plug_remote_timer2running">टाइमर २ -शुरू कर दिया है</string>
+<string name="plug_remote_timer2stopped">टाइमर २ -स्टोप्पड़</string>
+<string name="plug_on">ऑन</string>
+<string name="plug_off">ऑफ</string>
+
+<string name="plug_deactivate">डीएक्टिवेट</string>
+<string name="plug_activate">एक्टिवटे</string>
+<string name="valid_plug_on_time">सेलेक्ट प्लग ऑन टाइम</string>
+<string name="valid_plug_off_time">सेलेक्ट प्लग ऑफ टाइम</string>
+
+<!-- PLUG Control END -->
+
+<!-- LOGIN -->
+
+<string name="hint_user_email">यूजर ईमेल</string>
+<string name="password">पासवर्ड</string>
+<string name="login">साइन इन</string>
+<string name="sign_up">साइन अप</string>
+<string name="sign_in">साइन इन</string>
+<string name="forgot_your_password">फॉरगॉट पासवर्ड ?</string>
+<string name="don_t_have_an_account">पहले से अकाउंट है?</string>
+
+
+<!-- LOGIN END -->
+
+<!-- ADD NEW DEVICE INFO -->
+<string name="newdev_add_head">ऐड ओनलूक डिवाइस</string>
+<string name="scan_description">एप्लिकेशन में डिवाइस जोड़ने के लिए कृपया बारकोड को ऑनलुक बॉक्स पर स्कैन करें स्कैन शुरू करने के लिए ऑन क्लिक करें</string>
+
+<string name="button_scan_barcode">स्कैन बरकड़े</string>
+<string name="not_proper_device">डिवाइस आईडी गलत है। कृपया पुन: प्रयास करें</string>
+<!-- ADD NEW DEVICE END -->
+
+<!-- extra 2 start -->
+
+<string name="valid_device_name">कृपया डिवाइस लोकेशन का नाम दर्ज करें</string>
+<string name="message_update_motion_value">मोशन सेंसिटिविटी कॉन्फ़िगरेशन सफलतापूर्वक बदला गया</string>
+<string name="valid_wifi_name">हॉटस्पॉट /वाईफाई नेटवर्क का नाम दर्ज करें</string>
+<string name="valid_wifi_name_pass">हॉटस्पॉट /वाईफाई नाम एंड पासवर्ड का नाम दर्ज करें</string>
+<string name="valid_wifi_password">8 अक्षर हॉटस्पॉट /वाईफाई पासवर्ड दर्ज करें</string>
+<string name="btn_update">अपडेट</string>
+<string name="message_emergency_no_success">आपातकालीन नंबर अपडेट हो चूका है</string>
+<string name="valid_emergency_number">कृपया आपातकालीन कॉल नंबर दर्ज करें</string>
+<string name="app_build">अप्प बिल्ड :</string>
+<string name="app_version">ओनलूक अप्प वर्शन :</string>
+<string name="message_add_family_exist">ईमेल पहले से मौजूद है। एडमिन से संपर्क करें</string>
+<string name="message_add_family_no_mobile">आप नया सदस्य नहीं जोड़ सकते। एडमिन से संपर्क करें</string>
+<string name="message_add_family_no_head">आप नया सदस्य नहीं जोड़ सकते।</string>
+<string name="message_add_family_same">आप खुद को नहीं जोड़ सकते।</string>
+<string name="message_login">यूजर लॉगिन सफलतापूर्वक!</string>
+<string name="title_emergency">आपातकालीन कालिंग</string>
+<string name="title_family_member">फॅमिली मेंबर लॉगिन</string>
+
+<string name="downloading_files">डौन्लोडिंग फाइल्स</string>
+<string name="str_default_rationale_message">हमें यह अनुमति चाहिए।कृपया अनुमति दें।</string>
+<string name="str_rationale_message">कृपाया अनुमति दिजिये</string>
+<string name="str_possitive_button">ओके</string>
+<string name="str_negative_button">कैंसिल</string>
+<string name="forgot_password_head">फॉरगॉट पासवर्ड</string>
+<string name="forgot_password_text" >नोटिफिकेशन पाने के लिए कृपायाअपना ईमेल दर्ज करें</string>
+<string name="button_recover_my_account" >कंटिन्यू</string>
+
+<string name="message_login_fail">लॉगिन फ़ैल कृपाया सही ईमेल और पासवर्ड डाले</string>
+
+<string name="online">ऑनलाइन</string>
+<string name="offline">ऑफलाइन</string>
+<string name="planned">आपका डिवाइस ऑनलाइन</string>
+   <string name="device_online">आपका डिवाइस ऑनलाइन</string>
+<string name="device_motion">मोशन का पता लगाया गया</string>
+<string name="device_vibration">वाइब्रेशन का पता लगाया गया</string>
+    <string name="device_fire">आग का पता चला </string>
+<string name="devicealert_offline">आपका डिवाइस ऑफलाइन</string>
+
+<string name="selected_language">अंग्रेज़ी</string>
+    <string name="selected_language_head">Hindi</string>
+
+<string name="language_heading" >अपनी पसंदीदा भाषा चुनें</string>
+<string name="contact_language_error_head"  >भाषा समर्थन-संस्करण-012</string>
+<string name="contact_language_support"  >यदि आपको भाषा की समस्या और गलत अर्थ मिलता है तो कृपया हमें सूचित करें। अनुवाद केवल ऐप उपयोग के उद्देश्य के लिए है।.\n\n प्रगति में विकास</string>
+<string name="continue_language"  >हिंदी में जारी रखें</string>
+<string name="alert_off">अलर्ट बंद</string>
+<string name="blocked">ब्लॉक्ड</string>
+<string name="silent_mode">साइलेंट</string>
+<string name="ring_mode">रिंगिंग</string>
+<string name="vibration_mode">वाइब्रेशन</string>
+<string name="please_enter_mobile">कृपया मोबाइल नंबर दर्ज करें</string>
+<string name="please_enter_password">कृपया पासवर्ड दर्ज करें</string>
+<string name="please_enter_valid_password">पासवर्ड 2 अक्षरों से अधिक होना चाहिए।</string>
+<string name="message_device_add">डिवाइस सफलतापूर्वक जोड़ा गया</string>
+<string name="wifi_planned_desc">सेटअप पूरा करने के लिए क्लिक करें</string>
+<string name="no_internet_connection">इंटरनेट कनेक्शन उपलब्ध नहीं है,\nकृपया इंटरनेट कनेक्शन चालू करें</string>
+<string name="message_complete">इंस्टॉलेशन पूरा करें</string>
+<string name="message_nodevice">डिवाइस नहीं मिला</string>
+<string name="btn_view_more_on_web_browser">अलर्ट देखें और हटाएं</string>
+<string name="wifi_noti">नोटिफिकेशन सेटअप</string>
+<string name="wifi_noti_info">नोटिफिकेशन सेटअप करने के लिए कृपया लॉगिन करें</string>
+<string name="wifi_noti_ok">ओके</string>
+<string name="wifi_wifi_confi">डिवाइस वाईफ़ाई कॉन्फ़िगरेशन</string>
+<string name="wifi_noti_restart">कृपया डिवाइस को अभी रीस्टार्ट करें और ओके पर क्लिक करें</string>
+<string name="wifi_wifi_confiwith">डिवाइस वाईफाई के साथ कॉन्फ़िगर किया गया है</string>
+
+<string name="title_my_device">मेरी डिवाइस जानकारी</string>
+    <string name="stop_share">शेयर बंद करो</string>
+    <string name="share_note">नोट: आप एक दिन के लिए डिवाइस को दूसरे व्यक्ति के साथ साझा कर सकते हैं। शेयर आइकन पर क्लिक करके लॉगिन और पासवर्ड का डिवाइस विवरण साझा करें।.</string>
+
+    <string name="share_mobile">रिसीवर मोबाइल नंबर</string>
+
+    <string name="rate_app_title">Rate App</string>
+    <string name="rate_app_message">If you are enjoying our app, please take a moment to rate it on PlayStore. Thanks for your support!</string>
+    <string name="rate_btn_pos">Rate Now</string>
+    <string name="rate_btn_neg">Remind me later</string>
+    <string name="rate_btn_nut">No, Thanks</string>
+
+    <string name="youtube_text"> यूट्यूब सहायता </string>
+
+    <string name="whatalert"> व्हाट्सएप पर अधिसूचना अलर्ट </string>
+    <string name="whatsnumber">व्हाट्सएप नंबर:98458xxxxx</string>
+    <string name="whatstitle">व्हाट्सएप अलर्ट</string>
+    <string name="sendalerts">व्हाट्सएप अलर्ट भेजें</string>
+    <string name="stopalerts"> व्हाट्सएप अलर्ट बंद करें  </string>
+
+    <string name="alertnote">नोट: प्रीमियम सेवा। अनुरोध पर उपलब्ध।</string>
+    <string name="alertvalidity">नोट: एक दिन के लिए वैध। व्यवस्थापक द्वारा प्रबंधित।</string>
+
+
+    <string name="title_minutes">मिनट</string>
+<string name="title_seconds">सेकण्ड्स</string>
+
+    <!--pushy alert-->
+
+
+    <string name="pushy_connection_alert">ऑनलुक कनेक्शन अलर्ट</string>
+    <string name="pushy_motion_alert">मोशन अलर्ट</string>
+    <string name="pushy_vibration_alert">वाइब्रेशन अलर्ट</string>
+    <string name="pushy_fire_alert">आग की अलर्ट</string>
+    <string name="pushy_time">अलर्ट समय</string>
+    <!--pushy alert end-->
+
+    <!-- Theme switch -->
+
+    <string name="dark_theme">रात थीम्स</string>
+    <string name="light_theme">दिन थीम्स</string>
+    <string name="onlook_cube">ऑनलुक स्मार्ट क्यूब</string>
+    <string name="onlook_sub">ओनलुक सब्सक्रिप्शन समाप्त</string>
+    <string name="sub_end">दिनांक</string>
+
+    <string name="not_for_demo">डेमो उपयोगकर्ता के लिए नहीं</string>
+
+    <!-- Theme switch end -->
+
+</resources>

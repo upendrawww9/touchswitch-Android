@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "414614022721",
+    "firebase_url": "https://onlook-94ddd.firebaseio.com",
+    "project_id": "onlook-94ddd",
+    "storage_bucket": "onlook-94ddd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:414614022721:android:45a4839f4a2f443d3174c0",
+        "android_client_info": {
+          "package_name": "bizmessage.in.touchswitch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "414614022721-neie7rc8ih00o1oahpf763gvm0mvjlk0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdwZQojdEDuH9f1wpMItIAriqBWxLYZiY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "414614022721-neie7rc8ih00o1oahpf763gvm0mvjlk0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+ }

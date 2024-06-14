@@ -1,0 +1,649 @@
+<resources>
+
+    <string name="app_name"  translatable="false">Onlook</string>
+    <string name="title_setup"  translatable="false">Setup</string>
+    <string name="msg_token_fmt"  translatable="false">Setup</string>
+
+    <!-- Dashboard Menu -->
+
+    <string name="device">Device</string>
+    <string name="device_id">ID: </string>
+
+    <string name="device_name">	Location : </string>
+    <string name="onlook_status">Status : </string>
+    <string name="wifi_strength">WiFi Power : </string>
+    <string name="battery_strength">Battery : </string>
+
+    <string name="youtube_text"> Onlook Help On Youtube </string>
+
+    <string name="whatalert"> Alerts On Whatsapp </string>
+    <string name="whatsnumber"> Whatsapp Number: 98458xxxxx  </string>
+    <string name="whatstitle"> Whatsapp Alerts  </string>
+    <string name="sendalerts"> Send Whatsapp Alerts  </string>
+    <string name="stopalerts"> Stop Whatsapp Alerts  </string>
+    <string name="alertnote"> Note: Premium Service. Available on Request.  </string>
+    <string name="alertvalidity"> Note: Valid for one day.Admin Managed   </string>
+
+
+    <string name="motion_sensor">Motion Sensor</string>
+    <string name="led">	Led</string>
+    <string name="light_1">	Light</string>
+    <string name="light_2">	Plug</string>
+    <string name="light_3">	Siren</string>
+
+    <string name="settings">	Setup</string>
+    <string name="alerts">	Alerts</string>
+    <string name="device_status">Onlook Device Status</string>
+    <string name="lowbattery_alert">Low Battery in Onlook </string>
+
+    <!-- Dashboard Menu End -->
+
+
+
+    <!-- Light Control -->
+    <string name="title_light_one">	HOME LIGHT</string>
+    <string name="light_control">	Light Control</string>
+    <string name="light_status">	Light Is</string>
+    <string name="light_activate">	Activate</string>
+    <string name="light_deactivate">	Deactivate</string>
+
+
+
+    <string name="light_offtime">	Off Time</string>
+    <string name="light_ontime">	On Time</string>
+    <string name="light_remote_timer1running">Timer 1-Started</string>
+    <string name="light_remote_timer1stopped">Timer 1-Stopped</string>
+
+    <string name="light_remote_timer2running">Timer 2-Started</string>
+    <string name="light_remote_timer2stopped">Timer 2-Stopped</string>
+
+
+
+    <string name="light_on">	ON</string>
+    <string name="light_off">	OFF</string>
+    <string name="device_offline">	Status: Device Offline</string>
+    <string name="select_time">	Select Time</string>
+    <string name="valid_on_time">	Select LIGHT ON TIME</string>
+    <string name="valid_off_time">	Select LIGHT OFF TIME</string>
+    <string name="message_device_offline">	Your Device is Offline, Please Try Again Later.</string>
+    <!-- Light Control End-->
+
+    <!-- Bottom Menu -->
+
+    <string name="title_others">More</string>
+    <string name="title_add_device">Device</string>
+    <string name="title_home">Home</string>
+    <!-- Bottom Menu End -->
+
+    <!-- general -->
+
+    <string name="no_internet_title">No Internet Connection</string>
+    <string name="status_updated_successfully">Status Updated Successfully!</string>
+    <string name="status_website">	Website Not reachable, Please check internet</string>
+
+    <string name="no_internet">Not found Internet connection,\nPlease Turn On Internet Connection</string>
+    <string name="button_try_again">Try Again</string>
+    <string name="button_setting">Check Internet</string>
+    <!-- general End -->
+
+
+
+
+    <!-- Others Menu -->
+    <string name="title_emergency_number">Emergency Phone Number</string>
+    <string name="title_alarm">Mobile Alarm</string>
+    <string name="mobile_noti">Notification Settings</string>
+
+
+    <string name="title_change_user_password">Change User Password</string>
+    <string name="share_my_app">Share My App</string>
+    <string name="share_my_dev">Share My Device</string>
+    <string name="stop_share">Stop Share</string>
+    <string name="share_mobile">Receiver Mobile Number</string>
+    <string name="share_stop">Status :  Device Sharing stopped</string>
+    <string name="share_start">Status : Device Sharing Started</string>
+
+
+
+    <string name="share_note">Note: You can share device to other person for one day.Share device details of login and password by clicking share icon.</string>
+
+
+    <string name="rate_app_title">Rate App</string>
+    <string name="rate_app_message">If you are enjoying our app, please take a moment to rate it on PlayStore. Thanks for your support!</string>
+    <string name="rate_btn_pos">Rate Now</string>
+    <string name="rate_btn_neg">Remind me later</string>
+    <string name="rate_btn_nut">No, Thanks</string>
+
+
+    <string name="family_login">Onlook Family Login</string>
+    <string name="title_download_reports">Download Reports</string>
+    <string name="buzz">Notification Test</string>
+    <string name="language">Language/ক/అ/आ/ಎ/அ/എ/ગુ/म</string>
+    <string name="siren">Buzzer Alert Setup</string>
+    <string name="vibratehead">Vibration Sensor Control</string>
+    <string name="vibrate">Vibration Alert Setup</string>
+    <string name="vibrate_activate">Activate Vibration </string>
+
+
+    <string name="vibrate_setup">Activate Setup </string>
+
+
+
+    <string name="help">Onlook Help</string>
+
+    <string name="offers">Offers And Notifications For Me</string>
+    <string name="logout">Logout</string>
+    <string name="addcust">Add Customer</string>
+    <string name="webcust">View Customers</string>
+
+    <!-- Others Menu user account -->
+    <string name="user_account">Change User Password</string>
+    <string name="change_password">Change Password</string>
+
+    <!-- Others Menu Family Login -->
+    <string name="alert_ops_login">Alerts Operator Login</string>
+    <string name="light_ops_login">Light Operator Login</string>
+    <string name="family_light_loginpass">Password : </string>
+
+
+    <string name="family_member_email">Family Member Email or Mobile</string>
+    <string name="create_member">Create Member</string>
+    <string name="family_member_note">Note: Only one family member and only one time you can add a member. Additional member can be added by Email request only in Pro mode</string>
+    <string name="family_login_note"> Note: Ask your family member to download and login with this password to control only light</string>
+
+    <string name="family_member_light_login">Login : member@onlook.in</string>
+    <string name="family_member_status">Status :</string>
+    <string name="family_member_status_info">Family member is added</string>
+
+    <!-- Others Menu Emergency Number -->
+    <string name="hint_emergency_number">98xxx-xxxxx</string>
+    <string name="button_edit">Edit Number</string>
+    <string name="button_call_now">Call Now</string>
+    <string name="button_save_now">Save Number </string>
+
+
+    <!-- Others Menu Download report -->
+
+    <string name="title_confirm_download_report">Confirm Download Report</string>
+    <string name="dialog_message">Do You Want To Send Email and Download Reports</string>
+    <string name="button_yes">	Yes</string>
+    <string name="button_no">No</string>
+    <string name="not_ebable">Not Enabled For This User</string>
+
+    <!-- Others Menu Buzzer/siren -->
+    <string name="buzzer">Buzzer</string>
+    <string name="buzzer_control">Buzzer Alert Setup</string>
+    <string name="buzzer_status">Buzzer Is</string>
+
+    <string name="buzzer_on">	ON</string>
+    <string name="buzzer_off">	OFF</string>
+
+    <!-- Others Menu Logout -->
+    <string name="logout_title">Confirm Logout</string>
+    <string name="logout_message">Are You Sure You Want To Logout?</string>
+    <string name="high" translatable="false">High</string>
+    <string name="medium" translatable="false">Medium</string>
+    <string name="low" translatable="false">Low</string>
+
+
+    <!-- Others Menu End -->
+
+    <!-- Language support screen-->
+    <string name="language_heading">	Choose Your Preferred language</string>
+    <string name="language_english" translatable="false">English</string>
+
+    <string name="selected_language">English</string>
+    <string name="selected_language_head">English</string>
+
+
+
+h
+
+
+
+
+    <string name="continue_language">	Continue With English</string>
+    <string name="contact_language_error_head">	Language Support-version-012</string>
+    <string name="contact_language_support">In case you find language issue and wrong meaning please inform us.Translation are for app usage purpose only.\n\n Status: Development in Progress
+</string>
+    <!-- Language support screen End-->
+
+
+
+    <!-- Motion Sensor  -->
+    <string name="motion_activate">	Activate</string>
+    <string name="motion_deactivate">	Deactivate</string>
+
+    <string name="sensor_timer">Motion Sensor Timer</string>
+    <string name="motion_offtime">	Off Time</string>
+    <string name="motion_ontime">	On Time</string>
+    <string name="timer_running">	Sensor Running</string>
+    <string name="timer_stopped">	Sensor Stopped</string>
+    <string name="timer_always">	Alerts All Day</string>
+
+    <string name="timer_or">	---OR---</string>
+
+
+    <string name="motion_set_info">	1) Deactivate sensor to stop all sensor alerts. \n2) To change alerts receving time slot , click "DEACTIVATE", uncheck checkbox "Alerts ALL Day", now change on time and off time and click "ACTIVATE". \n3) To get "Alerts All Day", deactivate sensor and select checkbox "ALerts All Day" and click "ACTIVATE" button.</string>
+    <string name="motion_alerttype">	Alert Type</string>
+
+    <string name="motion_notiemail">	Notification Email</string>
+    <string name="motion_allow_email">	Allow Email Notification</string>
+
+    <string name="motion_notitone">	Notification Tone</string>
+    <string name="motion_ringtone">	Ring Tone</string>
+    <string name="motion_mob_noti">	Mobile Notification</string>
+    <string name="motion_auto_time">	Auto Light</string>
+    <string name="motion_auto_buzz">	Auto Buzzer</string>
+    <string name="auto_note" translatable="false"> </string>
+
+    <string name="fire_alt"> Fire Alert(Test Mode) </string>
+
+    <string name="motion_pow_alt">	Power Alert</string>
+    <string name="motion_mot_alt">	Fire Alert</string>
+    <string name="motion_vib_alt">	Vibration Alert</string>
+    <string name="vibration">Vibration</string>
+
+    <string name="motion_email_noti">Allow Email Notifications</string>
+
+    <string name="motion_magic">	Magic</string>
+    <string name="motion_fire">	Fire</string>
+    <string name="motion_night">	Night</string>
+    <string name="motion_forest">	Forest</string>
+    <string name="motion_phoneringer">	Phone Ringer</string>
+    <string name="motion_jazz">	Jazz</string>
+    <string name="motion_wakeup">	Wake Up</string>
+    <string name="motion_long_night">	Long Night</string>
+
+    <string name="motion_blockall">	Block All Notification</string>
+    <string name="motion_sil_alert">	Silent Alert</string>
+    <string name="motion_noti_alert">	Notification Alert</string>
+    <string name="motion_ringer_alert">	Ringer Alert</string>
+    <string name="motion_vibration_alertnoti">	Vibration Alert</string>
+
+
+
+
+    <string name="motion_autolight">	Auto Light</string>
+    <string name="motion_dect_autolight_head">	Motion Detected Auto light</string>
+    <string name="motion_dect_autolight_subhead">	Light Will Be On For</string>
+
+    <string name="motion_autobuzzer">	Auto Buzzer</string>
+    <string name="motion_dect_autobuzz_head">Motion Detected Auto Buzzer</string>
+    <string name="motion_dect_autobuzz_subhead">	Buzzer Will Be On For</string>
+    <string name="fire_dect_autobuzz_head">	Auto Fire Alarm</string>
+
+    <string name="fire_dect_autobuzz_subhead">	Alarm Will Be On For</string>
+
+    <string name="motion_autoled">	Auto LED</string>
+    <string name="motion_dect_autoled_head">Motion Detected Auto LED</string>
+    <string name="motion_dect_autoled_subhead">	LED Will Be On For</string>
+
+
+
+    <!-- Motion Sensor End -->
+
+
+
+    <!-- LED Control -->
+    <string name="title_led">MULTI COLOR LED</string>
+
+    <string name="led_control">	LED CONTROL</string>
+    <string name="led_status">	LED IS</string>
+    <string name="led_on">	On</string>
+    <string name="led_off">	Off</string>
+    <string name="led_wheel">	Color Wheel</string>
+    <string name="led_scheme">	Select Color Scheme</string>
+    <string name="led_brightness">	Brightness</string>
+    <string name="led_speed">Speed</string>
+    <string name="led_speed_info">Fast (-) Slow</string>
+
+
+    <string name="led_brightness_info"  translatable="false">	.</string>
+    <string name="please_wait">	Please Wait</string>
+    <!-- LED Control END-->
+
+
+    <!-- SETUP-->
+    <string name="setup_loc_name">Device Location name</string>
+    <string name="setup_hint_name">Device location Name</string>
+    <string name="setup_update">Update</string>
+    <string name="setup_time_alert_setup">Update</string>
+    <string name="setup_timing_alert_settings">Motion Alert Setup</string>
+
+
+    <string name="setup_setup">Setup</string>
+    <string name="wifi_name">Wifi Name</string>
+
+    <string name="setup_wifi_and_hot_spot_settings">Wifi And Hotspot Setup</string>
+    <string name="setup_motion_sensitivity">Motion Sensitivity Setup</string>
+
+    <string name="message_update_device_name_success">Your Device Name Updated Successfully!</string>
+
+    <!-- SETUP END-->
+
+    <!-- DASHBOARD ALERT MODE -->
+
+    <string name="alert_off">Alerts Off</string>
+    <string name="blocked">Blocked</string>
+    <string name="silent_mode">Silent</string>
+    <string name="ring_mode">Ringing</string>
+    <string name="vibration_mode">Vibration</string>
+    <!-- DASHBOARD ALERT MODE  END-->
+
+
+
+    <!-- WIFI AND HOTSPOT ALERT MODE -->
+
+    <string name="wifi_heading">Wifi And Hotspot Setup</string>
+    <string name="wifi_hotspot_setup">Hotspot Setup</string>
+    <string name="wifi_hotspot_setup2">Step1:Turn on Hotspot, Configure</string>
+
+    <string name="wifi_hotspot_netname">Hotspot Name</string>
+    <string name="wifi_hotspot_password">Hotspot Password</string>
+    <string name="wifi_hotspot_desc">Note : Configure Mobile Hotspot with above network name and password and also set security as WPA2 PSK mode.</string>
+    <string name="wifi_hotspot_btn">Hotspot Setup</string>
+    <string name="wifi_hotspot_continue">Power On onlook device and click on below Continue Button.</string>
+
+    <string name="wifi_hotspot_continue2">Step 2 : Reset onlook device and click Continue Button.</string>
+
+    <string name="wifi_hotspot_btn_continue">Continue</string>
+    <string name="wifi_setup">Setup Wifi</string>
+    <string name="wifi_status">Onlook Status:</string>
+    <string name="wifi_setup_text">Provide wifi network details for long time use</string>
+    <string name="wifi_found">Networks Found</string>
+    <string name="wifi_found_check"> .Check Entering 3 Chars</string>
+
+    <string name="wifi_network_name">Wifi Network Name</string>
+    <string name="wifi_network_password">Wifi Password</string>
+    <string name="wifi_btn_submit">Submit</string>
+    <string name="wifi_noti">Notification Setup</string>
+
+    <string name="wifi_noti_info">Please login to Setup the Notification Engine</string>
+    <string name="wifi_noti_ok">OK</string>Z
+    <string name="wifi_wifi_confi">Device Wifi Configuration</string>
+    <string name="wifi_wifi_confiwith">Device WiFi is Configured with</string>
+    <string name="wifi_noti_restart">Please restart the device now and click OK</string>
+
+
+
+
+    <!-- WIFI AND HOTSPOT ALERT MODE END -->
+
+
+
+    <!-- Motion Sensor Sensitivity -->
+
+    <string name="motion_sensivity">Motion Sensitivity Control Setup</string>
+    <string name="reset">Reset Onlook Device </string>
+    <string name="device_restarted">Restart Request Sent</string>
+
+
+
+
+    <string name="motion_sensivity_head">Motion Sensor Sensitivity</string>
+
+    <string name="motion_sensivity_status">Onlook Status</string>
+    <string name="motion_sensivity_offline">Offline</string>
+    <string name="motion_sensivity_online">Online</string>
+
+    <string name="motion_sensivity_changebar">Change the bar and click button</string>
+
+    <string name="motion_sensivity_desc">Sensitivity</string>
+    <string name="motion_sensivity_button">Update</string>
+
+
+    <!-- Motion Sensor Sensitivity END -->
+
+
+    <!-- PLUG Control -->
+    <string name="title_plug_one">	HOME PLUG/LIGHT2/Siren</string>
+    <string name="plug_control">Plug Control</string>
+    <string name="plug_status">Plug Is</string>
+
+    <!-- SIREN Control -->
+
+    <string name="siren_control">Siren Control</string>
+    <string name="siren_status">Siren Is</string>
+
+
+
+    <string name="plug_offtime">	Off Time</string>
+    <string name="plug_ontime">	On Time</string>
+    <string name="plug_remote_timer1running">Timer 1-Started</string>
+    <string name="plug_remote_timer1stopped">Timer 1-Stopped</string>
+    <string name="plug_remote_timer2running">Timer 2-Started</string>
+    <string name="plug_remote_timer2stopped">Timer 2-Stopped</string>
+    <string name="plug_on">	ON</string>
+    <string name="plug_off">	OFF</string>
+    <string name="plug_deactivate">Deactivate</string>
+    <string name="plug_activate">Activate</string>
+    <string name="valid_plug_on_time">	Select Plug On Time</string>
+    <string name="valid_plug_off_time">	Select Plug Off Time</string>
+
+    <!-- PLUG Control END -->
+
+    <!-- LOGIN -->
+
+    <string name="hint_user_email">User Email or Mobile</string>
+    <string name="password">Password</string>
+    <string name="login">Signin</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="forgot_your_password">Forgot Password?</string>
+    <string name="don_t_have_an_account">Don`t Have An Account?</string>
+
+    <string name="please_enter_mobile">Please Enter Mobile Number</string>
+    <string name="please_enter_password">Please Enter Password</string>
+    <string name="please_enter_valid_password">Password Should Be At Least 2 Characters Long.</string>
+
+
+    <!-- LOGIN END -->
+
+    <!-- NEW USER REGISTRATION -->
+    <string name="have_an_account" translatable="false">Already have Login Account</string>
+    <string name="title_registration" translatable="false">Registration</string>
+
+    <string name="email" translatable="false">Email</string>
+    <string name="first_name"  translatable="false">First Name</string>
+    <string name="last_name"  translatable="false">Last Name</string>
+    <string name="mobile_number"  translatable="false">Whatsapp Mobile Number</string>
+    <string name="confirm_password">	Confirm Password</string>
+    <!-- NEW USER REGISTRATION END -->
+
+    <!-- MY DEVICE INFO -->
+    <string name="title_my_device">My Device Info</string>
+
+    <!-- MY DEVICE INFO END -->
+
+
+    <!-- ADD NEW DEVICE INFO -->
+    <string name="newdev_add_head">ADD ONLOOK DEVICE</string>
+    <string name="scan_description">Please scan the barcode on the onlook box to add device in Application.\n\n Click on button to start scan.</string>
+    <string name="button_scan_barcode">Scan Barcode</string>
+    <string name="not_proper_device">Not Proper device id, Please Try Again.</string>
+    <string name="message_device_add">Device Added successfully!</string>
+
+
+    <!-- ADD NEW DEVICE END -->
+
+    <!-- Desktop complete planned setup -->
+
+    <string name="wifi_planned_desc">Click To Complete Setup </string>
+
+    <!-- Desktop complete planned setup end-->
+
+    <!-- general extra -->
+
+    <string name="no_internet_connection">Please Check Your Internet Connection</string>
+    <string name="message_complete"> Complete the pending installation</string>
+    <string name="message_nodevice">No Device Found.</string>
+    <string name="btn_view_more_on_web_browser">Delete Alerts</string>
+    <!-- general extra end-->
+
+    <!-- Theme switch -->
+
+    <string name="dark_theme">Night Theme</string>
+    <string name="light_theme">Day Theme</string>
+
+
+    <!-- Theme switch end -->
+
+
+    <!-- extra 2 start -->
+    <string name="not_for_demo">Not For Demo User</string>
+
+    <string name="valid_device_name">Please Enter device Location Name</string>
+    <string name="message_update_motion_value">Motion Sensitivity Configuration Changed Successfully.</string>
+    <string name="valid_wifi_name">Enter Hotspot/Wifi Network Name</string>
+    <string name="valid_wifi_name_pass">Enter Hotspot/Wifi Name And Password</string>
+
+    <string name="valid_wifi_password">Enter Min 8 Char Hotspot/Wifi Password</string>
+    <string name="btn_update">UPDATE</string>
+    <string name="message_emergency_no_success">Emergency Number Updated Successfully!</string>
+    <string name="valid_emergency_number">Please Enter Emergency Call Number</string>
+    <string name="app_build">App Build :</string>
+    <string name="app_version">Onlook App Version :</string>
+
+
+
+    <string name="message_add_family_exist">Email Already exists.Contact Admin.</string>
+    <string name="message_add_family_no_mobile">New Member Addition Failed. Contact Admin.</string>
+    <string name="message_add_family_no_head">You cannot add new member.</string>
+    <string name="message_add_family_same">You cannot add yourself.</string>
+    <string name="message_login">User login successfully!</string>
+
+    <string name="title_emergency">Emergency Calling</string>
+
+    <string name="title_family_member">Family Member Login</string>
+
+
+    <string name="downloading_files">Downloading Files</string>
+    <string name="str_default_rationale_message">We Need This permission.Please Allow.</string>
+    <string name="str_rationale_message">Required Permission</string>
+    <string name="str_possitive_button">OK</string>
+    <string name="str_negative_button">Cancel</string>
+
+    <string name="forgot_password_head">Forgot Password</string>
+    <string name="forgot_password_text">Enter your email address here \nto receive further instructions.</string>
+    <string name="button_recover_my_account">Continue</string>
+
+    <string name="message_login_fail">Login fail! Enter valid user email and password.</string>
+
+    <string name="device_online">Your Device is Online On</string>
+    <string name="device_motion">Motion detected on </string>
+    <string name="device_vibration">Vibration detected on </string>
+    <string name="device_fire">Fire detected on </string>
+
+    <string name="devicealert_offline">Your Device is Offline On</string>
+
+    <string name="online">Online</string>
+    <string name="offline">Offline</string>
+    <string name="planned">planned</string>
+
+    <string name="title_minutes">minutes</string>
+    <string name="title_seconds">seconds</string>
+
+    <!-- extra 2 end -->
+
+    <!--pushy alert-->
+
+    <string name="pushy_connection_alert">Onlook Connection Alert</string>
+    <string name="pushy_motion_alert">Motion Alert</string>
+    <string name="pushy_vibration_alert">Vibration Alert</string>
+    <string name="pushy_fire_alert">Fire Alert</string>
+
+
+    <string name="pushy_time">Alert Time</string>
+    <string name="onlook_cube">Onlook Smart Cube</string>
+    <string name="onlook_sub">Onlook Subscription Ends</string>
+    <string name="sub_end">On </string>
+
+    <!--pushy alert end-->
+
+
+
+
+    <string name="language_kannada" translatable="false">ಕನ್ನಡ</string>
+    <string name="language_hindi" translatable="false">हिंदी</string>
+    <string name="language_telugu" translatable="false">తెలుగు</string>
+    <string name="language_tamil" translatable="false">தமிழ்</string>
+    <string name="language_malaya" translatable="false">മലയാളം</string>
+    <string name="language_mara" translatable="false">मराठी</string>
+    <string name="language_guja" translatable="false">ગુજરાતી</string>
+    <string name="language_ben" translatable="false">বাংলা</string>
+
+
+
+
+
+
+    str_default_rationale_message
+
+
+    <!--validations-->
+    <string name="please_enter_first_name"  translatable="false">Please Enter First Name</string>
+    <string name="please_enter_last_name"  translatable="false">Please Enter Last Name</string>
+    <string name="please_enter_email"  translatable="false">Please Enter Email or Mobile</string>
+
+    <string name="password_and_confirm_password_not_match"  translatable="false">Password And Confirm Password Does Not Match.</string>
+
+    <string name="please_enter_valid_mobile"  >Please Enter Valid 10 Digit Mobile Number</string>
+
+    <!--validations-->
+    <string name="please_enter_valid_email"  translatable="false">Please Enter Valid Email</string>
+    <string name="please_email"  translatable="false">Please Enter Email</string>
+
+
+
+    <!--Change Password-->
+    <string name="please_enter_confirm_password"  translatable="false">Please enter confirm password</string>
+    <string name="please_check_both_password"  translatable="false">Password and confirm password does not match.</string>
+
+    <!--Contact us-->
+
+
+
+
+
+
+    <string name="support_email_subject"  translatable="false">Support Required</string>
+    <string name="sub_title_support_email"  translatable="false">Send email...</string>
+    <string name="support_email_body_text"  translatable="false">" Do not edit above information \n \n Dear Admin,\n There is issue with my device \n below are the issue details"</string>
+
+
+
+    <string name="title_alerts"  translatable="false">Alerts</string>
+    <string name="change_password_fail"  translatable="false">Fail to change user password, Please try again.</string>
+    <string name="forgot_password_fail"  translatable="false">Fail to forgot password request, Please try again.</string>
+    <string name="no_user_exist"  translatable="false">User not exist, Please enter your registered email.</string>
+
+
+    <string name="registration_success"  translatable="false">User Registration Successfully!</string>
+    <string name="user_already_exist"  translatable="false">User Already exist, Please try to login!</string>
+    <string name="user_registration_fail"  translatable="false">Fail User Registration Please try again.</string>
+    <string name="user_dupmobile"  translatable="false">Mobile Number Already exist.</string>
+
+    <string name="forgot_password_sent"  translatable="false">Please check you email for reset password!</string>
+
+    <string name="click_here_for_webview"  translatable="false">Click here for WebView</string>
+
+    <string name="whatserror"  translatable="false">Number Blocked</string>
+
+
+
+
+
+
+    <string name="device_header"  translatable="false">How To Add Device</string>
+
+
+    <string name="email_sent_to"  translatable="false">\"Email Details sent to \"</string>
+    <string name="for_aproval"  translatable="false">\" for approval.\"</string>
+    <string name="device_not_found"  translatable="false">Device Not Found.</string>
+    <string name="default_notification_channel_id"  translatable="false">999</string>
+
+
+
+
+</resources>

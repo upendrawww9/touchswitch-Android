@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#00B8D4</color>
+    <!-- <color name="colorPrimary">#0B7C8E</color>  red color-->
+
+    <color name="navy">#021430</color>
+
+    <color name="colorPrimaryDark">#1C1D1E</color>
+    <color name="colorAccent">#F9FCFF</color>
+    <color name="black_dark">#5a5a5c</color>
+    <color name="dark_gray">#777777</color>
+    <color name="white">#FAF7F7</color>
+    <color name="white1">#3389B6B6</color>
+
+    <color name="white3">#CB878585</color>
+    <color name="white2">#dedcdc</color>
+    <color name="black">#000000</color>
+    <color name="light_gray">#c4c1c1</color>
+    <color name="red">#f1c70623</color>
+    <color name="yellow">#f1edd107</color>
+    <color name="green">#fb33760d</color>
+    <color name="app_logo_color">#03A9F4</color>
+
+    <color name="light_white_grey">#c4c1c1</color>
+    <color name="card_view_gb">#FFFFFF</color>
+    <color name="pink">#df158d</color>
+
+    <color name="transparent3">#BA000000</color>
+    <color name="transparent2">#8D000000</color>
+    <color name="transparent1">#46000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="orange">@android:color/holo_orange_light</color>
+
+    <color name="purple_500">#80278A</color>
+
+    <color name="blue">#0000ff</color>
+    <color name="lightgreen">#90EE90</color>
+    <color name="lightblue">#add8e6</color>
+    <color name="amber">#60B3F6</color>
+    <color name="cyan">#00FFFF</color>
+    <color name="purple">#800080</color>
+
+</resources>

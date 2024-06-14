@@ -1,0 +1,1312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        tools:context=".ui.settings.SettingsFragment">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <TextView
+            android:id="@+id/text_device_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:text="Device "
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_device_id"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:fillViewport="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardTiming"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+
+                    android:elevation="@dimen/_5sdp"
+                    app:cardBackgroundColor="@color/card_view_gb"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    app:cardElevation="@dimen/_2sdp"
+                    app:cardMaxElevation="@dimen/_3sdp"
+                    app:cardUseCompatPadding="true"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_8sdp">
+
+                        <ImageView
+                            android:id="@+id/imgTiming"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:src="@drawable/dashimg"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textTiming"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:gravity="start"
+                            android:text="@string/sensor_timer"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_16ssp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/imgTiming"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <View
+                            android:id="@+id/viewLine"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@color/dark_gray"
+                            app:layout_constraintTop_toBottomOf="@+id/textTiming" />
+
+                        <TextView
+                            android:id="@+id/textTimeOn"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:gravity="start"
+
+                            android:text="@string/motion_ontime"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_16ssp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/viewLine" />
+
+                        <TextView
+                            android:id="@+id/textTimeOnValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:background="@color/white1"
+                            android:gravity="start"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:paddingEnd="@dimen/_10sdp"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:text="00:00"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_16ssp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textTimeOn" />
+
+                        <TextView
+                            android:id="@+id/textTimeOff"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:gravity="start"
+                            android:text="@string/motion_offtime"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_16ssp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/viewLine" />
+
+
+                        <TextView
+                            android:id="@+id/textTimeOffValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:background="@color/white1"
+                            android:gravity="start"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:paddingEnd="@dimen/_10sdp"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:text="00:00"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_16ssp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textTimeOff" />
+
+
+                        <TextView
+                            android:id="@+id/textTimeor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:gravity="center"
+                            android:text="@string/timer_or"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_14ssp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textTimeOffValue" />
+
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:id="@+id/checkBoxAlways"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:buttonTint="@color/colorPrimary"
+                            android:layout_marginStart="@dimen/_6sdp"
+                            android:layout_marginTop="@dimen/_6sdp"
+
+                            android:text="@string/timer_always"
+
+                            android:textSize="@dimen/_16ssp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textTimeor" />
+
+                        <TextView
+                            android:id="@+id/textTimeStatus1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:gravity="center"
+                            android:text="@string/timer_running"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_14ssp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBoxAlways" />
+
+
+                        <Button
+                            android:id="@+id/btnStatus1"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:padding="@dimen/_12sdp"
+                            android:paddingTop="@dimen/_8sdp"
+                            android:paddingBottom="@dimen/_8sdp"
+                            android:text="@string/motion_activate"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textTimeStatus1"
+
+                            android:textSize="@dimen/_10ssp"
+                            android:layout_width="@dimen/_150sdp"
+                            android:layout_height="@dimen/_45sdp"
+                            android:background="@drawable/shape"
+                            android:textColor="@android:color/white" />
+
+
+
+                        <TextView
+                            android:id="@+id/text_timer_set_info"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:gravity="start"
+
+                            android:text="@string/motion_set_info"
+
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10ssp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/btnStatus1" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardNotificationEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+
+                    android:elevation="@dimen/_5sdp"
+                    app:cardBackgroundColor="@color/card_view_gb"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    app:cardElevation="@dimen/_2sdp"
+                    app:cardMaxElevation="@dimen/_3sdp"
+                    app:cardUseCompatPadding="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardTiming">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_8sdp">
+
+                        <ImageView
+                            android:id="@+id/imgNotificationEmail"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:src="@drawable/ic_email"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textNotificationEmail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:gravity="start"
+                            android:text="@string/motion_email_noti"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_16ssp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/imgNotificationEmail"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <View
+                            android:id="@+id/viewLineNotificationEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@color/dark_gray"
+                            app:layout_constraintTop_toBottomOf="@+id/textNotificationEmail" />
+
+                        <TextView
+                            android:id="@+id/textallowNotification"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:gravity="start"
+
+                            android:text="@string/motion_allow_email"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14ssp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/viewLineNotificationEmail" />
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:id="@+id/checkNotificationEmail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorPrimary"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:textSize="@dimen/_16ssp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/viewLineNotificationEmail" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardNotificationToneSelection"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+
+                    android:elevation="@dimen/_5sdp"
+                    app:cardBackgroundColor="@color/card_view_gb"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    app:cardElevation="@dimen/_2sdp"
+                    app:cardMaxElevation="@dimen/_3sdp"
+                    app:cardUseCompatPadding="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardNotificationEmail">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_8sdp">
+
+                        <ImageView
+                            android:id="@+id/imgNotificationTone"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:src="@drawable/tone"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textNotificationTone"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:gravity="start"
+
+                            android:text="@string/motion_notitone"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_16ssp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/imgNotificationTone"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <View
+                            android:id="@+id/viewLineNotificationTone"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@color/dark_gray"
+                            app:layout_constraintTop_toBottomOf="@+id/textNotificationTone" />
+
+                        <TextView
+                            android:id="@+id/textNotificationTone1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:gravity="start"
+                            android:text="Magic"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14ssp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/viewLineNotificationTone" />
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:id="@+id/checkNotificationTone1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorPrimary"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:textSize="@dimen/_16ssp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/viewLineNotificationTone" />
+
+                        <TextView
+                            android:id="@+id/textNotificationTone2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:gravity="start"
+
+                            android:text="@string/motion_fire"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14ssp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/checkNotificationTone1" />
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:id="@+id/checkNotificationTone2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorPrimary"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:textSize="@dimen/_16ssp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/checkNotificationTone1" />
+
+                        <TextView
+                            android:id="@+id/textNotificationTone3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:gravity="start"
+
+                            android:text="@string/motion_night"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14ssp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/checkNotificationTone2" />
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:id="@+id/checkNotificationTone3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorPrimary"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:textSize="@dimen/_16ssp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/checkNotificationTone2" />
+
+                        <TextView
+                            android:id="@+id/textNotificationTone4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:gravity="start"
+                            android:text="@string/motion_forest"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14ssp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/checkNotificationTone3" />
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:id="@+id/checkNotificationTone4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorPrimary"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:textSize="@dimen/_16ssp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/checkNotificationTone3" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardRingSelection"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+
+                    android:elevation="@dimen/_5sdp"
+                    app:cardBackgroundColor="@color/card_view_gb"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    app:cardElevation="@dimen/_2sdp"
+                    app:cardMaxElevation="@dimen/_3sdp"
+                    app:cardUseCompatPadding="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardNotificationToneSelection">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_8sdp">
+
+                        <ImageView
+                            android:id="@+id/imgRingSelection"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:src="@drawable/ringtone"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textRingSelection"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:gravity="start"
+
+                            android:text="@string/motion_ringtone"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_16ssp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/imgRingSelection"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <View
+                            android:id="@+id/viewLineRingSelection"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@color/dark_gray"
+                            app:layout_constraintTop_toBottomOf="@+id/textRingSelection" />
+
+                        <TextView
+                            android:id="@+id/textPhoneRinger"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:gravity="start"
+                            android:text="@string/motion_phoneringer"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14ssp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/viewLineRingSelection" />
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:id="@+id/checkPhoneRinger"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorPrimary"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:textSize="@dimen/_16ssp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/viewLineRingSelection" />
+
+                        <TextView
+                            android:id="@+id/textAlertRing1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:gravity="start"
+
+                            android:text="@string/motion_jazz"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14ssp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/checkPhoneRinger" />
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:id="@+id/checkAlertRing1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorPrimary"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:textSize="@dimen/_16ssp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/checkPhoneRinger" />
+
+                        <TextView
+                            android:id="@+id/textAlertRing2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:gravity="start"
+
+                            android:text="@string/motion_wakeup"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14ssp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/checkAlertRing1" />
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:id="@+id/checkAlertRing2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorPrimary"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:textSize="@dimen/_16ssp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/checkAlertRing1" />
+
+                        <TextView
+                            android:id="@+id/textAlertRing3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:gravity="start"
+
+                            android:text="@string/motion_long_night"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14ssp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/checkAlertRing2" />
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:id="@+id/checkAlertRing3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorPrimary"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:textSize="@dimen/_16ssp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/checkAlertRing2" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardMobileNotification"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+
+                    android:elevation="@dimen/_5sdp"
+                    app:cardBackgroundColor="@color/card_view_gb"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    app:cardElevation="@dimen/_2sdp"
+                    app:cardMaxElevation="@dimen/_3sdp"
+                    app:cardUseCompatPadding="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardRingSelection">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_8sdp">
+
+                        <ImageView
+                            android:id="@+id/imgMobileNotification"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:src="@drawable/mobile2"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textMobileNotification"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:gravity="start"
+                           android:text="@string/motion_mob_noti"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_16ssp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/imgMobileNotification"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <View
+                            android:id="@+id/viewLineMobileNotification"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@color/dark_gray"
+                            app:layout_constraintTop_toBottomOf="@+id/textMobileNotification" />
+
+                        <TextView
+                            android:id="@+id/textBlockAllMobileNotification"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:gravity="start"
+
+                            android:text="@string/motion_blockall"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14ssp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/viewLineMobileNotification" />
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:id="@+id/checkBlockAllMobileNotification"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorPrimary"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:textSize="@dimen/_16ssp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/viewLineMobileNotification" />
+
+                        <TextView
+                            android:id="@+id/textSilentAlert"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:gravity="start"
+                            android:text="@string/motion_sil_alert"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14ssp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBlockAllMobileNotification" />
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:id="@+id/checkSilentAlert"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorPrimary"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:textSize="@dimen/_16ssp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBlockAllMobileNotification" />
+
+                        <TextView
+                            android:id="@+id/textNotificationAlert"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:gravity="start"
+                            android:text="@string/motion_noti_alert"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14ssp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/checkSilentAlert" />
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:id="@+id/checkNotificationAlert"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorPrimary"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:textSize="@dimen/_16ssp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/checkSilentAlert" />
+
+                        <TextView
+                            android:id="@+id/textRingerAlert"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:gravity="start"
+                            android:text="@string/motion_ringer_alert"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14ssp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/checkNotificationAlert" />
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:id="@+id/checkRingerAlert"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorPrimary"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:textSize="@dimen/_16ssp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/checkNotificationAlert" />
+
+                        <TextView
+                            android:id="@+id/textVibra"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:gravity="start"
+                            android:text="@string/motion_vibration_alertnoti"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14ssp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/checkRingerAlert" />
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:id="@+id/checkVibrationAlert"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorPrimary"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:textSize="@dimen/_16ssp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/checkRingerAlert" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardAutolight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+
+                    android:elevation="@dimen/_5sdp"
+                    app:cardBackgroundColor="@color/card_view_gb"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    app:cardElevation="@dimen/_2sdp"
+                    app:cardMaxElevation="@dimen/_3sdp"
+                    app:cardUseCompatPadding="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardMobileNotification">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_8sdp">
+
+                        <ImageView
+                            android:id="@+id/imgWifi"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:src="@drawable/autolight"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/texautolight"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:gravity="start"
+                            android:text="@string/motion_autolight"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/imgWifi"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <View
+                            android:id="@+id/viewLineAutoLight"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@color/dark_gray"
+                            app:layout_constraintTop_toBottomOf="@+id/texautolight" />
+
+                        <TextView
+                            android:id="@+id/textAutoLighthead"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:gravity="start"
+                            android:textStyle="bold"
+                            android:text="@string/motion_dect_autolight_head"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_16ssp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/viewLineAutoLight" />
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:id="@+id/checkAutoLight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorPrimary"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:textSize="@dimen/_16ssp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/viewLineAutoLight" />
+
+                        <TextView
+                            android:id="@+id/textautolightsubhead"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textAutoLighthead"
+                            android:text="@string/motion_dect_autolight_subhead"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+
+
+                        <TextView
+                            android:id="@+id/textautolight_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+
+                            android:text=""
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp"
+                            app:layout_constraintStart_toEndOf="@+id/textautolightsubhead"
+                            android:layout_marginStart="@dimen/_220sdp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textAutoLighthead"
+
+                            />
+                        <!--    <SeekBar
+                                android:id="@+id/seekBar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                                android:max="60"
+                                android:min="3"
+                                android:paddingBottom="15dp"
+                                android:progress="10"
+                                android:progressTint="@color/colorPrimary"
+                                android:thumb="@drawable/seek_bar_thumb"
+                                android:thumbTint="@color/colorPrimaryDark"/>-->
+
+                        <SeekBar
+                            android:id="@+id/seekBar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            app:layout_constraintTop_toBottomOf="@+id/textautolightsubhead"
+                            android:max="60"
+                            android:progress="10"
+                            android:progressTint="@color/colorPrimary"
+                            android:thumb="@drawable/seek_bar_thumb"
+                            android:thumbTint="@color/colorPrimaryDark" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cardAutoled"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+
+
+
+                    android:elevation="@dimen/_5sdp"
+                    app:cardBackgroundColor="@color/card_view_gb"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    app:cardElevation="@dimen/_2sdp"
+                    app:cardMaxElevation="@dimen/_3sdp"
+                    app:cardUseCompatPadding="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardAutolight">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_8sdp">
+
+                        <ImageView
+                            android:id="@+id/imgDeviceLed"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:src="@drawable/autoled"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/texautoled"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:gravity="start"
+                            android:text="@string/motion_autoled"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/imgDeviceLed"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <View
+                            android:id="@+id/viewLineAutoled"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@color/dark_gray"
+                            app:layout_constraintTop_toBottomOf="@+id/texautoled" />
+
+                        <TextView
+                            android:id="@+id/textAutoledhead"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:gravity="start"
+                            android:textStyle="bold"
+                            android:text="@string/motion_dect_autoled_head"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_16ssp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/viewLineAutoled" />
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:id="@+id/checkAutoled"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorPrimary"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:textSize="@dimen/_16ssp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/viewLineAutoled" />
+
+                        <TextView
+                            android:id="@+id/textautoledsubhead"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textAutoledhead"
+                            android:text="@string/motion_dect_autoled_subhead"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+
+
+                        <TextView
+                            android:id="@+id/textautoled_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp"
+                            app:layout_constraintStart_toEndOf="@+id/textautoledsubhead"
+                            android:layout_marginStart="@dimen/_220sdp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textAutoledhead"
+
+                            />
+                        <!--    <SeekBar
+                                android:id="@+id/seekBar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                                android:max="60"
+                                android:min="3"
+                                android:paddingBottom="15dp"
+                                android:progress="10"
+                                android:progressTint="@color/colorPrimary"
+                                android:thumb="@drawable/seek_bar_thumb"
+                                android:thumbTint="@color/colorPrimaryDark"/>-->
+
+                        <SeekBar
+                            android:id="@+id/seekBarled"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            app:layout_constraintTop_toBottomOf="@+id/textautoledsubhead"
+                            android:max="60"
+                            android:progress="10"
+                            android:progressTint="@color/colorPrimary"
+                            android:thumb="@drawable/seek_bar_thumb"
+                            android:thumbTint="@color/colorPrimaryDark" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardAutobuzzer"
+                    android:layout_width="0dp"
+                    android:layout_height="210dp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_80sdp"
+
+                    android:elevation="@dimen/_5sdp"
+                    app:cardBackgroundColor="@color/card_view_gb"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    app:cardElevation="@dimen/_2sdp"
+
+                    app:cardMaxElevation="@dimen/_3sdp"
+                    app:cardUseCompatPadding="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardAutoled">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_8sdp">
+
+                        <ImageView
+                            android:id="@+id/imgAutoBuzzer"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:src="@drawable/autovibrate"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textAutoBuzzer"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:gravity="start"
+                            android:text="@string/motion_autobuzzer"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/imgAutoBuzzer"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <View
+                            android:id="@+id/viewLineAutoBuzzer"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@color/dark_gray"
+                            app:layout_constraintTop_toBottomOf="@+id/textAutoBuzzer" />
+
+                        <TextView
+                            android:id="@+id/textAutoBuzzerhead"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:gravity="start"
+                            android:text="@string/motion_dect_autobuzz_head"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_16ssp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/viewLineAutoBuzzer" />
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:id="@+id/checkAutoBuzzer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorPrimary"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:textSize="@dimen/_16ssp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/viewLineAutoBuzzer" />
+
+                        <TextView
+                            android:id="@+id/textViewbuzzsubhead"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textAutoBuzzerhead"
+                            android:text="@string/motion_dect_autobuzz_subhead"
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp" />
+                        <TextView
+                            android:id="@+id/textViewbuzz_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_220sdp"
+                             android:text=""
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp"
+                            app:layout_constraintStart_toEndOf="@+id/textViewbuzzsubhead"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textAutoBuzzerhead"
+
+
+
+
+
+                            />
+
+                        <!--            <SeekBar
+                                        android:id="@+id/bseekBar"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/_5sdp"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toBottomOf="@+id/textViewbuzz"
+                                        android:layout_below="@+id/textViewbuzz"
+                                        android:max="60"
+                                        android:min="3"
+                                        android:paddingBottom="15dp"
+                                        android:progress="10"
+                                        android:progressTint="@color/colorPrimary"
+                                        android:thumb="@drawable/seek_bar_thumb"
+                                        android:thumbTint="@color/colorPrimaryDark"/>
+            -->
+                        <SeekBar
+                            android:id="@+id/bseekBar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewbuzzsubhead"
+                            android:max="60"
+                            android:progress="10"
+                            android:progressTint="@color/colorPrimary"
+
+                            android:thumb="@drawable/seek_bar_thumb"
+                            android:thumbTint="@color/colorPrimaryDark" />
+
+                        <TextView
+                            android:id="@+id/textnote"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/bseekBar"
+                            android:text="@string/auto_note"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
