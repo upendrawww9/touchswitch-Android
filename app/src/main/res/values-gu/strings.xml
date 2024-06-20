@@ -3,7 +3,7 @@
     <string name="device">ઉપકરણ</string>
     <string name="device_id">ID:</string>
     <string name="device_name">સ્થાન</string>
-    <string name="onlook_status">સ્થિતિ:</string>
+    <string name="onload_status">સ્થિતિ:</string>
     <string name="wifi_strength">વાઇફાઇ:</string>
     <string name="battery_strength">બેટરી : </string>
     <string name="lowbattery_alert">ઓનલૂકમાં ઓછી બેટરી </string>
@@ -20,7 +20,7 @@
 
     <string name="settings">સ્થાપના</string>
     <string name="alerts">ચેતવણીઓ</string>
-    <string name="device_status">ઓનલુક ઉપકરણ સ્થિતિ</string>
+    <string name="device_status">સ્માર્ટ ઉપકરણ સ્થિતિ</string>
 
 
 
@@ -422,8 +422,8 @@
 
 
 
-<string name="newdev_add_head">ONLOOK ઉપકરણ ઉમેરો</string>
-<string name="scan_description">એપ્લિકેશનમાં ઉપકરણ ઉમેરવા માટે કૃપા કરીને ઓનલુક બોક્સ પર બારકોડ સ્કેન કરો. \n \n સ્કેન શરૂ કરવા માટે બટન પર ક્લિક કરો.</string>
+<string name="newdev_add_head">જસ્ટ લાઇટ ઉમેરો</string>
+<string name="scan_description">कृपया एप्लिकेशन में डिवाइस जोड़ने के लिए बॉक्स के साथ दिया गया SSID और पासवर्ड दर्ज करें।\n\n जोड़ने के लिए बटन पर क्लिक करें।.</string>
 <string name="button_scan_barcode">બારકોડ સ્કેન કરો</string>
 <string name="not_proper_device">યોગ્ય ઉપકરણ ID નથી, કૃપા કરીને ફરી પ્રયાસ કરો.</string>
 <string name="message_device_add">ઉપકરણ સફળતાપૂર્વક ઉમેર્યું!</string>
@@ -486,6 +486,12 @@
 <string name="str_possitive_button">બરાબર</string>
 <string name="str_negative_button">રદ કરો</string>
 
+    <string name="ssidonbox"> બોક્સ પર હોટસ્પોટ SSID દાખલ કરો </string>
+    <string name="passwdonbox">બોક્સ પર હોટસ્પોટ પાસવર્ડ દાખલ કરો  </string>
+
+
+
+
 <string name="forgot_password_head">પાસવર્ડ ભૂલી ગયા છો</string>
 <string name="forgot_password_text" >વધુ "સૂચનાઓ મેળવવા માટે અહીં તમારું ઇમેઇલ સરનામું દાખલ કરો.</string>
 <string name="button_recover_my_account" >ચાલુ રાખો</string>
@@ -514,9 +520,21 @@
 <string name="pushy_vibration_alert">કંપન ચેતવણી</string>
     <string name="pushy_fire_alert">આગ ચેતવણી</string>
 <string name="pushy_time">ચેતવણી સમય</string>
-<string name="onlook_cube">ઓનલુક સ્માર્ટ ક્યુબ</string>
-    <string name="onlook_sub">ઓનલૂક સબ્સ્ક્રિપ્શન સમાપ્ત થાય છે</string>
+<string name="justlight_cube">સ્માર્ટ બલ્બ</string>
+    <string name="justlight_sub">ઓનલૂક સબ્સ્ક્રિપ્શન સમાપ્ત થાય છે</string>
     <string name="sub_end">તારીખ</string>
+    <string name="switch1">સ્વિચ 1</string>
+    <string name="switch2">સ્વિચ 2</string>
+    <string name="switch3">સ્વિચ 3</string>
+
+    <string name="entsmart">મારા સ્માર્ટ ઉપકરણો</string>
+    <string name="entgrp">સમૂહ</string>
+    <string name="entswitch">મારી સ્વીચો</string>
+    <string name="swtogrp">જૂથ સ્વીચો</string>
+
+
+
+
 
 <string name="pushy_connection_alert">ઓનલુક કનેક્શન ચેતવણી</string>
 

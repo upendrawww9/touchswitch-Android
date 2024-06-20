@@ -81,7 +81,7 @@ import bizmessage.in.touchswitch.location.LocationUpdatesService;
 import bizmessage.in.touchswitch.utils.DialogButtonClickListener;
 import bizmessage.in.touchswitch.utils.PreferenceData;
 import bizmessage.in.touchswitch.utils.Utility;
-import me.pushy.sdk.Pushy;
+//import me.pushy.sdk.Pushy;
 //import me.pushy.sdk.util.PushyPowerSaving;
 
 import static android.content.ContentValues.TAG;
@@ -338,7 +338,7 @@ public class MainActivity extends AppCompatActivity implements DialogButtonClick
 
         PeriodicWorkRequest myWork = myWorkBuilder.build();
         WorkManager.getInstance()
-                .enqueueUniquePeriodicWork("onlook", ExistingPeriodicWorkPolicy.KEEP, myWork);
+                .enqueueUniquePeriodicWork("onload", ExistingPeriodicWorkPolicy.KEEP, myWork);
 
         //Toast.makeText(MainActivity.this, "SUPER AND DUPER in function"+r_pushy_token, Toast.LENGTH_SHORT).show();
 
@@ -369,18 +369,16 @@ public class MainActivity extends AppCompatActivity implements DialogButtonClick
 
 
 
-        Pushy.setHeartbeatInterval(100, getApplicationContext());
+     //   Pushy.setHeartbeatInterval(100, getApplicationContext());
 
         //.listen(this);
         //Pushy.setAppId("5f58951a291ae40f2441f1d7", getApplicationContext()); /// TO CHANGE if APP ID IS CHANGED
-        Pushy.listen(this);
-        Pushy.setAppId("65abee5762800d1221104b05", getApplicationContext()); /// TO CHANGE if APP ID IS CHANGED
+      //  Pushy.listen(this);
+        //Pushy.setAppId("65abee5762800d1221104b05", getApplicationContext()); /// TO CHANGE if APP ID IS CHANGED
         //   Pushy.toggleFCM(true, getApplicationContext());
        // Pushy.setPushyDeviceCredentials();
    //Pushy.unregister(getApplicationContext());
 
-        if(DBG) Log.d("pushy is connected",Pushy.isConnected()+"");
-        if(DBG) Log.d("pushy is connected",Pushy.isRegistered(getApplicationContext())+"");
 
 
 

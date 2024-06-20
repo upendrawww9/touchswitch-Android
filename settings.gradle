@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = "Onlook App"
+rootProject.name = "TouchSwitch2"

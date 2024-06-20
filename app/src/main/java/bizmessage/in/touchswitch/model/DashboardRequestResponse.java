@@ -144,6 +144,16 @@ public class DashboardRequestResponse implements Serializable {
         @SerializedName("id")
         @Expose
         private String id;
+
+        @SerializedName("roomtype")
+        @Expose
+        private String roomtype;
+
+        @SerializedName("touchtype")
+        @Expose
+        private String touchtype;
+
+
         @SerializedName("email")
         @Expose
         private String email;
@@ -189,9 +199,16 @@ public class DashboardRequestResponse implements Serializable {
         @SerializedName("r_dev_wifi")
         @Expose
         private String rDevWifi;
+
+
+
+        @SerializedName("show")
+        @Expose
+        private String show;
+
         @SerializedName("lwt")
         @Expose
-        private String lwt = "";
+           private String lwt = "";
         @SerializedName("main")
         @Expose
         private String main;
@@ -504,6 +521,26 @@ public class DashboardRequestResponse implements Serializable {
             this.id = id;
         }
 
+        public String getRoomtype() {
+            return roomtype;
+        }
+
+        public void setroomtype(String roomtype) {
+            this.roomtype = roomtype;
+        }
+
+
+        public String getTouchtype() {
+            return touchtype;
+        }
+
+        public void setTouchtype(String touchtype) {
+            this.touchtype = touchtype;
+        }
+
+
+
+
         public String getEmail() {
             return email;
         }
@@ -637,6 +674,19 @@ public class DashboardRequestResponse implements Serializable {
         public void setLwt(String lwt) {
             this.lwt = lwt;
         }
+
+
+         //below getShow() will tell if device is used one time ifgetShow()r returns   "1" then device is mqtt connected
+            // if show is 0 then its kind of new device just joining. if its 0 for more than 1 day then we can delete in espstatus table
+         public String getShow() {
+            return show;
+        }
+
+        public void setShow(String show) {
+            this.show = show;
+        }
+
+
 
         public String getMain() {
             return main;

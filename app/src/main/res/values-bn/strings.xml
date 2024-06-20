@@ -4,7 +4,7 @@
     <string name="device_id">আইডি:</string>
 
     <string name="device_name">অবস্থান :</string>
-    <string name="onlook_status">অবস্থা :</string>
+    <string name="onload_status">অবস্থা :</string>
     <string name="wifi_strength">ওয়াইফাই :</string>
     <string name="battery_strength">ব্যাটারি : </string>
 
@@ -425,8 +425,8 @@
 
 
     <!-- ADD NEW DEVICE INFO -->
-    <string name="newdev_add_head">শুধুমাত্র ডিভাইস যোগ করুন</string>
-    <string name="scan_description">অ্যাপ্লিকেশনটিতে ডিভাইস যুক্ত করতে অনুগ্রহ করে অনলুক বক্সে বারকোড স্ক্যান করুন। \ n \ n স্ক্যান শুরু করতে বোতামে ক্লিক করুন।</string>
+    <string name="newdev_add_head">জাস্ট লাইট যোগ করুন</string>
+    <string name="scan_description">অ্যাপ্লিকেশনে ডিভাইস যোগ করতে বক্সের সাথে দেওয়া SSID এবং পাসওয়ার্ড লিখুন।\n\n যোগ করতে বোতামে ক্লিক করুন।.</string>
     <string name="button_scan_barcode">বারকোড স্ক্যান করুন</string>
     <string name="not_proper_device">সঠিক ডিভাইস আইডি নয়, দয়া করে আবার চেষ্টা করুন।</string>
     <string name="message_device_add">ডিভাইস সফলভাবে যোগ করা হয়েছে!</string>
@@ -490,6 +490,12 @@
     <string name="str_possitive_button">ঠিক আছে</string>
     <string name="str_negative_button">বাতিল করুন</string>
 
+    <string name="ssidonbox"> বক্সে হটস্পট SSID লিখুন </string>
+    <string name="passwdonbox">  বক্সে হটস্পট পাসওয়ার্ড দিন</string>
+
+
+
+
     <string name="forgot_password_head">পাসওয়ার্ড ভুলে গেছেন</string>
     <string name="forgot_password_text">এখানে আপনার ইমেইল ঠিকানা লিখুন further n পরবর্তী নির্দেশনা পেতে।</string>
     <string name="button_recover_my_account">চালিয়ে যান</string>
@@ -518,9 +524,23 @@
     <string name="pushy_vibration_alert">কম্পন সতর্কতা</string>
     <string name="pushy_fire_alert">ফায়ার অ্যালার্ট</string>
     <string name="pushy_time">সতর্কতার সময়</string>
-    <string name="onlook_cube">অনলুক স্মার্ট কিউব</string>
-    <string name="onlook_sub">অনলুক সাবস্ক্রিপশন শেষ</string>
+    <string name="justlight_cube">স্মার্ট বাল্ব</string>
+    <string name="justlight_sub">অনলুক সাবস্ক্রিপশন শেষ</string>
     <string name="sub_end">তারিখ</string>
+    <string name="switch1">সুইচ 1</string>
+    <string name="switch2">সুইচ 2</string>
+    <string name="switch3">সুইচ 3</string>
+
+    <string name="entsmart">আমার স্মার্ট ডিভাইস</string>
+    <string name="entgrp">গ্রুপ</string>
+    <string name="entswitch">আমার সুইচ</string>
+    <string name="swtogrp">গ্রুপ সুইচ</string>
+
+
+
+
+
+
     <!--pushy alert end-->
 
 

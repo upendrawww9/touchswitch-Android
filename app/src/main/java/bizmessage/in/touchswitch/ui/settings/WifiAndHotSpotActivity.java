@@ -30,7 +30,6 @@ import org.eclipse.paho.client.mqttv3.IMqttDeliveryToken;
 import org.eclipse.paho.client.mqttv3.IMqttToken;
 import org.eclipse.paho.client.mqttv3.MqttCallbackExtended;
 import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
-import org.eclipse.paho.client.mqttv3.MqttException;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 import org.jetbrains.annotations.NotNull;
 import org.json.JSONObject;
@@ -41,7 +40,7 @@ import java.util.ArrayList;
 import bizmessage.in.touchswitch.LocaleHelper;
 import bizmessage.in.touchswitch.MainActivity;
 import bizmessage.in.touchswitch.R;
-import bizmessage.in.touchswitch.app.OnlookApplication;
+import bizmessage.in.touchswitch.app.TouchApplication;
 import bizmessage.in.touchswitch.databinding.ActivityWifiHotspotSettingsBinding;
 import bizmessage.in.touchswitch.retrofit.WebServiceCaller;
 import bizmessage.in.touchswitch.retrofit.WebUtility;
@@ -94,7 +93,7 @@ public class WifiAndHotSpotActivity extends AppCompatActivity implements View.On
         binding.btnWifiSettings.setOnClickListener(this);
         binding.btnContinue.setOnClickListener(this);
 
-        if (PreferenceData.getLoginid().equalsIgnoreCase("demo@onlook.in")) {
+        if (PreferenceData.getLoginid().equalsIgnoreCase("demo@onload.in")) {
 
             binding.btnSubmit.setEnabled(false);
             binding.btnContinue.setEnabled(false);
@@ -153,17 +152,17 @@ public class WifiAndHotSpotActivity extends AppCompatActivity implements View.On
             resources = context.getResources();
         }
 
-        binding.textDeviceId.setText(resources.getString(R.string.device)+" - " + OnlookApplication.SELECTED_DEVICE.getNikname()+" : "+OnlookApplication.SELECTED_DEVICE.getSsid());
-        // binding.textNetworkName.setText("Network Name : " + OnlookApplication.SELECTED_DEVICE.getSsid());
-       // binding.textPassword.setText("Network Password : " + OnlookApplication.SELECTED_DEVICE.getPaswd());
+        binding.textDeviceId.setText(resources.getString(R.string.device)+" - " + TouchApplication.SELECTED_DEVICE.getNikname()+" : "+TouchApplication.SELECTED_DEVICE.getSsid());
+        // binding.textNetworkName.setText("Network Name : " + TouchApplication.SELECTED_DEVICE.getSsid());
+       // binding.textPassword.setText("Network Password : " + TouchApplication.SELECTED_DEVICE.getPaswd());
         getSupportActionBar().setTitle(resources.getString(R.string.setup_wifi_and_hot_spot_settings));
 
 
         binding.textWifino.setText(PreferenceData.getWifino()+" "+resources.getString(R.string.wifi_found)+" "+resources.getString(R.string.wifi_found_check));
         binding.textNetworkName.setText(resources.getString(R.string.wifi_hotspot_netname));///////////////
-        binding.textNetworkNameInfo.setText(OnlookApplication.SELECTED_DEVICE.getSsid());///////////////
+        binding.textNetworkNameInfo.setText(TouchApplication.SELECTED_DEVICE.getSsid());///////////////
         binding.textPassword.setText(resources.getString(R.string.wifi_hotspot_password));///////////////
-        binding.textPasswordInfo.setText(OnlookApplication.SELECTED_DEVICE.getPaswd());///////////////
+        binding.textPasswordInfo.setText(TouchApplication.SELECTED_DEVICE.getPaswd());///////////////
         binding.textwifihotspotdesc.setText(resources.getString(R.string.wifi_hotspot_desc));///////////////
         binding.btnWifiSettings.setText(resources.getString(R.string.wifi_hotspot_btn));///////////////
         binding.btnContinue.setText(resources.getString(R.string.wifi_hotspot_btn_continue));///////////////
@@ -189,7 +188,7 @@ public class WifiAndHotSpotActivity extends AppCompatActivity implements View.On
             binding.viewLineAlertType1.setVisibility(View.VISIBLE);
             binding.cardDeviceSetup.setVisibility(View.GONE);
            // binding.textTiming.setText("Step 1 :Turn on Hotspot, Configure");
-           // binding.textContinue.setText("Step 2 : Reset onlook device and click Continue Button.");
+           // binding.textContinue.setText("Step 2 : Reset onload device and click Continue Button.");
 
             binding.textTiming.setText(resources.getString(R.string.wifi_hotspot_setup2));///////////////
             binding.textTiming.setTextColor(Color.BLACK);
@@ -203,7 +202,7 @@ public class WifiAndHotSpotActivity extends AppCompatActivity implements View.On
             binding.cardDeviceSetup.setVisibility(View.VISIBLE);
             setupMqttConnection();
         }
-        if (PreferenceData.getLoginid().equalsIgnoreCase(OnlookApplication.SELECTED_DEVICE.getRFamEmail())) {
+        if (PreferenceData.getLoginid().equalsIgnoreCase(TouchApplication.SELECTED_DEVICE.getRFamEmail())) {
             binding.cardDeviceSetup.setVisibility(View.GONE);
             binding.btnSubmit.setVisibility(View.GONE);
         }
@@ -263,7 +262,7 @@ public class WifiAndHotSpotActivity extends AppCompatActivity implements View.On
                         binding.btnSubmit.setEnabled(false);
                         Utility.showToast("Please Wait");
                         updateSettings(isFamily, binding.edtNetworkName.getText().toString().trim(), "myap", false, binding.edtPassword.getText().toString().trim());
-                        publishMessage("cmnd/" + OnlookApplication.SELECTED_DEVICE.getDevid() + "/SSID1", binding.edtNetworkName.getText().toString());
+                        publishMessage("cmnd/" + TouchApplication.SELECTED_DEVICE.getDevid() + "/SSID1", binding.edtNetworkName.getText().toString());
                     }
                     else{
                         Utility.showToast("Device is Offline");
@@ -338,10 +337,10 @@ public class WifiAndHotSpotActivity extends AppCompatActivity implements View.On
             @Override
             public void connectComplete(boolean reconnect, String serverURI) {
                 if (reconnect) {
-                    subscriptionTopic = "tele/" + OnlookApplication.SELECTED_DEVICE.getDevid() + "/LWT";
+                    subscriptionTopic = "tele/" + TouchApplication.SELECTED_DEVICE.getDevid() + "/LWT";
                     subscribeToTopic(subscriptionTopic);
                     try {
-                        publishMessage("cmnd/" + OnlookApplication.SELECTED_DEVICE.getDevid() + "/AP", "");
+                        publishMessage("cmnd/" + TouchApplication.SELECTED_DEVICE.getDevid() + "/AP", "");
                     } catch (IllegalArgumentException illegalArgumentException) {
                         illegalArgumentException.printStackTrace();
                     }
@@ -385,7 +384,7 @@ public class WifiAndHotSpotActivity extends AppCompatActivity implements View.On
                 }
 
                 if (inboundvalue.equalsIgnoreCase("Online")) {
-                    subscriptionTopic = "stat/" + OnlookApplication.SELECTED_DEVICE.getDevid() + "/RESULT";
+                    subscriptionTopic = "stat/" + TouchApplication.SELECTED_DEVICE.getDevid() + "/RESULT";
                     subscribeToTopic(subscriptionTopic);
                 }
 
@@ -398,12 +397,12 @@ public class WifiAndHotSpotActivity extends AppCompatActivity implements View.On
                     isOffLine = false;
                 }
 
-                if (inboundtopic.equalsIgnoreCase("stat/" + OnlookApplication.SELECTED_DEVICE.getDevid() + "/RESULT/") && inboundvalue.contains("SSId1")) {
-                    publishMessage("cmnd/" + OnlookApplication.SELECTED_DEVICE.getDevid() + "/Password1", binding.edtPassword.getText().toString());
+                if (inboundtopic.equalsIgnoreCase("stat/" + TouchApplication.SELECTED_DEVICE.getDevid() + "/RESULT/") && inboundvalue.contains("SSId1")) {
+                    publishMessage("cmnd/" + TouchApplication.SELECTED_DEVICE.getDevid() + "/Password1", binding.edtPassword.getText().toString());
                 }
 
-                if (inboundtopic.equalsIgnoreCase("stat/" + OnlookApplication.SELECTED_DEVICE.getDevid() + "/RESULT/") && inboundvalue.contains("Password1")) {
-                  //  publishMessage("cmnd/" + OnlookApplication.SELECTED_DEVICE.getDevid() + "/Restart", "1");
+                if (inboundtopic.equalsIgnoreCase("stat/" + TouchApplication.SELECTED_DEVICE.getDevid() + "/RESULT/") && inboundvalue.contains("Password1")) {
+                  //  publishMessage("cmnd/" + TouchApplication.SELECTED_DEVICE.getDevid() + "/Restart", "1");
                     WifiManager wifiManager = (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
                     Method method = wifiManager.getClass().getDeclaredMethod("getWifiApState");
                     method.setAccessible(true);
@@ -449,9 +448,9 @@ public class WifiAndHotSpotActivity extends AppCompatActivity implements View.On
                     disconnectedBufferOptions.setPersistBuffer(true);
                     disconnectedBufferOptions.setDeleteOldestMessages(true);
                     mqttAndroidClient.setBufferOpts(disconnectedBufferOptions);
-                    subscriptionTopic = "tele/" + OnlookApplication.SELECTED_DEVICE.getDevid() + "/LWT";
+                    subscriptionTopic = "tele/" + TouchApplication.SELECTED_DEVICE.getDevid() + "/LWT";
                     subscribeToTopic(subscriptionTopic);
-                    publishMessage("cmnd/" + OnlookApplication.SELECTED_DEVICE.getDevid() + "/AP", "");
+                    publishMessage("cmnd/" + TouchApplication.SELECTED_DEVICE.getDevid() + "/AP", "");
                 } catch (IllegalArgumentException ixp) {
                     ixp.printStackTrace();
                 }
@@ -562,7 +561,7 @@ public class WifiAndHotSpotActivity extends AppCompatActivity implements View.On
         } else {
             Utility.showProgress(WifiAndHotSpotActivity.this);
             WebServiceCaller.ApiInterface service = WebServiceCaller.getClient();
-            Call<ResponseBody> responseCall = service.updateWifiSettings(isFamily, status, wifiName, OnlookApplication.SELECTED_DEVICE.getDevid(), isChecked,"",PreferenceData.getLatitude(),PreferenceData.getLongitude());
+            Call<ResponseBody> responseCall = service.updateWifiSettings(isFamily, status, wifiName, TouchApplication.SELECTED_DEVICE.getDevid(), isChecked,"",PreferenceData.getLatitude(),PreferenceData.getLongitude());
 
             responseCall.enqueue(new Callback<ResponseBody>() {
                 @Override

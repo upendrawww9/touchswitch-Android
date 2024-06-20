@@ -3,7 +3,7 @@
     <string name="device">साधन</string>
     <string name="device_id">आयडी:</string>
     <string name="device_name">स्थान :</string>
-    <string name="onlook_status">स्थिती :</string>
+    <string name="onload_status">स्थिती :</string>
     <string name="wifi_strength">वायफाय :</string>
     <string name="battery_strength">बॅटरी : </string>
     <string name="lowbattery_alert">Onlook मध्ये कमी बॅटरी</string>
@@ -18,7 +18,8 @@
     <string name="light_3">	सायरन</string>
     <string name="settings">सेटअप</string>
     <string name="alerts">सूचना</string>
-    <string name="device_status">दृष्टीकोन डिव्हाइस स्थिती</string>
+    <string name="device_status">स्मार्ट डिव्हाइस स्थिती</string>
+
 
 
 
@@ -412,8 +413,8 @@
 
 
 
-    <string name="newdev_add_head">ऑनलाईन डिव्हाइस जोडा</string>
-    <string name="scan_description">अनुप्रयोगामध्ये डिव्हाइस जोडण्यासाठी कृपया बारकोड स्कॅन करा. \n \n स्कॅन सुरू करण्यासाठी बटणावर क्लिक करा.</string>
+    <string name="newdev_add_head">फक्त प्रकाश जोडा</string>
+    <string name="scan_description">कृपया ऍप्लिकेशनमध्ये डिव्हाइस जोडण्यासाठी बॉक्ससह दिलेला SSID आणि पासवर्ड प्रविष्ट करा.\n\n जोडण्यासाठी बटणावर क्लिक करा.</string>
     <string name="button_scan_barcode">बारकोड स्कॅन करा</string>
     <string name="not_proper_device">योग्य डिव्हाइस आयडी नाही, कृपया पुन्हा प्रयत्न करा.</string>
     <string name="message_device_add">डिव्हाइस यशस्वीरित्या जोडले!</string>
@@ -476,6 +477,12 @@
     <string name="str_negative_button">रद्द करा</string>
 
     <string name="forgot_password_head">पासवर्ड विसरलात</string>
+
+    <string name="ssidonbox">बॉक्सवर हॉटस्पॉट SSID प्रविष्ट करा  </string>
+    <string name="passwdonbox">बॉक्सवर हॉटस्पॉट पासवर्ड एंटर करा </string>
+
+
+
     <string name="forgot_password_text" >पुढील सूचना प्राप्त करण्यासाठी येथे आपला ईमेल पत्ता प्रविष्ट करा.</string>
     <string name="button_recover_my_account" >सुरू</string>
 
@@ -499,9 +506,22 @@
 <string name="pushy_vibration_alert">कंपन सूचना</string>
     <string name="pushy_fire_alert">फायर अलर्ट</string>
 <string name="pushy_time">इशारा वेळ</string>
-<string name="onlook_cube">Onlook स्मार्ट क्यूब</string>
-    <string name="onlook_sub">ऑनलूक सबस्क्रिप्शन संपते</string>
+<string name="justlight_cube">स्मार्ट बल्ब</string>
+    <string name="justlight_sub">ऑनलूक सबस्क्रिप्शन संपते</string>
     <string name="sub_end">तारीख</string>
+
+    <string name="switch1">स्विच 1</string>
+    <string name="switch2">स्विच 2</string>
+    <string name="switch3">स्विच 3</string>
+
+    <string name="entsmart">माझी स्मार्ट उपकरणे</string>
+    <string name="entgrp">गट</string>
+    <string name="entswitch">माझे स्विचेस</string>
+    <string name="swtogrp">गट स्विच</string>
+
+
+
+
 
 <string name="pushy_connection_alert">ऑनलुक कनेक्शन अलर्ट</string>
     <string name="vibratehead">कंपन सेन्सर नियंत्रण</string>

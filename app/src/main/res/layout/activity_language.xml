@@ -59,7 +59,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/text_device_id"
-                    app:cardBackgroundColor="@color/card_view_gb"
+                    app:cardBackgroundColor="@color/cbg3"
                     android:layout_marginStart="@dimen/_1sdp"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:layout_marginEnd="@dimen/_1sdp"
@@ -430,7 +430,7 @@
                     android:layout_marginEnd="@dimen/_5sdp"
              
                     android:elevation="@dimen/_5sdp"
-                    app:cardBackgroundColor="@color/card_view_gb"
+                    app:cardBackgroundColor="@color/cbg3"
                     android:foreground="?android:attr/selectableItemBackground"
                     app:cardCornerRadius="@dimen/_5sdp"
                     app:cardElevation="@dimen/_2sdp"

@@ -4,7 +4,7 @@
     <string name="device">டிவைஸ்</string>
     <string name="device_id">ஐடி :</string>
     <string name="device_name">நேம் :</string>
-    <string name="onlook_status">ஸ்டேடஸ் :</string>
+    <string name="onload_status">ஸ்டேடஸ் :</string>
     <string name="wifi_strength">வைஃபை :</string>
 
 
@@ -36,7 +36,7 @@
     <string name="light_3">	சைரன்</string>
     <string name="settings">செட்டப்</string>
     <string name="alerts">அலர்ட்ஸ்</string>
-    <string name="device_status">ஆன்லுக் டிவைஸ் ஸ்டேடஸ் </string>
+    <string name="device_status">ஸ்மார்ட் சாதனத்தின் நிலை </string>
     <!-- Dashboard Menu End -->
     <!-- Light Control -->
     <string name="title_light_one">ஹோம் லைட்</string>
@@ -95,10 +95,25 @@
     <string name="pushy_motion_alert">மோஷன் அலர்ட்</string>
     <string name="pushy_vibration_alert">அதிர்வு அலர்ட்</string>
     <string name="pushy_time">அலர்ட் நேரம்</string>
-    <string name="onlook_cube">ஆன்லுக்</string>
+    <string name="justlight_cube">ஸ்மார்ட் பல்பு</string>
 
-    <string name="onlook_sub">ஆன்லுக் சந்தா முடிவடைகிறது</string>
+    <string name="justlight_sub">ஆன்லுக் சந்தா முடிவடைகிறது</string>
     <string name="sub_end">தேதி</string>
+
+    <string name="switch1">சுவிட்ச் 1</string>
+    <string name="switch2">சுவிட்ச் 2</string>
+    <string name="switch3">சுவிட்ச் 3</string>
+
+    <string name="entsmart">எனது ஸ்மார்ட் சாதனங்கள்</string>
+    <string name="entgrp">குழு</string>
+    <string name="entswitch">எனது சுவிட்சுகள்</string>
+    <string name="swtogrp">குழு மாறுதல்கள்</string>
+
+
+
+
+
+
     <!--pushy alert end-->
 
     <!-- Others Menu -->
@@ -365,8 +380,8 @@
     <!-- LOGIN END -->
 
     <!-- ADD NEW DEVICE INFO -->
-    <string name="newdev_add_head">ஆன்லுக் டிவைஸ் சேர்க்கவும்</string>
-    <string name="scan_description">பயன்பாட்டில் டிவைசை சேர்க்கவும், ஆன்லுக் டிவைசில் உள்ள பார்கோடை ஸ்கேன் செய்யவும் \n\n ஸ்கேன் செய்ய பொத்தானைக் கிளிக் செய்க.</string>
+    <string name="newdev_add_head">வெறும் ஒளியைச் சேர்க்கவும்</string>
+    <string name="scan_description">பயன்பாட்டில் சாதனத்தைச் சேர்க்க, பெட்டியுடன் கொடுக்கப்பட்டுள்ள SSID மற்றும் கடவுச்சொல்லை உள்ளிடவும்.\n\n சேர்க்க பொத்தானைக் கிளிக் செய்யவும்.</string>
     <string name="button_scan_barcode">ஸ்கேன் பார்கோட்</string>
     <string name="not_proper_device">தவரான டிவைஸ் ஐடி, தயவுசெய்து மீண்டும் முயற்சிக்கவும்</string>
     <!-- ADD NEW DEVICE END -->
@@ -396,6 +411,12 @@
     <string name="str_possitive_button">ஓகே</string>
     <string name="str_negative_button">கேன்சல்</string>
     <string name="forgot_password_head">பாஸ்வர்ட் மறந்துவிட்டீர்களா?</string>
+
+    <string name="ssidonbox"> பெட்டியில் ஹாட்ஸ்பாட் SSID ஐ உள்ளிடவும்</string>
+    <string name="passwdonbox"> பெட்டியில் ஹாட்ஸ்பாட் கடவுச்சொல்லை உள்ளிடவும் </string>
+
+
+
     <string name="forgot_password_text" >மேலும் வழிமுறைகளைப் பெற உங்கள் மின்னஞ்சல் முகவரியை இங்கே உள்ளிடவும்.</string>
     <string name="button_recover_my_account" >தொடரவும்</string>
     <string name="message_login_fail">உள்நுழைவு தோல்வி! செல்லுபடியாகும் பயனர் மின்னஞ்சல் மற்றும் பாஸ்வர்டை உள்ளிடவும்.</string>

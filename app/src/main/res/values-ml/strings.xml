@@ -4,7 +4,7 @@
     <string name="device"  >ഉപകരണം :</string>
     <string name="device_id"> ഐഡി : </string>
     <string name="device_name">പേര് : </string>
-    <string name="onlook_status">സ്ഥിതി : </string>
+    <string name="onload_status">സ്ഥിതി : </string>
     <string name="wifi_strength">വൈഫൈ: </string>
     <string name="battery_strength">ബാറ്ററി : </string>
     <string name="lowbattery_alert">ഓൺലുക്കിൽ കുറഞ്ഞ ബാറ്ററി</string>
@@ -17,7 +17,7 @@
 
     <string name="settings">സജ്ജമാക്കുക</string>
     <string name="alerts">അലേർട്ടുകൾ</string>
-    <string name="device_status">ഉപകരണ നില</string>
+    <string name="device_status">സ്മാർട്ട് ഉപകരണ നില</string>
     <!-- Dashboard Menu End -->
     <!-- Light Control -->
     <string name="title_light_one">ഹോം ലൈറ്റ്</string>
@@ -324,8 +324,9 @@
     <!-- LOGIN END -->
 
     <!-- ADD NEW DEVICE INFO -->
-    <string name="newdev_add_head">ഓൺലുക്ക്  ഉപകരണം ചേർക്കുക</string>
-    <string name="scan_description">അപ്ലിക്കേഷനിൽ ഉപകരണം ചേർക്കുന്നതിന് ദയവായി ഓൺലുക്ക് ബോക്സിലെ ബാർകോഡ് സ്കാൻ ചെയ്യുക.\n സ്കാൻ ആരംഭിക്കാൻ ബട്ടണിൽ ക്ലിക്കുചെയ്യുക.</string>
+
+    <string name="newdev_add_head">വെറും വെളിച്ചം ചേർക്കുക</string>
+    <string name="scan_description">അപ്ലിക്കേഷനിൽ ഉപകരണം ചേർക്കുന്നതിന് ബോക്‌സിനൊപ്പം നൽകിയിരിക്കുന്ന SSID, പാസ്‌വേഡ് എന്നിവ നൽകുക.\n\n ചേർക്കാൻ ബട്ടണിൽ ക്ലിക്കുചെയ്യുക.</string>
     <string name="button_scan_barcode">ബാർകോഡ് സ്കാൻ ചെയ്യുക</string>
     <string name="not_proper_device">ശരിയായ ഉപകരണ ഐഡി അല്ല, ദയവായി വീണ്ടും ശ്രമിക്കുക</string>
     <!-- ADD NEW DEVICE END -->
@@ -355,6 +356,12 @@
     <string name="str_possitive_button">ശരി</string>
     <string name="str_negative_button">റദ്ദാക്കുക</string>
     <string name="forgot_password_head">പാസ്വേഡ് മറന്നോ</string>
+
+    <string name="ssidonbox"> ബോക്സിൽ ഹോട്ട്സ്പോട്ട് SSID നൽകുക </string>
+    <string name="passwdonbox"> ബോക്‌സിൽ ഹോട്ട്‌സ്‌പോട്ട് പാസ്‌വേഡ് നൽകുക </string>
+
+
+
     <string name="forgot_password_text" >കൂടുതൽ നിർദ്ദേശങ്ങൾ ലഭിക്കുന്നതിന് നിങ്ങളുടെ ഇമെയിൽ വിലാസം ഇവിടെ നൽകുക.</string>
     <string name="button_recover_my_account" >തുടരുക</string>
     <string name="message_login_fail">ലോഗിൻ പരാജയപ്പെട്ടു! സാധുവായ ഉപയോക്തൃ ഇമെയിലും പാസ്‌വേഡും നൽകുക.</string>
@@ -413,9 +420,22 @@
 
     <string name="dark_theme">രാത്രി തീം</string>
     <string name="light_theme">ദിവസത്തെ തീം</string>
-    <string name="onlook_cube">ഓൺലുക്ക്</string>
-    <string name="onlook_sub">ഓൺലുക്ക് സബ്സ്ക്രിപ്ഷൻ അവസാനിക്കുന്നു</string>
+    <string name="justlight_cube">സ്മാർട്ട് ബൾബ്</string>
+    <string name="justlight_sub">ഓൺലുക്ക് സബ്സ്ക്രിപ്ഷൻ അവസാനിക്കുന്നു</string>
     <string name="sub_end">തീയതി</string>
+    <string name="switch1">സ്വിച്ച് 1</string>
+    <string name="switch2">സ്വിച്ച് 2</string>
+    <string name="switch3">സ്വിച്ച് 3</string>
+
+    <string name="entsmart">എൻ്റെ സ്മാർട്ട് ഉപകരണങ്ങൾ</string>
+    <string name="entgrp">ഗ്രൂപ്പ്</string>
+    <string name="entswitch">എൻ്റെ സ്വിച്ചുകൾ</string>
+    <string name="swtogrp">ഗ്രൂപ്പ് സ്വിച്ചുകൾ</string>
+
+
+
+
+
 
     <string name="not_for_demo">ഡെമോ ഉപയോക്താവിന് വേണ്ടിയല്ല</string>
 

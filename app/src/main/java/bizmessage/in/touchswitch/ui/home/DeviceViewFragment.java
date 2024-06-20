@@ -94,10 +94,10 @@ public class DeviceViewFragment extends Fragment implements DialogButtonClickLis
 
         binding.textDeviceId.setText(resources.getString(R.string.device_id));
         binding.textDeviceName.setText(resources.getString(R.string.device_name));
-       binding.textDeviceStatus.setText(resources.getString(R.string.onlook_status));
+       binding.textDeviceStatus.setText(resources.getString(R.string.onload_status));
       binding.textDevicePower.setText(resources.getString(R.string.wifi_strength));
         binding.btnSetup.setText(resources.getString(R.string.wifi_planned_desc));
-        binding.textBatPower.setText(resources.getString(R.string.battery_strength));
+        //binding.textBatPower.setText(resources.getString(R.string.battery_strength));
 
 
 
@@ -172,9 +172,9 @@ public class DeviceViewFragment extends Fragment implements DialogButtonClickLis
 
 
              binding.textDevicePowerInfo.setText(espDetails.getRDevWifi()+" %");
-        binding.textBatPowerInfo.setText(espDetails.getVcc()+" %");
+        //binding.textBatPowerInfo.setText(espDetails.getVcc()+" %");
 
-
+/*
         if(vcc > 90 ) {
             binding.textBatPowerInfo.setTextColor(Color.parseColor("#FF00C853"));
         }
@@ -206,7 +206,8 @@ public class DeviceViewFragment extends Fragment implements DialogButtonClickLis
             binding.textBatPower.setVisibility(View.GONE);
 
         }
-
+        */
+        binding.textBatPower.setVisibility(View.GONE);
 
         return binding.getRoot();
     }

@@ -36,7 +36,7 @@
                 android:layout_marginStart="@dimen/_1sdp"
                 android:clickable="true"
                 android:elevation="@dimen/_5sdp"
-                app:cardBackgroundColor="@color/card_view_gb"
+                app:cardBackgroundColor="@color/cbg3"
                 android:foreground="?android:attr/selectableItemBackground"
                 app:cardCornerRadius="@dimen/_5sdp"
                 app:cardElevation="@dimen/_2sdp"
@@ -185,75 +185,23 @@
             </androidx.cardview.widget.CardView>
 
 
+
             <androidx.cardview.widget.CardView
-                android:id="@+id/cardAlarm"
+                android:id="@+id/cardShareDevice"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_1sdp"
                 android:layout_marginEnd="@dimen/_1sdp"
+                android:layout_marginStart="@dimen/_1sdp"
+                android:clickable="true"
+                android:elevation="@dimen/_5sdp"
+                app:cardBackgroundColor="@color/card_view_gb"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="@dimen/_5sdp"
+                app:cardElevation="@dimen/_2sdp"
+                app:cardMaxElevation="@dimen/_3sdp"
+                app:cardUseCompatPadding="true"
                 app:layout_constraintTop_toBottomOf="@+id/cardEmergencyNumber"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                android:clickable="true"
-                android:elevation="@dimen/_5sdp"
-                app:cardBackgroundColor="@color/card_view_gb"
-                android:foreground="?android:attr/selectableItemBackground"
-                app:cardCornerRadius="@dimen/_5sdp"
-                app:cardElevation="@dimen/_2sdp"
-                app:cardMaxElevation="@dimen/_3sdp"
-                app:cardUseCompatPadding="true">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="@dimen/_8sdp"
-                    android:layout_marginBottom="@dimen/_8sdp">
-
-                    <ImageView
-                        android:id="@+id/imgAlarm"
-                        android:layout_width="@dimen/_22sdp"
-                        android:layout_height="@dimen/_22sdp"
-                        android:layout_marginStart="@dimen/_10sdp"
-                        android:src="@drawable/ic_alarm"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/textAlarm"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_10sdp"
-                        android:gravity="start"
-                        android:text="@string/title_alarm"
-                        android:textColor="@color/black"
-                        android:textSize="@dimen/_12ssp"
-                        android:textStyle="normal"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/imgAlarm"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-            </androidx.cardview.widget.CardView>
-
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardnotset"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/_1sdp"
-                android:layout_marginStart="@dimen/_1sdp"
-                android:clickable="true"
-                android:elevation="@dimen/_5sdp"
-                app:cardBackgroundColor="@color/card_view_gb"
-                android:foreground="?android:attr/selectableItemBackground"
-                app:cardCornerRadius="@dimen/_5sdp"
-                app:cardElevation="@dimen/_2sdp"
-                app:cardMaxElevation="@dimen/_3sdp"
-                app:cardUseCompatPadding="true"
-                app:layout_constraintTop_toBottomOf="@+id/cardAlarm"
-                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -263,10 +211,10 @@
                     android:layout_marginBottom="@dimen/_8sdp">
 
                     <ImageView
-                        android:id="@+id/imgnoti"
-                        android:layout_width="@dimen/_32sdp"
-                        android:layout_height="@dimen/_32sdp"
-                        android:src="@drawable/ic_noti2"
+                        android:id="@+id/imgSharedevice"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:src="@drawable/devshare"
                         android:layout_marginStart="@dimen/_10sdp"
                         android:layout_marginEnd="@dimen/_10sdp"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -274,18 +222,18 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/textnoti"
+                        android:id="@+id/textsharedevice"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:gravity="start"
-                        android:text="@string/logout"
-                        android:textStyle="normal"
+                        android:text="@string/share_my_dev"
                         android:textColor="@color/black"
                         android:layout_marginStart="@dimen/_10sdp"
                         android:layout_marginEnd="@dimen/_10sdp"
                         android:textSize="@dimen/_12ssp"
+                        android:textStyle="normal"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/imgnoti"
+                        app:layout_constraintStart_toEndOf="@+id/imgSharedevice"
                         app:layout_constraintEnd_toEndOf="parent" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -295,173 +243,15 @@
 
 
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardBuzz"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/_1sdp"
-                android:layout_marginStart="@dimen/_1sdp"
-                android:clickable="true"
-                android:elevation="@dimen/_5sdp"
-                app:cardBackgroundColor="@color/card_view_gb"
-                android:foreground="?android:attr/selectableItemBackground"
-                app:cardCornerRadius="@dimen/_5sdp"
-                app:cardElevation="@dimen/_2sdp"
-                app:cardMaxElevation="@dimen/_3sdp"
-                app:cardUseCompatPadding="true"
-                app:layout_constraintTop_toBottomOf="@+id/cardnotset"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="@dimen/_8sdp"
-                    android:layout_marginBottom="@dimen/_8sdp">
-
-                    <ImageView
-                        android:id="@+id/imgBuzz"
-                        android:layout_width="@dimen/_22sdp"
-                        android:layout_height="@dimen/_22sdp"
-                        android:src="@drawable/notification"
-                        android:layout_marginStart="@dimen/_10sdp"
-                        android:layout_marginEnd="@dimen/_10sdp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/textBuzz"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_10sdp"
-                        android:layout_marginEnd="@dimen/_10sdp"
-                        android:gravity="start"
-                        android:text="@string/buzz"
-                        android:textColor="@color/black"
-                        android:textSize="@dimen/_12ssp"
-                        android:textStyle="normal"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="1.0"
-                        app:layout_constraintStart_toEndOf="@+id/imgBuzz"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-            </androidx.cardview.widget.CardView>
 
 
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardwhatalert"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/_1sdp"
-                android:layout_marginStart="@dimen/_1sdp"
-                android:clickable="true"
-                android:elevation="@dimen/_5sdp"
-                app:cardBackgroundColor="@color/card_view_gb"
-                android:foreground="?android:attr/selectableItemBackground"
-                app:cardCornerRadius="@dimen/_5sdp"
-                app:cardElevation="@dimen/_2sdp"
-                app:cardMaxElevation="@dimen/_3sdp"
-                app:cardUseCompatPadding="true"
-                app:layout_constraintTop_toBottomOf="@+id/cardBuzz"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="@dimen/_8sdp"
-                    android:layout_marginBottom="@dimen/_8sdp">
-
-                    <ImageView
-                        android:id="@+id/imgwalert"
-                        android:layout_width="@dimen/_40sdp"
-                        android:layout_height="@dimen/_30sdp"
-                        android:src="@drawable/imgwalert"
-                        android:layout_marginStart="@dimen/_10sdp"
-                        android:layout_marginEnd="@dimen/_10sdp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/textwhatalert"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_10sdp"
-                        android:layout_marginEnd="@dimen/_10sdp"
-                        android:gravity="start"
-                        android:text="@string/whatalert"
-                        android:textColor="@color/black"
-                        android:textSize="@dimen/_12ssp"
-                        android:textStyle="normal"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="1.0"
-                        app:layout_constraintStart_toEndOf="@+id/imgwalert"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-            </androidx.cardview.widget.CardView>
 
 
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardHelp"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/_1sdp"
-                android:layout_marginStart="@dimen/_1sdp"
-                android:clickable="true"
-                android:elevation="@dimen/_5sdp"
-                app:cardBackgroundColor="@color/card_view_gb"
-                android:foreground="?android:attr/selectableItemBackground"
-                app:cardCornerRadius="@dimen/_5sdp"
-                app:cardElevation="@dimen/_2sdp"
-                app:cardMaxElevation="@dimen/_3sdp"
-                app:cardUseCompatPadding="true"
-                app:layout_constraintTop_toBottomOf="@+id/cardwhatalert"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="@dimen/_8sdp"
-                    android:layout_marginBottom="@dimen/_8sdp">
 
-                    <ImageView
-                        android:id="@+id/imgHelp"
-                        android:layout_width="@dimen/_22sdp"
-                        android:layout_height="@dimen/_22sdp"
-                        android:src="@drawable/ic_actionhelp"
-                        android:layout_marginStart="@dimen/_10sdp"
-                        android:layout_marginEnd="@dimen/_10sdp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
 
-                    <TextView
-                        android:id="@+id/textHelp"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:gravity="start"
-                        android:textStyle="normal"
-                        android:text="@string/help"
-                        android:textColor="@color/black"
-                        android:layout_marginStart="@dimen/_10sdp"
-                        android:layout_marginEnd="@dimen/_10sdp"
-                        android:textSize="@dimen/_12ssp"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/imgHelp"
-                        app:layout_constraintEnd_toEndOf="parent" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-            </androidx.cardview.widget.CardView>
 
 
             <androidx.cardview.widget.CardView
@@ -472,13 +262,13 @@
                 android:layout_marginStart="@dimen/_1sdp"
                 android:clickable="true"
                 android:elevation="@dimen/_5sdp"
-                app:cardBackgroundColor="@color/card_view_gb"
+                app:cardBackgroundColor="@color/cbg3"
                 android:foreground="?android:attr/selectableItemBackground"
                 app:cardCornerRadius="@dimen/_5sdp"
                 app:cardElevation="@dimen/_2sdp"
                 app:cardMaxElevation="@dimen/_3sdp"
                 app:cardUseCompatPadding="true"
-                app:layout_constraintTop_toBottomOf="@+id/cardHelp"
+                app:layout_constraintTop_toBottomOf="@+id/cardShareDevice"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
 
@@ -529,7 +319,7 @@
                 android:layout_marginStart="@dimen/_1sdp"
                 android:clickable="true"
                 android:elevation="@dimen/_5sdp"
-                app:cardBackgroundColor="@color/card_view_gb"
+                app:cardBackgroundColor="@color/cbg3"
                 android:foreground="?android:attr/selectableItemBackground"
                 app:cardCornerRadius="@dimen/_5sdp"
                 app:cardElevation="@dimen/_2sdp"
@@ -583,7 +373,7 @@
                 android:layout_marginStart="@dimen/_1sdp"
                 android:clickable="true"
                 android:elevation="@dimen/_5sdp"
-                app:cardBackgroundColor="@color/card_view_gb"
+                app:cardBackgroundColor="@color/cbg3"
                 android:foreground="?android:attr/selectableItemBackground"
                 app:cardCornerRadius="@dimen/_5sdp"
                 app:cardElevation="@dimen/_2sdp"
@@ -637,7 +427,7 @@
                 android:layout_marginStart="@dimen/_1sdp"
                 android:clickable="true"
                 android:elevation="@dimen/_5sdp"
-                app:cardBackgroundColor="@color/card_view_gb"
+                app:cardBackgroundColor="@color/cbg3"
                 android:foreground="?android:attr/selectableItemBackground"
                 app:cardCornerRadius="@dimen/_5sdp"
                 app:cardElevation="@dimen/_2sdp"
@@ -685,113 +475,9 @@
 
 
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardShareDevice"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/_1sdp"
-                android:layout_marginStart="@dimen/_1sdp"
-                android:clickable="true"
-                android:elevation="@dimen/_5sdp"
-                app:cardBackgroundColor="@color/card_view_gb"
-                android:foreground="?android:attr/selectableItemBackground"
-                app:cardCornerRadius="@dimen/_5sdp"
-                app:cardElevation="@dimen/_2sdp"
-                app:cardMaxElevation="@dimen/_3sdp"
-                app:cardUseCompatPadding="true"
-                app:layout_constraintTop_toBottomOf="@+id/cardShareApp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="@dimen/_8sdp"
-                    android:layout_marginBottom="@dimen/_8sdp">
 
-                    <ImageView
-                        android:id="@+id/imgSharedevice"
-                        android:layout_width="@dimen/_25sdp"
-                        android:layout_height="@dimen/_25sdp"
-                        android:src="@drawable/devshare"
-                        android:layout_marginStart="@dimen/_10sdp"
-                        android:layout_marginEnd="@dimen/_10sdp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
 
-                    <TextView
-                        android:id="@+id/textsharedevice"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:gravity="start"
-                        android:text="@string/share_my_dev"
-                        android:textColor="@color/black"
-                        android:layout_marginStart="@dimen/_10sdp"
-                        android:layout_marginEnd="@dimen/_10sdp"
-                        android:textSize="@dimen/_12ssp"
-                        android:textStyle="normal"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/imgSharedevice"
-                        app:layout_constraintEnd_toEndOf="parent" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardDownloadReports"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/_1sdp"
-                android:layout_marginStart="@dimen/_1sdp"
-                android:clickable="true"
-                android:elevation="@dimen/_5sdp"
-                app:cardBackgroundColor="@color/card_view_gb"
-                android:foreground="?android:attr/selectableItemBackground"
-                app:cardCornerRadius="@dimen/_5sdp"
-                app:cardElevation="@dimen/_2sdp"
-                app:cardMaxElevation="@dimen/_3sdp"
-                app:cardUseCompatPadding="true"
-                app:layout_constraintTop_toBottomOf="@+id/cardShareDevice"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="@dimen/_8sdp"
-                    android:layout_marginBottom="@dimen/_8sdp">
-
-                    <ImageView
-                        android:id="@+id/imgDownloadReport"
-                        android:layout_width="@dimen/_40sdp"
-                        android:layout_height="@dimen/_25sdp"
-                        android:src="@drawable/ic_download_report"
-                        android:layout_marginStart="@dimen/_5sdp"
-                        android:layout_marginEnd="@dimen/_10sdp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/textDownloadReport"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:gravity="start"
-                        android:textStyle="normal"
-                        android:text="@string/title_download_reports"
-                        android:textColor="@color/black"
-                        android:layout_marginStart="@dimen/_2sdp"
-                        android:layout_marginEnd="@dimen/_1sdp"
-                        android:textSize="@dimen/_12ssp"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/imgDownloadReport"
-                        app:layout_constraintEnd_toEndOf="parent" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-            </androidx.cardview.widget.CardView>
 
 
 
@@ -810,13 +496,13 @@
                 android:layout_marginStart="@dimen/_5sdp"
                 android:clickable="true"
                 android:elevation="@dimen/_5sdp"
-                app:cardBackgroundColor="@color/card_view_gb"
+                app:cardBackgroundColor="@color/cbg3"
                 android:foreground="?android:attr/selectableItemBackground"
                 app:cardCornerRadius="@dimen/_5sdp"
                 app:cardElevation="@dimen/_2sdp"
                 app:cardMaxElevation="@dimen/_3sdp"
                 app:cardUseCompatPadding="true"
-                app:layout_constraintTop_toBottomOf="@+id/cardDownloadReports"
+                app:layout_constraintTop_toBottomOf="@+id/cardShareApp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
 

@@ -3,7 +3,6 @@ package bizmessage.in.touchswitch.retrofit;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-import bizmessage.in.touchswitch.app.OnlookApplication;
 import bizmessage.in.touchswitch.model.AlertsRequestResponse;
 import bizmessage.in.touchswitch.model.DashboardRequestResponse;
 import bizmessage.in.touchswitch.model.LoginRequestResponse;
@@ -13,7 +12,6 @@ import bizmessage.in.touchswitch.model.TimeAlertsSettingResponse;
 import java.util.concurrent.TimeUnit;
 
 import bizmessage.in.touchswitch.model.YoutubeRequestResponse;
-import bizmessage.in.touchswitch.utils.PreferenceData;
 import okhttp3.OkHttpClient;
 import okhttp3.ResponseBody;
 import okhttp3.logging.HttpLoggingInterceptor;
@@ -23,7 +21,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
 import retrofit2.http.Query;
-import static bizmessage.in.touchswitch.utils.AppConstant.DBG;
+
 public class WebServiceCaller {
 
     private static ApiInterface apiInterface;
@@ -31,7 +29,7 @@ public class WebServiceCaller {
     public static ApiInterface getClient() {
         if (apiInterface == null) {
             HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
-        logging.setLevel(HttpLoggingInterceptor.Level.BODY);
+  // if(DBG)    logging.setLevel(HttpLoggingInterceptor.Level.BODY);
             OkHttpClient okClient = new OkHttpClient();
             Gson gson = new GsonBuilder().setLenient().setDateFormat("yyyy-MM-dd'T'HH:mm:ssZ").create();
 
@@ -132,11 +130,12 @@ public class WebServiceCaller {
 
         @GET(WebUtility.ADD_SCAN_DEVICE)
         Call<ResponseBody> addDevice(@Query("email") String email,
+                                     @Query("pass") String pass,
                                      @Query("lat") String lat,
                                      @Query("lng") String lng,
                                      @Query("time") String time,
                                      @Query("devid") String devid,
-                                     @Query("ssid") String ssid);
+                                     @Query("hotpass") String hotpass);
 
 
         @GET(WebUtility.SCAN_INVENT_DEVICE)
@@ -320,10 +319,40 @@ public class WebServiceCaller {
                                      @Query("offmin") String offmin,
                                      @Query("devid") String devid);
 
+        @GET(WebUtility.SET_SWITCH2)
+        Call<ResponseBody> setSwitch2(@Query("activate") String activate,
+                                     @Query("ops") String ops,
+                                     @Query("onhour") String onhour,
+                                     @Query("onmin") String onmin,
+                                     @Query("offhour") String offhour,
+                                     @Query("offmin") String offmin,
+                                     @Query("devid") String devid);
+
+        @GET(WebUtility.SET_SWITCH3)
+        Call<ResponseBody> setSwitch3(@Query("activate") String activate,
+                                     @Query("ops") String ops,
+                                     @Query("onhour") String onhour,
+                                     @Query("onmin") String onmin,
+                                     @Query("offhour") String offhour,
+                                     @Query("offmin") String offmin,
+                                     @Query("devid") String devid);
+
+
+
+
+
+
         @GET(WebUtility.GET_SWITCH_SETTINGS)
         Call<SwitchSettingResponse> getSwitchSetting(@Query("isfamily") String isfamily,
                                                      @Query("devid") String devid);
 
+        @GET(WebUtility.GET_SWITCH_SETTINGS2)
+        Call<SwitchSettingResponse> getSwitchSetting2(@Query("isfamily") String isfamily,
+                                                     @Query("devid") String devid);
+
+        @GET(WebUtility.GET_SWITCH_SETTINGS3)
+        Call<SwitchSettingResponse> getSwitchSetting3(@Query("isfamily") String isfamily,
+                                                     @Query("devid") String devid);
 
 
         @GET(WebUtility.HART_BEAT_SERVICE)

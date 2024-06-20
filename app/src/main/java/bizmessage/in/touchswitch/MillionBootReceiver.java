@@ -5,7 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 
 public class MillionBootReceiver extends BroadcastReceiver {
-    private static final String TAG = "Onlook";
+    private static final String TAG = "Onload";
     @Override
     public void onReceive(Context context, Intent intent) {
 

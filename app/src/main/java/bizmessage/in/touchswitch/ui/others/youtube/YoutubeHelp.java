@@ -255,7 +255,7 @@ Context context;
 
       video1.setId(1L);
         video1.setTitle("IoT Technology Trends in 2021");
-        video1.setImageUrl("http://www.ilmc.xyz/onlook/dashimage/iot.JPG");
+        video1.setImageUrl("http://www.ilmc.xyz/justlight/dashimage/iot.JPG");
         video1.setVideoId("nt00cm7irVE");
         mYoutubeVideo.add(video1);
 

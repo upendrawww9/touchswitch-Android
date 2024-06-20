@@ -3,7 +3,7 @@
  <string name="device">డివైస్</string>
 <string name="device_id">ఐడి : </string>
 <string name="device_name">స్థానం : </string>
-<string name="onlook_status">స్టేటస్ : </string>
+<string name="onload_status">స్టేటస్ : </string>
 <string name="wifi_strength">వైఫై: </string>
  <string name="battery_strength">బ్యాటరీ : </string>
  <string name="lowbattery_alert">ఆన్‌లుక్‌లో తక్కువ బ్యాటరీ</string>
@@ -15,7 +15,7 @@
  <string name="light_3">సైరన్</string>
 <string name="settings">సెటప్</string>
 <string name="alerts">అలర్ట్స్</string>
- <string name="device_status">ఆన్లుక్ డివైస్ స్టేటస్</string>"
+ <string name="device_status">స్మార్ట్ పరికరం స్థితి</string>"
 <!-- Dashboard Menu End -->
 <!-- Light Control -->
 <string name="title_light_one">హోమ్ లైట్</string>
@@ -321,8 +321,8 @@
 <!-- LOGIN END -->
 
 <!-- ADD NEW DEVICE INFO -->
-<string name="newdev_add_head">క్రొత్త ఆన్‌లూక్ పరికరాన్ని జోడించండి</string>
-<string name="scan_description">దయచేసి ఆన్‌లూక్ బాక్స్‌లోని బార్‌కోడ్‌ను స్కాన్ చేయండి. \n \n స్కాన్ ప్రారంభించడానికి బటన్‌పై క్లిక్ చేయండి.</string>
+<string name="newdev_add_head">జస్ట్ లైట్ జోడించండి</string>
+<string name="scan_description">దయచేసి అప్లికేషన్‌లో పరికరాన్ని జోడించడానికి పెట్టెతో ఇచ్చిన SSID మరియు పాస్‌వర్డ్‌ని నమోదు చేయండి.\n\n జోడించడానికి బటన్‌పై క్లిక్ చేయండి.</string>
 <string name="button_scan_barcode">బార్‌కోడ్‌ను స్కాన్ చేయండి</string>
 <string name="not_proper_device">సరైన ఆన్‌లూక్ ఐడి కాదు, దయచేసి మళ్లీ ప్రయత్నించండి</string>
 <!-- ADD NEW DEVICE END -->
@@ -357,6 +357,12 @@
 <string name="str_possitive_button">ఓకే</string>
 <string name="str_negative_button">రద్దు</string>
 <string name="forgot_password_head">పాస్వర్డ్ మర్చిపోయారా</string>
+
+ <string name="ssidonbox"> బాక్స్‌పై హాట్‌స్పాట్ SSIDని నమోదు చేయండి </string>
+ <string name="passwdonbox"> బాక్స్‌పై హాట్‌స్పాట్ పాస్‌వర్డ్‌ను నమోదు చేయండి </string>
+
+
+
 <string name="forgot_password_text" >ఇక్కడ మీ ఇమెయిల్ చిరునామా ఎంటర్ \n మరింత సూచనలను అందుకుంటారు.</string>
 <string name="button_recover_my_account" >కొనసాగించు</string>
 <string name="message_login_fail">లాగిన్ Fail! అయ్యే, వినియోగదారు ఇమెయిల్ మరియు పాస్‌వర్డ్‌ను నమోదు చేయండి.</string>
@@ -408,9 +414,21 @@
 
  <string name="dark_theme">రాత్రి థీమ్</string>
  <string name="light_theme">డే థీమ్</string>
- <string name="onlook_cube">ఆన్‌లుక్ స్మార్ట్ క్యూబ్</string>
- <string name="onlook_sub">ఆన్‌లుక్ సబ్‌స్క్రిప్షన్ ముగుస్తుంది</string>
+ <string name="justlight_cube">స్మార్ట్ బల్బ్</string>
+ <string name="justlight_sub">ఆన్‌లుక్ సబ్‌స్క్రిప్షన్ ముగుస్తుంది</string>
  <string name="sub_end">తేదీ</string>
+
+ <string name="switch1">స్విచ్ 1</string>
+ <string name="switch2">స్విచ్ 2</string>
+ <string name="switch3">స్విచ్ 3</string>
+
+ <string name="entsmart">నా స్మార్ట్ పరికరాలు</string>
+ <string name="entgrp">సమూహం</string>
+ <string name="entswitch">నా స్విచ్‌లు</string>
+ <string name="swtogrp">గ్రూప్ స్విచ్‌లు</string>
+
+
+
 
 
  <string name="not_for_demo">డెమో వినియోగదారు కోసం కాదు</string>

@@ -7,8 +7,6 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
-import android.graphics.Color;
-import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -19,13 +17,9 @@ import androidx.databinding.DataBindingUtil;
 import bizmessage.in.touchswitch.LocaleHelper;
 import bizmessage.in.touchswitch.MainActivity;
 import bizmessage.in.touchswitch.R;
-import bizmessage.in.touchswitch.app.OnlookApplication;
+import bizmessage.in.touchswitch.app.TouchApplication;
 import bizmessage.in.touchswitch.databinding.ActivityWhatsalertBinding;
 import bizmessage.in.touchswitch.retrofit.WebServiceCaller;
-import bizmessage.in.touchswitch.retrofit.WebUtility;
-import bizmessage.in.touchswitch.ui.auth.LoginActivity;
-import bizmessage.in.touchswitch.ui.auth.RegistrationActivity;
-import bizmessage.in.touchswitch.ui.settings.SettingsActivity;
 import bizmessage.in.touchswitch.utils.AppConstant;
 import bizmessage.in.touchswitch.utils.DialogButtonClickListener;
 import bizmessage.in.touchswitch.utils.PreferenceData;
@@ -98,7 +92,7 @@ public class Whatsalert extends AppCompatActivity implements View.OnClickListene
             resources = context.getResources();
         }
 
-        binding.textDeviceId.setText(resources.getString(R.string.device)+" - " + OnlookApplication.SELECTED_DEVICE.getNikname()+" : "+OnlookApplication.SELECTED_DEVICE.getSsid());
+        binding.textDeviceId.setText(resources.getString(R.string.device)+" - " + TouchApplication.SELECTED_DEVICE.getNikname()+" : "+TouchApplication.SELECTED_DEVICE.getSsid());
 
         getSupportActionBar().setTitle(resources.getString(R.string.whatstitle));
 
@@ -113,20 +107,20 @@ public class Whatsalert extends AppCompatActivity implements View.OnClickListene
 
         //   binding.textStatusFamilyadd.setText(resources.getString(R.string.family_member_status));///////////////
 
-//Utility.showToast(OnlookApplication.SELECTED_DEVICE.getIsWhatsalert());
-        //Utility.showToast(OnlookApplication.SELECTED_DEVICE.getWhatsnum().toString().trim());
+//Utility.showToast(TouchApplication.SELECTED_DEVICE.getIsWhatsalert());
+        //Utility.showToast(TouchApplication.SELECTED_DEVICE.getWhatsnum().toString().trim());
 
-        if(OnlookApplication.SELECTED_DEVICE.getIsWhatsalert().equalsIgnoreCase("false") ) {
+        if(TouchApplication.SELECTED_DEVICE.getIsWhatsalert().equalsIgnoreCase("false") ) {
 
             binding.btnCreate.setVisibility(View.GONE);
         }
         else{
             binding.btnCreate.setVisibility(View.VISIBLE);
-            binding.textwhatsstatus.setText("Alerts Number:"+OnlookApplication.SELECTED_DEVICE.getWhatsnum().toString().trim());
-            // Utility.showToast(OnlookApplication.SELECTED_DEVICE.getWhatsnum().toString().trim());
+            binding.textwhatsstatus.setText("Alerts Number:"+TouchApplication.SELECTED_DEVICE.getWhatsnum().toString().trim());
+            // Utility.showToast(TouchApplication.SELECTED_DEVICE.getWhatsnum().toString().trim());
 
-            if(OnlookApplication.SELECTED_DEVICE.getWhatsnum().length()>9 ) {
-                //   Utility.showToast(OnlookApplication.SELECTED_DEVICE.getWhatsnum().toString().trim());
+            if(TouchApplication.SELECTED_DEVICE.getWhatsnum().length()>9 ) {
+                //   Utility.showToast(TouchApplication.SELECTED_DEVICE.getWhatsnum().toString().trim());
                 binding.edtWhatsnumber.setEnabled(false);
 
 
@@ -140,9 +134,9 @@ public class Whatsalert extends AppCompatActivity implements View.OnClickListene
 
 
 
-        if (OnlookApplication.SELECTED_DEVICE.getRFamEmail() != null) {
-            if (!OnlookApplication.SELECTED_DEVICE.getRFamEmail().isEmpty()) {
-                //  binding.edtWhatsnumber.setText(OnlookApplication.SELECTED_DEVICE.getRFamEmail());
+        if (TouchApplication.SELECTED_DEVICE.getRFamEmail() != null) {
+            if (!TouchApplication.SELECTED_DEVICE.getRFamEmail().isEmpty()) {
+                //  binding.edtWhatsnumber.setText(TouchApplication.SELECTED_DEVICE.getRFamEmail());
                 // binding.edtPassword.setText(PreferenceData.getFamilyPassword());
                 // binding.edtWhatsnumber.setClickable(false);
                 //  binding.edtWhatsnumber.setEnabled(false);
@@ -175,10 +169,10 @@ public class Whatsalert extends AppCompatActivity implements View.OnClickListene
                 break;
             case
                     R.id.btnCreate:
-                if(OnlookApplication.SELECTED_DEVICE.getWhatsnum().length()>9 ) {
-                    //   Utility.showToast(OnlookApplication.SELECTED_DEVICE.getWhatsnum().toString().trim());
+                if(TouchApplication.SELECTED_DEVICE.getWhatsnum().length()>9 ) {
+                    //   Utility.showToast(TouchApplication.SELECTED_DEVICE.getWhatsnum().toString().trim());
 //                    binding.btnCreate.setVisibility(View.VISIBLE);
-                    //                  binding.textwhatsstatus.setText("Alerts Number:"+OnlookApplication.SELECTED_DEVICE.getWhatsnum().toString().trim());
+                    //                  binding.textwhatsstatus.setText("Alerts Number:"+TouchApplication.SELECTED_DEVICE.getWhatsnum().toString().trim());
 
                     //                binding.btnCreate.setText(resources.getString(R.string.stopalerts));///////////////
                     binding.btnCreate.setVisibility(View.GONE);
@@ -191,7 +185,7 @@ public class Whatsalert extends AppCompatActivity implements View.OnClickListene
                         addWhatsNumber(binding.edtWhatsnumber.getText().toString().trim(), "add");
                         binding.btnCreate.setVisibility(View.GONE);
 
-                        binding.textwhatsstatus.setText("Alerts Number:" + OnlookApplication.SELECTED_DEVICE.getWhatsnum().toString().trim());
+                        binding.textwhatsstatus.setText("Alerts Number:" + TouchApplication.SELECTED_DEVICE.getWhatsnum().toString().trim());
                     }
                     else{
                         Utility.showToast(resources.getString(R.string.whatsnumber));
@@ -209,7 +203,7 @@ public class Whatsalert extends AppCompatActivity implements View.OnClickListene
                 sendIntent.setType("text/plain");
                 sendIntent.setFlags(FLAG_ACTIVITY_NEW_TASK);
                 getApplicationContext().startActivity(sendIntent);
-//OnlookApplication.SELECTED_DEVICE.getPaswd()
+//TouchApplication.SELECTED_DEVICE.getPaswd()
 
                 break;
 
@@ -220,7 +214,7 @@ public class Whatsalert extends AppCompatActivity implements View.OnClickListene
                 sendIntentfam.setAction(Intent.ACTION_SEND);
 
                 sendIntentfam.putExtra(Intent.EXTRA_TEXT, "Onlook Alert Control Login \n " +
-                        "Email: " + OnlookApplication.SELECTED_DEVICE.getRFamEmail() + "\n Password: "+OnlookApplication.SELECTED_DEVICE.getFampass() + "\n Download app at: \n https://play.google.com/store/apps/details?id=" + getApplicationContext().getPackageName() + "\n Donot Share this. Please delete this message");
+                        "Email: " + TouchApplication.SELECTED_DEVICE.getRFamEmail() + "\n Password: "+TouchApplication.SELECTED_DEVICE.getFampass() + "\n Download app at: \n https://play.google.com/store/apps/details?id=" + getApplicationContext().getPackageName() + "\n Donot Share this. Please delete this message");
 
 
                 sendIntentfam.setType("text/plain");
@@ -248,7 +242,7 @@ public class Whatsalert extends AppCompatActivity implements View.OnClickListene
 
             if(action.equalsIgnoreCase("add")) {
                 WebServiceCaller.ApiInterface service = WebServiceCaller.getClient();
-                responseCall = service.addWhatsNumber(OnlookApplication.SELECTED_DEVICE.getDevid(),
+                responseCall = service.addWhatsNumber(TouchApplication.SELECTED_DEVICE.getDevid(),
                         whatnumber,
                         PreferenceData.getLatitude(),
                         PreferenceData.getLongitude(),
@@ -257,7 +251,7 @@ public class Whatsalert extends AppCompatActivity implements View.OnClickListene
             }
             if(action.equalsIgnoreCase("delete")) {
                 WebServiceCaller.ApiInterface service = WebServiceCaller.getClient();
-                responseCall = service.addWhatsNumber(OnlookApplication.SELECTED_DEVICE.getDevid(),
+                responseCall = service.addWhatsNumber(TouchApplication.SELECTED_DEVICE.getDevid(),
                         whatnumber,
                         PreferenceData.getLatitude(),
                         PreferenceData.getLongitude(),
@@ -273,7 +267,7 @@ public class Whatsalert extends AppCompatActivity implements View.OnClickListene
                             ResponseBody responseBody = response.body();
                             String responseStatus = responseBody.string();
                             if (responseStatus.contains(AppConstant.API_STATUS_SUCCESS)) {
-                                OnlookApplication.SELECTED_DEVICE.setRFamEmail(binding.edtWhatsnumber.getText().toString().trim());
+                                TouchApplication.SELECTED_DEVICE.setRFamEmail(binding.edtWhatsnumber.getText().toString().trim());
                                 binding.imgSharefam.setVisibility(View.VISIBLE);
                                 //  Utility.showSnackBar(binding.appBarLayout, getString(R.string.email_sent_to) + binding.edtFamilyMemberEmail.getText().toString().trim() + getString(R.string.for_aproval));
                                 Utility.showSnackBar(binding.appBarLayout,"Update Sucesses. Share it on Whatsapp");

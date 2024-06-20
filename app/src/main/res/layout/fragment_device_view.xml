@@ -13,21 +13,29 @@
             android:id="@+id/card_top_card"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            app:cardCornerRadius="@dimen/_20sdp"
+            app:cardElevation="@dimen/_2sdp"
+
+            app:cardMaxElevation="@dimen/_3sdp"
+
+
 
             android:foreground="?android:attr/selectableItemBackground"
-            app:cardMaxElevation="@dimen/_2sdp"
-            app:cardElevation="@dimen/_1sdp"
-            android:elevation="@dimen/_2sdp"
-            app:cardUseCompatPadding="false"
-            android:layout_marginTop="@dimen/_2sdp"
 
-            app:cardCornerRadius="@dimen/_6sdp"
-            android:background="@color/transparent1"
-            app:cardBackgroundColor="@color/card_view_gb"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:elevation="@dimen/_2sdp"
+
+
+            app:cardBackgroundColor="@color/cbg3"
+
+
+
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+
+
+
             android:focusable="true">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -118,7 +126,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_2sdp"
                     android:gravity="start"
-                    android:text="@string/onlook_status"
+                    android:text="@string/onload_status"
                     android:textSize="@dimen/_12ssp"
                     android:textStyle="bold"
                     android:textColor="@color/black"
@@ -195,7 +203,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_2sdp"
                     android:gravity="start"
-                    android:text="10%"
+                    android:text=""
                     android:layout_marginTop="@dimen/_5sdp"
                     android:textSize="@dimen/_12ssp"
                     android:textStyle="bold"

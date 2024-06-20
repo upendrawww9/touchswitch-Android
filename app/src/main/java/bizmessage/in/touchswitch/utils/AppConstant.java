@@ -13,7 +13,7 @@ public class AppConstant {
     public static final String fcm = "fcm";
 
     public static final String ISLanguage = "true";
-    public static final String MEMBER_EMAIL = "member@onlook.in";
+    public static final String MEMBER_EMAIL = "member@onload.in";
     public static final String DEVICE_ANDROID = "android";
     public static final String LOGIN_REQUEST_RESPONSE = "LOGIN_REQUEST_RESPONSE";
     public static final String LIGHT1_ON_HOUR_TIME = "LIGHT1_ON_HOUR_TIME";

@@ -27,7 +27,7 @@ import java.net.URL;
 import bizmessage.in.touchswitch.LocaleHelper;
 import bizmessage.in.touchswitch.MainActivity;
 import bizmessage.in.touchswitch.R;
-import bizmessage.in.touchswitch.app.OnlookApplication;
+import bizmessage.in.touchswitch.app.TouchApplication;
 import bizmessage.in.touchswitch.location.LocationUpdatesService;
 import bizmessage.in.touchswitch.retrofit.WebServiceCaller;
 import bizmessage.in.touchswitch.utils.PreferenceData;
@@ -96,7 +96,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
        //     sendNotification(remoteMessage.getNotification().getTitle(),remoteMessage.getNotification().getBody());
             PreferenceData.setOffer(remoteMessage.getNotification().getBody());
 if(remoteMessage.getNotification().getTitle().length()>3) {
- // sendNotification("onlook");
+ // sendNotification("onload");
 
 
 
@@ -129,7 +129,7 @@ if(remoteMessage.getNotification().getTitle().length()>3) {
         Log.d(TAG, "From: " + remoteMessage.getFrom());
         if(message!=null) {
             if(PreferenceData.isLogin()) {
-                sendNotification(remoteMessage, "onlook", message);
+                sendNotification(remoteMessage, "onload", message);
             }
         }
     }
@@ -195,8 +195,8 @@ if(remoteMessage.getNotification().getTitle().length()>3) {
         timestamp = remoteMessage.getData().get("timestamp");
       //  Utility.showToast("TIME"+timestamp);
 
-        if (OnlookApplication.SELECTED_DEVICE != null) {
-            if (OnlookApplication.SELECTED_DEVICE.getIsshared().equals(PreferenceData.getLoginid())) {
+        if (TouchApplication.SELECTED_DEVICE != null) {
+            if (TouchApplication.SELECTED_DEVICE.getIsshared().equals(PreferenceData.getLoginid())) {
 
                 PreferenceData.setSilent(is_sil);
                 PreferenceData.setNoti(is_noti);
@@ -394,7 +394,7 @@ if(remoteMessage.getNotification().getTitle().length()>3) {
         if (alert.equalsIgnoreCase("buzz")) {
 
             bitmap = BitmapFactory.decodeResource(getApplicationContext().getResources(),
-                    R.drawable.bigdevice);
+                    R.drawable.ic_bulb_on);
 
             notificationBuilder =
                     new NotificationCompat.Builder(this, channelId)
@@ -428,7 +428,7 @@ if(remoteMessage.getNotification().getTitle().length()>3) {
         // Since android Oreo notification channel is needed.
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             NotificationChannel channel = new NotificationChannel(channelId,
-                    "ONLOOK-FCM",
+                    "onload-FCM",
                     NotificationManager.IMPORTANCE_DEFAULT);
             notificationManager.createNotificationChannel(channel);
         }

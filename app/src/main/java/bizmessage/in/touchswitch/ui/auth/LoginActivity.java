@@ -19,17 +19,13 @@ import bizmessage.in.touchswitch.R;
 import bizmessage.in.touchswitch.databinding.ActivityLoginBinding;
 import bizmessage.in.touchswitch.retrofit.WebServiceCaller;
 import bizmessage.in.touchswitch.retrofit.WebUtility;
-import bizmessage.in.touchswitch.utils.AppConstant;
 import bizmessage.in.touchswitch.utils.DialogButtonClickListener;
 import bizmessage.in.touchswitch.utils.PreferenceData;
 import bizmessage.in.touchswitch.utils.Utility;
 import bizmessage.in.touchswitch.utils.Validation;
-import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-
-import static bizmessage.in.touchswitch.utils.AppConstant.DBG;
 
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener, DialogButtonClickListener  {

@@ -3,7 +3,7 @@
 
     <string name="device"  >ಡಿವೈಸ್</string>
     <string name="device_name">ಸ್ಥಳ :</string>
-    <string name="onlook_status">ಸ್ಥಿತಿ :</string>
+    <string name="onload_status">ಸ್ಥಿತಿ :</string>
     <string name="device_id"  >ಐಡಿ : </string>
     <string name="wifi_strength">ವೈಫೈ :</string>
     <string name="battery_strength">ಬ್ಯಾಟರಿ : </string>
@@ -17,7 +17,7 @@
 
     <string name="settings">ಸೆಟಪ್</string>
     <string name="alerts">ಎಚ್ಚರಿಕೆಗಳು</string>
-    <string name="device_status">ಆನ್ ಲುಕ್ ಸಾಧನ ಸ್ಥಿತಿ</string>
+    <string name="device_status">ಸ್ಮಾರ್ಟ್ ಸಾಧನ ಸ್ಥಿತಿ</string>
     <!-- Dashboard Menu End -->
     <!-- Light Control -->
     <string name="title_light_one">ಹೋಮ್ ಲೈಟ್</string>
@@ -320,8 +320,8 @@
         <!-- LOGIN END -->
 
         <!-- ADD NEW DEVICE INFO -->
-        <string name="newdev_add_head">ಆನ್ ಲುಕ್ ಸಾಧನವನ್ನು ಸೇರಿಸಿ</string>
-<string name="scan_description">ಅಪ್ಲಿಕೇಶನ್‌ನಲ್ಲಿ ಸಾಧನವನ್ನು ಸೇರಿಸಲು ದಯವಿಟ್ಟು ಆನ್‌ಲುಕ್ ಬಾಕ್ಸ್‌ನಲ್ಲಿ ಬಾರ್‌ಕೋಡ್ ಅನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಿ.\n\n ಸ್ಕ್ಯಾನ್ ಪ್ರಾರಂಭಿಸಲು ಬಟನ್ ಕ್ಲಿಕ್ ಮಾಡಿ.</string>
+        <string name="newdev_add_head">ಕೇವಲ ಬೆಳಕನ್ನು ಸೇರಿಸಿ</string>
+<string name="scan_description">ಅಪ್ಲಿಕೇಶನ್‌ನಲ್ಲಿ ಸಾಧನವನ್ನು ಸೇರಿಸಲು ಬಾಕ್ಸ್‌ನೊಂದಿಗೆ ನೀಡಲಾದ SSID ಮತ್ತು ಪಾಸ್‌ವರ್ಡ್ ಅನ್ನು ನಮೂದಿಸಿ.\n\n ಸೇರಿಸಲು ಬಟನ್ ಕ್ಲಿಕ್ ಮಾಡಿ..</string>
 <string name="button_scan_barcode">ಸ್ಕ್ಯಾನ್ ಬಾರ್‌ಕೋಡ್</string>
 <string name="not_proper_device">ಸರಿಯಾದ ಸಾಧನ ಐಡಿ ಅಲ್ಲ, ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ</string>
         <!-- ADD NEW DEVICE END -->
@@ -356,6 +356,13 @@
 <string name="forgot_password_text" >ಹೆಚ್ಚಿನ ಸೂಚನೆಗಳನ್ನು ಸ್ವೀಕರಿಸಲು ನಿಮ್ಮ ಇಮೇಲ್ ವಿಳಾಸವನ್ನು ಇಲ್ಲಿ ನಮೂದಿಸಿ.</string>
 <string name="button_recover_my_account" >ಮುಂದುವರಿಸಿ</string>
 <string name="message_login_fail">ಲಾಗಿನ್ ವಿಫಲವಾಗಿದೆ! ಮಾನ್ಯ ಬಳಕೆದಾರ ಇಮೇಲ್ ಮತ್ತು ಪಾಸ್ವರ್ಡ್ ಅನ್ನು ನಮೂದಿಸಿ.</string>
+
+    <string name="ssidonbox"> ಬಾಕ್ಸ್‌ನಲ್ಲಿ ಹಾಟ್‌ಸ್ಪಾಟ್ SSID ನಮೂದಿಸಿ </string>
+    <string name="passwdonbox">ಬಾಕ್ಸ್‌ನಲ್ಲಿ ಹಾಟ್‌ಸ್ಪಾಟ್ ಪಾಸ್‌ವರ್ಡ್ ನಮೂದಿಸಿ </string>
+
+
+
+
     <string name="online">ಆನ್‌ಲೈನ್</string>
     <string name="offline">ಆಫ್‌ಲೈನ್</string>
     <string name="planned">ಯೋಜಿಸಲಾಗಿದೆ</string>
@@ -405,9 +412,23 @@
     <string name="pushy_vibration_alert">ವೈಬ್ರೇಶನ್ ಎಚ್ಚರಿಕೆ</string>
     <string name="pushy_fire_alert">ಅಗ್ನಿಶಾಮಕ ಎಚ್ಚರಿಕೆ</string>
     <string name="pushy_time">ಎಚ್ಚರಿಕೆ ಸಮಯ</string>
-    <string name="onlook_cube">ಆನ್ ಲುಕ್</string>
-    <string name="onlook_sub">ಆನ್‌ಲುಕ್ ಚಂದಾದಾರಿಕೆ ಕೊನೆಗೊಳ್ಳುತ್ತದೆ</string>
+    <string name="justlight_cube">ಸ್ಮಾರ್ಟ್ ಬಲ್ಬ್</string>
+    <string name="justlight_sub">ಆನ್‌ಲುಕ್ ಚಂದಾದಾರಿಕೆ ಕೊನೆಗೊಳ್ಳುತ್ತದೆ</string>
     <string name="sub_end">ದಿನಾಂಕ</string>
+
+    <string name="switch1">ಸ್ವಿಚ್ 1</string>
+    <string name="switch2">ಸ್ವಿಚ್ 2</string>
+    <string name="switch3">ಸ್ವಿಚ್ 3</string>
+
+    <string name="entsmart">My Smart Devices</string>
+    <string name="entgrp">ಗುಂಪು</string>
+    <string name="entswitch">ನನ್ನ ಸ್ವಿಚ್‌ಗಳು</string>
+    <string name="swtogrp">ಗುಂಪು ಸ್ವಿಚ್‌ಗಳು</string>
+
+
+
+
+
     <!--pushy alert end-->
 
 

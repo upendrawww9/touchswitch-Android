@@ -93,10 +93,10 @@ public class MyDeviceActivity extends AppCompatActivity implements View.OnClickL
             }
         });
         Log.d("reportURL",WebUtility.WEB_MY_DEVICE+ PreferenceData.getEmail()+"&pass="+ PreferenceData.getPassword());
-       // binding.webView.loadUrl(WebUtility.WEB_MY_DEVICE+ PreferenceData.getEmail()+"&pass="+PreferenceData.getPassword());
-      binding.webView.loadUrl("https://goldsenz.bizmessage.in/ops");
+       binding.webView.loadUrl(WebUtility.WEB_MY_DEVICE+ PreferenceData.getEmail()+"&pass="+PreferenceData.getPassword());
+      //binding.webView.loadUrl("https://goldsenz.bizmessage.in/ops");
 
-        //binding.textDeviceId.setText("Device : "+ OnlookApplication.SELECTED_DEVICE.getDevid());
+        //binding.textDeviceId.setText("Device : "+ TouchApplication.SELECTED_DEVICE.getDevid());
         binding.textDeviceId.setText(resources.getString(R.string.device_status));
     }
 

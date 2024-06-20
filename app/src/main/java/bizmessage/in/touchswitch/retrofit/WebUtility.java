@@ -1,7 +1,6 @@
 package bizmessage.in.touchswitch.retrofit;
 
-import bizmessage.in.touchswitch.app.OnlookApplication;
-import bizmessage.in.touchswitch.utils.PreferenceData;
+import bizmessage.in.touchswitch.app.TouchApplication;
 
 public class WebUtility  {
 
@@ -9,7 +8,7 @@ public class WebUtility  {
 
 
 
-    public static final String BASE_URL = "http://www.ilmc.xyz/onlook/";
+    public static final String BASE_URL = "http://www.ilmc.xyz/touch/";
 
 
     public static final String API_SOURCE = "android";
@@ -23,8 +22,12 @@ public class WebUtility  {
 
     public static final String SET_TIME1_OPS = "t1";
     public static final String SET_TIME2_OPS = "t2";
-    public static final String SET_PLUG1_OPS = "t3";
-    public static final String SET_PLUG2_OPS = "t4";
+
+    public static final String SET_PLUG1_OPS = "t3";  //switch 2 only
+    public static final String SET_PLUG2_OPS = "t4"; //switch 2 only
+
+    public static final String SET_TIME5_OPS = "t5";
+    public static final String SET_TIME6_OPS = "t6";
 
     public static final String SET_LIGHT_ONOFF = "lonoff";
     public static final String SET_PLUG_ONOFF = "ponoff";
@@ -37,7 +40,7 @@ public class WebUtility  {
 
 
 
-    public static final String SUPPORT_EMAIL = "onlook@bizmessage.in";
+    public static final String SUPPORT_EMAIL = "justlight@bizmessage.in";
     public static final String LOGIN = "login.php?";
     public static final String LOGIN1 = "jsondata.php?";
     public static final String REGISTRATION = "login.php?";
@@ -71,14 +74,35 @@ public class WebUtility  {
     public static final String SET_PLUG = "setplug.php?";
     public static final String GET_PLUG_SETTING = "getplugsettings.php?";
     public static final String SET_SWITCH = "setswitch.php?";
+    public static final String SET_SWITCH2 = "setswitch2.php?";
+    public static final String SET_SWITCH3 = "setswitch3.php?";
+
+
     public static final String GET_SWITCH_SETTINGS = "getswitchsettings.php?";
+    public static final String GET_SWITCH_SETTINGS2 = "getlight2settings.php?";
+    public static final String GET_SWITCH_SETTINGS3 = "getlight3settings.php?";
+
+
     public static final String UPDATE_LOCATIONS = "updatelocation_new.php?";
     public static final String HART_BEAT_SERVICE = "heartbeat.php?";
 
-//  public static final String WEB_HELP = "http://www.ilmc.xyz/support/customer/do_login?email="+ OnlookApplication.SELECTED_DEVICE.getEmail()+"&password="+PreferenceData.getPassword();
+//  public static final String WEB_HELP = "http://www.ilmc.xyz/support/customer/do_login?email="+ TouchApplication.SELECTED_DEVICE.getEmail()+"&password="+PreferenceData.getPassword();
 
     public static final String WEB_HELP = "http://www.ilmc.xyz/support/public";
-    public static final String WEB_Newcust = "http://www.ilmc.xyz/onlook/dealercust.php?email=";
+    public static final String WEB_Newcust = "http://www.ilmc.xyz/touch/dealercust.php?email=";
+
+
+    public static final String WEB_Contrls = "http://ilmc.xyz/touch/androidjustlight/mycontrollers.php?email=";
+
+
+
+    public static final String WEB_Mygrp = "http://www.ilmc.xyz/touch/androidweb/mygroup.php?email=";
+
+    //public static final String WEB_Mygrp = "http://www.ilmc.xyz/touch/androidweb/mygroup.php?email=";
+    public static final String WEB_Swtogrp = "http://ilmc.xyz/touch/androidtouch/selswtogrp.php?email=";
+
+
+
 
      public static final String WEB_MY_DEVICE = "http://www.ilmc.xyz/launch/mydevstatus.php?email=";
 
@@ -86,9 +110,9 @@ public class WebUtility  {
     public static final String WEB_WHATS_APP = "https://api.whatsapp.com/send?phone=";
 
 
-    public static final String MQTT_SERVER_URL = OnlookApplication.SELECTED_DEVICE.getmqtthost();
-    public static final String MQTT_USER_ID = OnlookApplication.SELECTED_DEVICE.getmqttuser();
-    public static final String MQTT_PASSWORD = OnlookApplication.SELECTED_DEVICE.getmqttpass();
+    public static final String MQTT_SERVER_URL = TouchApplication.SELECTED_DEVICE.getmqtthost();
+    public static final String MQTT_USER_ID = TouchApplication.SELECTED_DEVICE.getmqttuser();
+    public static final String MQTT_PASSWORD = TouchApplication.SELECTED_DEVICE.getmqttpass();
 
     public static final String CLIENT_ID = "Switchbar";
     public static final String LED_CLIENT_ID = "Lightbar";

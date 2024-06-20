@@ -508,7 +508,7 @@ public class PushReceiver extends BroadcastReceiver {
         if (alert.equalsIgnoreCase("buzz")) {
 
             bitmap = BitmapFactory.decodeResource(context.getResources(),
-                    R.drawable.bigdevice);
+                    R.drawable.ic_bulb_on);
             // Prepare a notification with vibration, sound and lights
             builder = new NotificationCompat.Builder(context)
                     .setLargeIcon(bitmap)/*Notification icon image*/
@@ -537,7 +537,7 @@ public class PushReceiver extends BroadcastReceiver {
             builder = new NotificationCompat.Builder(context)
                     .setLargeIcon(bitmap)/*Notification icon image*/
                     .setSmallIcon(R.drawable.subscription)
-                    .setContentTitle(resources.getString(R.string.onlook_sub)+" @ " + nikname)
+                    .setContentTitle(resources.getString(R.string.justlight_sub)+" @ " + nikname)
                     .setContentText(resources.getString(R.string.sub_end)+" " + timestamp)
                     .setStyle(new NotificationCompat.BigPictureStyle()
                             .bigPicture(bitmap))/*Notification with Image*/
@@ -561,7 +561,7 @@ public class PushReceiver extends BroadcastReceiver {
             builder = new NotificationCompat.Builder(context)
                     .setLargeIcon(bitmap)/*Notification icon image*/
                     .setSmallIcon(R.drawable.subscription)
-                    .setContentTitle(resources.getString(R.string.onlook_sub)+" @ " + nikname)
+                    .setContentTitle(resources.getString(R.string.justlight_sub)+" @ " + nikname)
                     .setContentText(resources.getString(R.string.sub_end)+" " + timestamp)
                     .setStyle(new NotificationCompat.BigPictureStyle()
                             .bigPicture(bitmap))/*Notification with Image*/

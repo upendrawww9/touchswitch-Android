@@ -16,7 +16,7 @@
         app:cardElevation="@dimen/_1sdp"
         app:cardMaxElevation="@dimen/_1sdp"
         app:cardUseCompatPadding="true"
-        app:cardBackgroundColor="@color/card_view_gb"
+        app:cardBackgroundColor="@color/cbg3"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">

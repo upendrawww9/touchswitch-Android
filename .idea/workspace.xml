@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="exc" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+    <option name="TOOL_WINDOW_REGEXP_FILTER" value="false" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3823c98c-5e5e-4615-bb4a-9dc42fe55b84" name="Changes" comment="Justlight">
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_touchswitch.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/google-services.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/release/output-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/release/output-metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/Flexible.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/LocaleHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/MillionBootReceiver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/NotificationWorker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/app/JustlightApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/enums/Count.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/enums/FitActionRequestCode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/enums/FontSize.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/enums/MediaType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/enums/ResponseType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/enums/UserType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/location/LocationUpdatesService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/location/Loutils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/model/AddDeviceRequestResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/model/AlertsRequestResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/model/DashboardRequestResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/model/GetUserResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/model/LightModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/model/LoginRequestResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/model/SwitchSetting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/model/SwitchSettingResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/model/TimeAlertSetting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/model/TimeAlertsSettingResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/model/YoutubeRequestResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/notification/MyFirebaseMessagingService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/notification/MySwipeclose.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/notification/PushReceiver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/notification/RingtonePlayingService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/permissionManagerViews/Permission.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/permissionManagerViews/PermissionManagerActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/permissionManagerViews/PermissionManagerInstance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/permissionManagerViews/PermissionManagerListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/retrofit/WebServiceCaller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/retrofit/WebUtility.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/adddevice/AddDeviceFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/adddevice/AddDeviceViewModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/adddevice/AddJustlight.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/adddevice/SliderAddDeviceViewFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/auth/ForgotPasswordActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/auth/LoginActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/auth/RegistrationActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/auth/SplashActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/help/HelpActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/home/DeviceViewFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/home/DeviceViewModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/home/FirstTimeHotSpotActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/home/HomeFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/home/HomeViewModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/mydevice/MyDeviceActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/others/AddCustomer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/others/ContactUsActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/others/Dealerclients.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/others/EmergencyCalling.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/others/FamilyMemberActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/others/Language.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/others/OthersFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/others/OthersViewModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/others/ShareDevice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/others/UserAccountActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/others/Whatsalert.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/others/youtube/YoutubeHelp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/others/youtube/adapter/YoutubeRecyclerAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/others/youtube/base/BaseViewHolder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/others/youtube/model/YoutubeVideo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/settings/AutoCompleteAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/settings/LightOneActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/settings/MySmartdevices.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/settings/Mygroup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/settings/SettingsActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/settings/SwitctoGrp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/settings/WifiAndHotSpotActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/utils/AppConstant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/utils/DialogButtonClickListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/utils/PreferenceData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/utils/SharedPreferenceUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/utils/Utility.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/utils/Validation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bigdevice.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_addlight.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_addlight.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_light_one.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_add_device.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_add_device.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/mobile_navigation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/mobile_navigation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Onload App" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="layoutResourceFile" />
+        <option value="resourceFile" />
+      </list>
+    </option>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="EXPORT_PRIVATE_KEY" value="false" />
+    <option name="KEY_STORE_PATH" value="D:\Android\Justlight\playstore-keyfile\justlight.jks" />
+    <option name="KEY_ALIAS" value="key0" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="2Wa9JQIpipVwU20ekGAzAhUuLNX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ApkExportedModule" value="Onlook_App.app" />
+    <property name="BundleExportedModule" value="JustLight_App.app" />
+    <property name="ExportApk.ApkPath" value="D:\Android\Justlight\app\release" />
+    <property name="ExportApk.BuildVariants" value="release" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ToolWindowBuild.ShowToolbar" value="false" />
+    <property name="WORKMANAGER_INSPECTOR_NOTIFICATION_DISMISSED" value="true" />
+    <property name="android-custom-viewD:/Android/TouchSwitch2/app/src/main/java/bizmessage/in/touchswitch/utils/SwitchButton.java_SELECTED" value="SwitchButton" />
+    <property name="android-custom-viewD:/Android/TouchSwitch2/app/src/main/java/bizmessage/in/touchswitch/utils/SwitchButton.java_SwitchButton_DIMENSIONS" value="1080&#10;1920" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/bb/SeekBarExample" />
+    <property name="settings.editor.selected.configurable" value="memory.settings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Android\TouchSwitch2\app\src\main\res\layout" />
+      <recent name="D:\Android\TouchSwitch2\app\src\main\res\drawable" />
+      <recent name="D:\Android\TouchSwitch2\app\src\main\res\values-te" />
+      <recent name="D:\Android\Justlight\app\src\main\res\layout" />
+      <recent name="D:\Android\Onlook\app\src\main\res\layout" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="bizmessage.in.touchswitch.ui.settings" />
+      <recent name="bizmessage.in.touchswitch.ui.rooms" />
+      <recent name="bizmessage.in.touchswitch.utils" />
+      <recent name="bizmessage.in.justlight.ui.home" />
+      <recent name="bizmessage.in.justlight.ui.auth" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="TouchSwitch2.app.main" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3823c98c-5e5e-4615-bb4a-9dc42fe55b84" name="Changes" comment="" />
+      <created>1696959754724</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696959754724</updated>
+    </task>
+    <task id="LOCAL-00001" summary="new update for whats alert">
+      <created>1696960698122</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1696960698122</updated>
+    </task>
+    <task id="LOCAL-00002" summary="new update for whats alert">
+      <created>1696961036370</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1696961036370</updated>
+    </task>
+    <task id="LOCAL-00003" summary="new update for whats alert">
+      <created>1705768564837</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705768564838</updated>
+    </task>
+    <task id="LOCAL-00004" summary="new update for whats alert">
+      <created>1708096757440</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1708096757440</updated>
+    </task>
+    <task id="LOCAL-00005" summary="new update for whats alert">
+      <created>1708170308558</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1708170308558</updated>
+    </task>
+    <task id="LOCAL-00006" summary="new update for whats alert">
+      <created>1708170342317</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1708170342317</updated>
+    </task>
+    <task id="LOCAL-00007" summary="onload">
+      <created>1711589916045</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1711589916045</updated>
+    </task>
+    <task id="LOCAL-00008" summary="onload">
+      <created>1711600955572</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1711600955572</updated>
+    </task>
+    <task id="LOCAL-00009" summary="onload">
+      <created>1711723781460</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1711723781460</updated>
+    </task>
+    <task id="LOCAL-00010" summary="onload">
+      <created>1712339458725</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1712339458726</updated>
+    </task>
+    <task id="LOCAL-00011" summary="onload">
+      <created>1712339759794</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1712339759794</updated>
+    </task>
+    <task id="LOCAL-00012" summary="onload">
+      <created>1712392881647</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1712392881648</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Justlight">
+      <created>1712401524697</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1712401524697</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Justlight">
+      <created>1712401551958</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1712401551958</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Justlight">
+      <created>1713877872211</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1713877872211</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="new update for whats alert" />
+    <MESSAGE value="onload" />
+    <MESSAGE value="Justlight" />
+    <option name="LAST_COMMIT_MESSAGE" value="Justlight" />
+  </component>
+</project>

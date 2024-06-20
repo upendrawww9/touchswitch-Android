@@ -24,7 +24,7 @@ import java.text.SimpleDateFormat;
 import java.util.Locale;
 
 import bizmessage.in.touchswitch.R;
-import bizmessage.in.touchswitch.app.OnlookApplication;
+import bizmessage.in.touchswitch.app.TouchApplication;
 
 public class Utility {
 
@@ -106,8 +106,8 @@ public class Utility {
         new Handler().post(new Runnable() {
             @Override
             public void run() {
-                Toast toast = Toast.makeText(OnlookApplication.getInstance(), message, Toast.LENGTH_SHORT);
-                toast.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL, 0, pxToDp(OnlookApplication.getInstance(), 70));
+                Toast toast = Toast.makeText(TouchApplication.getInstance(), message, Toast.LENGTH_SHORT);
+                toast.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL, 0, pxToDp(TouchApplication.getInstance(), 70));
                 toast.show();
             }
         });
@@ -117,8 +117,8 @@ public class Utility {
         new Handler().post(new Runnable() {
             @Override
             public void run() {
-                Toast toast = Toast.makeText(OnlookApplication.getInstance(), message, Toast.LENGTH_LONG);
-                toast.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL, 0, pxToDp(OnlookApplication.getInstance(), 70));
+                Toast toast = Toast.makeText(TouchApplication.getInstance(), message, Toast.LENGTH_LONG);
+                toast.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL, 0, pxToDp(TouchApplication.getInstance(), 70));
                 toast.show();
             }
         });
@@ -128,8 +128,8 @@ public class Utility {
         new Handler().post(new Runnable() {
             @Override
             public void run() {
-                Toast toast = Toast.makeText(OnlookApplication.getInstance(), message, Toast.LENGTH_SHORT);
-                toast.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL, 0, pxToDp(OnlookApplication.getInstance(), 70));
+                Toast toast = Toast.makeText(TouchApplication.getInstance(), message, Toast.LENGTH_SHORT);
+                toast.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL, 0, pxToDp(TouchApplication.getInstance(), 70));
                 toast.show();
             }
         });
@@ -139,8 +139,8 @@ public class Utility {
         new Handler().post(new Runnable() {
             @Override
             public void run() {
-                Toast toast = Toast.makeText(OnlookApplication.getInstance(), message, Toast.LENGTH_LONG);
-                toast.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL, 0, pxToDp(OnlookApplication.getInstance(), 70));
+                Toast toast = Toast.makeText(TouchApplication.getInstance(), message, Toast.LENGTH_LONG);
+                toast.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL, 0, pxToDp(TouchApplication.getInstance(), 70));
                 toast.show();
             }
         });

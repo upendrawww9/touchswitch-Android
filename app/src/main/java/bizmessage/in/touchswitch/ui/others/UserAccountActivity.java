@@ -15,7 +15,7 @@ import org.jetbrains.annotations.NotNull;
 
 import bizmessage.in.touchswitch.LocaleHelper;
 import bizmessage.in.touchswitch.R;
-import bizmessage.in.touchswitch.app.OnlookApplication;
+import bizmessage.in.touchswitch.app.TouchApplication;
 import bizmessage.in.touchswitch.databinding.ActivityUserAccountBinding;
 import bizmessage.in.touchswitch.retrofit.WebServiceCaller;
 import bizmessage.in.touchswitch.retrofit.WebUtility;
@@ -91,8 +91,8 @@ public class UserAccountActivity extends AppCompatActivity implements View.OnCli
             resources = context.getResources();
         }
 
-        if (OnlookApplication.SELECTED_DEVICE != null) {
-            binding.textDeviceId.setText(resources.getString(R.string.device)+" - " + OnlookApplication.SELECTED_DEVICE.getNikname()+" : "+OnlookApplication.SELECTED_DEVICE.getSsid());
+        if (TouchApplication.SELECTED_DEVICE != null) {
+            binding.textDeviceId.setText(resources.getString(R.string.device)+" - " + TouchApplication.SELECTED_DEVICE.getNikname()+" : "+TouchApplication.SELECTED_DEVICE.getSsid());
         }
         binding.textAlertGroup.setText(resources.getString(R.string.user_account));///////////////
         binding.btnChangePassword.setText(resources.getString(R.string.change_password));///////////////

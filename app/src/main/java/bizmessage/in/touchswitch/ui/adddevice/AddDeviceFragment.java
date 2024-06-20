@@ -34,10 +34,11 @@ import com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator;
 import bizmessage.in.touchswitch.LocaleHelper;
 import bizmessage.in.touchswitch.MainActivity;
 import bizmessage.in.touchswitch.R;
-import bizmessage.in.touchswitch.app.OnlookApplication;
+import bizmessage.in.touchswitch.app.TouchApplication;
 import bizmessage.in.touchswitch.databinding.FragmentAddDeviceBinding;
 import bizmessage.in.touchswitch.retrofit.WebServiceCaller;
 import bizmessage.in.touchswitch.ui.auth.LoginActivity;
+import bizmessage.in.touchswitch.ui.auth.SplashActivity;
 import bizmessage.in.touchswitch.utils.AppConstant;
 import bizmessage.in.touchswitch.utils.DialogButtonClickListener;
 import bizmessage.in.touchswitch.utils.PreferenceData;
@@ -49,7 +50,7 @@ import retrofit2.Response;
 
 import static bizmessage.in.touchswitch.utils.AppConstant.DBG;
 
-public class AddDeviceFragment extends Fragment implements DialogButtonClickListener {
+public class AddDeviceFragment extends Fragment  {
 
     private final String TAG = AddDeviceFragment.class.getSimpleName();
     private AddDeviceViewModel addDeviceViewModel;
@@ -68,7 +69,7 @@ public class AddDeviceFragment extends Fragment implements DialogButtonClickList
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        if (PreferenceData.getLoginid().equalsIgnoreCase("demo@onlook.in")) {
+        if (PreferenceData.getLoginid().equalsIgnoreCase("demo@justlight.in")) {
             getActivity().finish();
         }
 
@@ -133,18 +134,18 @@ public class AddDeviceFragment extends Fragment implements DialogButtonClickList
         }
         binding.textDevice.setText(resources.getString(R.string.newdev_add_head));///////////////
         binding.textAddDevice.setText(resources.getString(R.string.scan_description));///////////////
-        binding.btnScanBarCode.setText(resources.getString(R.string.button_scan_barcode));///////////////
-        binding.btnaddBarCode.setText(resources.getString(R.string.wifi_btn_submit));///////////////
+        binding.btnScanBarCode.setText(resources.getString(R.string.newdev_add_head));///////////////
+     //   binding.btnaddBarCode.setText(resources.getString(R.string.wifi_btn_submit));///////////////
 
-        binding.btnaddBarCode.setVisibility(View.GONE);
-        binding.edtDevid.setVisibility(View.GONE);
+       // binding.btnaddBarCode.setVisibility(View.GONE);
+       // binding.edtDevid.setVisibility(View.GONE);
 
-        if (OnlookApplication.SELECTED_DEVICE != null) {
-            if (!PreferenceData.getEmail().equals(OnlookApplication.SELECTED_DEVICE.getEmail())) {
+        if (TouchApplication.SELECTED_DEVICE != null) {
+            if (!PreferenceData.getEmail().equals(TouchApplication.SELECTED_DEVICE.getEmail())) {
                 Utility.showToast("Not for family member");
                 //   binding.btnScanBarCode.setVisibility(View.GONE);
             }
-            if (!PreferenceData.getEmail().equals(OnlookApplication.SELECTED_DEVICE.getEmail())) {
+            if (!PreferenceData.getEmail().equals(TouchApplication.SELECTED_DEVICE.getEmail())) {
                 Utility.showToast("Not for family member");
                 binding.btnScanBarCode.setVisibility(View.GONE);
             }
@@ -162,33 +163,21 @@ public class AddDeviceFragment extends Fragment implements DialogButtonClickList
             ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION}, 1);
         }
 
-        binding.btnaddBarCode.setOnClickListener(v -> {
-
-
-       if(binding.edtDevid.getText().toString().length() >3){
-           addDevice(binding.edtDevid.getText().toString());
-
-       }
-       else{
-         Utility.showToast("Please Enter Correct Device Id");
-       }
-
-        });
 
         binding.btnScanBarCode.setOnClickListener(v -> {
 
 
-                if (!hasPermissions(getActivity(), PERMISSIONS)) {
-                    ActivityCompat.requestPermissions(getActivity(), PERMISSIONS, PERMISSION_ALL);
-                }
-                IntentIntegrator scanIntegrator = new IntentIntegrator(getActivity());
-                scanIntegrator.setDesiredBarcodeFormats(IntentIntegrator.ALL_CODE_TYPES);
-                IntentIntegrator.forSupportFragment(this).initiateScan();
 
-});
+            Intent intent = new Intent(getActivity(), AddJustlight.class);
+            startActivity(intent);
+            //finish();
 
-        if (OnlookApplication.SELECTED_DEVICE != null) {
-            showDevicePreviewSlider();
+    });
+
+
+
+        if (TouchApplication.SELECTED_DEVICE != null) {
+           // showDevicePreviewSlider();
         }
 
 
@@ -240,7 +229,7 @@ try {
     AddDeviceViewSlidePagerAdapter deviceViewSlidePagerAdapter = new AddDeviceViewSlidePagerAdapter(getActivity());
     viewPager2.setAdapter(deviceViewSlidePagerAdapter);
     viewPager2.setCurrentItem(0, true);
-    viewPager2.setOffscreenPageLimit(OnlookApplication.deviceList.size());
+    viewPager2.setOffscreenPageLimit(TouchApplication.deviceList.size());
     wormDotsIndicator.setViewPager2(viewPager2);
 
     btnOkGotIt.setOnClickListener(v -> popupWindow.dismiss());
@@ -270,7 +259,7 @@ try {
     @Override
     public void onResume() {
         super.onResume();
-        MainActivity.checkConnection(getActivity(), this,resources);
+       // MainActivity.checkConnection(getActivity(), this,resources);
     }
 
     @Override
@@ -280,10 +269,10 @@ try {
             if (result.getContents() == null) {
                 //scan have an error
                 Utility.showSnackBar(binding.btnScanBarCode, resources.getString(R.string.not_proper_device));
-                binding.btnaddBarCode.setVisibility(View.VISIBLE);
+ //               binding.btnaddBarCode.setVisibility(View.VISIBLE);
                 binding.btnScanBarCode.setVisibility(View.GONE);
                 binding.textAddDevice.setVisibility(View.GONE);
-                binding.edtDevid.setVisibility(View.VISIBLE);
+   //             binding.edtDevid.setVisibility(View.VISIBLE);
             } else {
                 //scan is successful
                 if (DBG) Log.i(TAG, "onActivityResult: " + result);
@@ -291,20 +280,20 @@ try {
                 try {
                     contents = data.getStringExtra("SCAN_RESULT");
                     if (contents.length() > 3) {
-                        addDevice(contents);
+       //                 addDevice(contents);
                     } else {
                         Utility.showSnackBar(binding.btnScanBarCode,  resources.getString(R.string.not_proper_device));
-                        binding.btnaddBarCode.setVisibility(View.VISIBLE);
+                   //     binding.btnaddBarCode.setVisibility(View.VISIBLE);
                         binding.btnScanBarCode.setVisibility(View.GONE);
                         binding.textAddDevice.setVisibility(View.GONE);
-                        binding.edtDevid.setVisibility(View.VISIBLE);
+                     //   binding.edtDevid.setVisibility(View.VISIBLE);
                     }
                 } catch (NullPointerException exception) {
                     Utility.showSnackBar(binding.btnScanBarCode,  resources.getString(R.string.not_proper_device));
-                    binding.btnaddBarCode.setVisibility(View.VISIBLE);
+                   // binding.btnaddBarCode.setVisibility(View.VISIBLE);
                     binding.btnScanBarCode.setVisibility(View.GONE);
                     binding.textAddDevice.setVisibility(View.GONE);
-                    binding.edtDevid.setVisibility(View.VISIBLE);
+                  //  binding.edtDevid.setVisibility(View.VISIBLE);
                     exception.printStackTrace();
                 }
             }
@@ -312,7 +301,7 @@ try {
             super.onActivityResult(requestCode, resultCode, data);
         }
     }
-
+/*
     private void addDevice(String deviceSSID) {
         if (!Utility.isNetworkAvailable(getActivity())) {
             Utility.showSnackBar(binding.btnScanBarCode,  resources.getString(R.string.no_internet_connection));
@@ -323,7 +312,7 @@ try {
                     PreferenceData.getLatitude(),
                     PreferenceData.getLongitude(),
                     PreferenceData.getLoctime(),
-                    "Million-" + deviceSSID,
+                    "Light-" + deviceSSID,
                     deviceSSID);
             responseCall.enqueue(new Callback<ResponseBody>() {
                 @Override
@@ -382,7 +371,7 @@ try {
     public void onNegativeButtonClicked(int dialogIdentifier) {
         openWifiSettings();
     }
-
+*/
     private void openWifiSettings() {
         final Intent intent = new Intent(Intent.ACTION_MAIN, null);
         intent.addCategory(Intent.CATEGORY_LAUNCHER);

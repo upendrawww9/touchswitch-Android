@@ -92,7 +92,7 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
 
                 }else{
                     if(binding.edtMobileNumber.getText().length()==10 && !Validation.isValidEmail(binding.edtEmail.getText().toString().trim())) {
-                        binding.edtEmail.setText(binding.edtMobileNumber.getText() + "@onlook.in");
+                        binding.edtEmail.setText(binding.edtMobileNumber.getText() + "@onload.in");
                     }
                     }
 

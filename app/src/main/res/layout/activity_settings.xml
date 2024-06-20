@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/background"
@@ -60,14 +61,14 @@
 
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/cardDeviceName"
+                    android:id="@+id/cardlanguage"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_1sdp"
                     android:layout_marginEnd="@dimen/_1sdp"
 
                     android:elevation="@dimen/_5sdp"
-                    app:cardBackgroundColor="@color/card_view_gb"
+                    app:cardBackgroundColor="@color/cbg3"
                     android:foreground="?android:attr/selectableItemBackground"
                     app:cardCornerRadius="@dimen/_5sdp"
                     app:cardElevation="@dimen/_2sdp"
@@ -76,438 +77,6 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent">
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="@dimen/_8sdp"
-                        android:layout_marginBottom="@dimen/_8sdp">
-
-                        <ImageView
-                            android:id="@+id/imgDeviceName"
-                            android:layout_marginStart="@dimen/_10sdp"
-                            android:layout_marginTop="@dimen/_2sdp"
-                            android:src="@drawable/dashimg"
-                            android:layout_width="@dimen/_30sdp"
-                            android:layout_height="@dimen/_30sdp"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                        <TextView
-                            android:id="@+id/textDeviceName"
-                            android:layout_width="0dp"
-                            android:textStyle="bold"
-                            android:layout_height="wrap_content"
-                            android:text="@string/setup_loc_name"
-                            android:layout_marginStart="@dimen/_10sdp"
-                            android:gravity="start"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/_16ssp"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toEndOf="@+id/imgDeviceName"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-
-
-                        <EditText
-                            android:id="@+id/edt_device"
-                            style="@style/editTextViewStyle"
-                            android:layout_width="@dimen/_100sdp"
-                            android:background="@color/white1"
-                            android:layout_marginStart="@dimen/_10sdp"
-                            android:layout_marginTop="@dimen/_13sdp"
-                            android:layout_marginRight="@dimen/_5sdp"
-                            android:textCursorDrawable="@drawable/color_cursor"
-
-                            android:hint="@string/setup_hint_name"
-
-                            android:imeOptions="actionDone"
-                            android:textColor="@color/black"
-                            android:inputType="text"
-                            android:lines="1"
-                            android:paddingTop="@dimen/_4sdp"
-                            android:maxLength="5"
-
-                            android:paddingBottom="@dimen/_6sdp"
-                            android:textSize="@dimen/_14ssp"
-                            app:layout_constraintEnd_toStartOf="@+id/btnUpdate"
-                            app:layout_constraintStart_toEndOf="@+id/imgDeviceName"
-                            app:layout_constraintTop_toBottomOf="@+id/textDeviceName" />
-
-                        <Button
-                            android:id="@+id/btnUpdate"
-                            style="@style/Widget.AppCompat.Button.Colored"
-                            android:layout_width="@dimen/_120sdp"
-                            android:layout_height="@dimen/_40sdp"
-                            android:textColor="@android:color/white"
-                            android:layout_marginTop="@dimen/_12sdp"
-
-                            android:layout_marginEnd="@dimen/_10sdp"
-                            android:layout_marginLeft="@dimen/_30sdp"
-
-                            android:layout_gravity="center_horizontal"
-                            android:background="@drawable/shape"
-
-                            android:gravity="center"
-                            android:padding="@dimen/_12sdp"
-                            android:paddingTop="@dimen/_8sdp"
-                            android:paddingBottom="@dimen/_8sdp"
-                            android:text="@string/setup_update"
-
-                            android:textSize="@dimen/_10ssp"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/textDeviceName" />
-
-
-
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                </androidx.cardview.widget.CardView>
-
-
-
-
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/cardAlertType"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_1sdp"
-                    android:layout_marginEnd="@dimen/_1sdp"
-
-                    android:elevation="@dimen/_5sdp"
-                    android:foreground="?android:attr/selectableItemBackground"
-                    app:cardCornerRadius="@dimen/_5sdp"
-                    app:cardElevation="@dimen/_2sdp"
-                    app:cardMaxElevation="@dimen/_3sdp"
-                    app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/card_view_gb"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/cardDeviceName">
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="@dimen/_8sdp"
-                        android:layout_marginBottom="@dimen/_8sdp">
-
-                        <ImageView
-                            android:id="@+id/imgAlertType"
-                            android:layout_width="@dimen/_30sdp"
-                            android:layout_height="@dimen/_30sdp"
-                            android:layout_marginStart="@dimen/_10sdp"
-                            android:layout_marginTop="@dimen/_2sdp"
-                            android:src="@drawable/plugon"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                        <TextView
-                            android:id="@+id/textAlertType"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="@dimen/_10sdp"
-                            android:gravity="start"
-
-                            android:text="@string/motion_pow_alt"
-                            android:textColor="@color/colorPrimary"
-                            android:textSize="@dimen/_16ssp"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toEndOf="@+id/imgAlertType"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                        <View
-                            android:id="@+id/viewLineAlertType"
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:layout_marginTop="@dimen/_10sdp"
-                            android:background="@color/dark_gray"
-                            app:layout_constraintTop_toBottomOf="@+id/textAlertType" />
-
-                        <TextView
-                            android:id="@+id/textPowerAlert"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_5sdp"
-                            android:layout_marginStart="@dimen/_10sdp"
-                            android:gravity="start"
-                            android:text="@string/plug_activate"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/_14ssp"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/viewLineAlertType" />
-
-                        <androidx.appcompat.widget.AppCompatCheckBox
-                            android:id="@+id/checkPowerAlerts"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:buttonTint="@color/colorPrimary"
-                            android:layout_marginTop="@dimen/_5sdp"
-                            android:layout_marginEnd="@dimen/_10sdp"
-                            android:textSize="@dimen/_16ssp"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/viewLineAlertType" />
-
-                        <TextView
-                            android:id="@+id/textPowring"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_10sdp"
-                            android:layout_marginStart="@dimen/_10sdp"
-                            android:gravity="start"
-                            android:text="@string/motion_ringtone"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/_12ssp"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/textPowerAlert" />
-
-
-                        <androidx.appcompat.widget.AppCompatCheckBox
-                            android:id="@+id/checkpowerring"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:buttonTint="@color/colorPrimary"
-                            android:layout_marginTop="@dimen/_5sdp"
-                            android:layout_marginEnd="@dimen/_10sdp"
-                            android:textSize="@dimen/_16ssp"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/checkPowerAlerts" />
-
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                </androidx.cardview.widget.CardView>
-
-
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/cardAlertFire"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_1sdp"
-                    android:layout_marginEnd="@dimen/_1sdp"
-
-                    android:elevation="@dimen/_5sdp"
-                    android:foreground="?android:attr/selectableItemBackground"
-                    app:cardCornerRadius="@dimen/_5sdp"
-                    app:cardElevation="@dimen/_2sdp"
-                    app:cardMaxElevation="@dimen/_3sdp"
-                    app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/card_view_gb"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/cardAlertType">
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="@dimen/_8sdp"
-                        android:layout_marginBottom="@dimen/_8sdp">
-
-                        <ImageView
-                            android:id="@+id/imgAlertTypeFire"
-                            android:layout_width="@dimen/_40sdp"
-                            android:layout_height="@dimen/_40sdp"
-                            android:layout_marginStart="@dimen/_10sdp"
-                            android:layout_marginTop="@dimen/_1sdp"
-                            android:src="@drawable/fire"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                        <TextView
-                            android:id="@+id/textAlertTypeFire"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="@dimen/_5sdp"
-                            android:gravity="start"
-
-                            android:text="@string/fire_alt"
-                            android:textColor="@color/colorPrimary"
-                            android:textSize="@dimen/_16ssp"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toEndOf="@+id/imgAlertTypeFire"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                        <View
-                            android:id="@+id/viewLineAlertTypeFire"
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:layout_marginTop="@dimen/_10sdp"
-                            android:background="@color/dark_gray"
-                            app:layout_constraintTop_toBottomOf="@+id/textAlertTypeFire" />
-
-
-                        <TextView
-                            android:id="@+id/textFireAlertact"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_5sdp"
-                            android:layout_marginBottom="@dimen/_10sdp"
-                            android:layout_marginStart="@dimen/_10sdp"
-                            android:gravity="start"
-                            android:text="@string/motion_activate"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/_14ssp"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/viewLineAlertTypeFire" />
-
-
-                        <androidx.appcompat.widget.AppCompatCheckBox
-                            android:id="@+id/checkFireAlerts"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:buttonTint="@color/colorPrimary"
-                            android:layout_marginTop="@dimen/_5sdp"
-                            android:layout_marginEnd="@dimen/_10sdp"
-                            android:textSize="@dimen/_16ssp"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/viewLineAlertTypeFire" />
-
-
-
-                        <TextView
-                            android:id="@+id/textautoHooter"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_10sdp"
-                            android:layout_marginStart="@dimen/_10sdp"
-                            android:gravity="start"
-                            android:text="@string/fire_dect_autobuzz_head"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/_12ssp"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/textFireAlertact" />
-
-
-                        <androidx.appcompat.widget.AppCompatCheckBox
-                            android:id="@+id/checkautohooter"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:buttonTint="@color/colorPrimary"
-                            android:layout_marginTop="@dimen/_5sdp"
-                            android:layout_marginEnd="@dimen/_10sdp"
-                            android:textSize="@dimen/_16ssp"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/checkFireAlerts" />
-
-
-
-
-                        <TextView
-                            android:id="@+id/textViewhootersubhead"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="@dimen/_10sdp"
-                            android:layout_marginTop="@dimen/_20sdp"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/textautoHooter"
-
-                            android:text="@string/fire_dect_autobuzz_subhead"
-                            android:textColor="@android:color/black"
-                            android:textSize="16sp" />
-                        <TextView
-                            android:id="@+id/textViewhooter_info"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="@dimen/_220sdp"
-                            android:text="2"
-                            android:textColor="@android:color/black"
-                            android:textSize="16sp"
-                            app:layout_constraintStart_toEndOf="@+id/textViewhootersubhead"
-                            android:layout_marginTop="@dimen/_20sdp"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/textautoHooter"
-
-
-
-
-
-                            />
-
-                        <!--            <SeekBar
-                                        android:id="@+id/bseekBar"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="@dimen/_5sdp"
-                                        app:layout_constraintStart_toStartOf="parent"
-                                        app:layout_constraintTop_toBottomOf="@+id/textViewbuzz"
-                                        android:layout_below="@+id/textViewbuzz"
-                                        android:max="60"
-                                        android:min="3"
-                                        android:paddingBottom="15dp"
-                                        android:progress="10"
-                                        android:progressTint="@color/colorPrimary"
-                                        android:thumb="@drawable/seek_bar_thumb"
-                                        android:thumbTint="@color/colorPrimaryDark"/>
-            -->
-                        <SeekBar
-                            android:id="@+id/seekBarfire"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_5sdp"
-                            android:layout_marginBottom="@dimen/_5sdp"
-                            app:layout_constraintTop_toBottomOf="@+id/textViewhootersubhead"
-                            android:max="60"
-                            android:min="1"
-
-                            android:progress="1"
-                            android:progressTint="@color/colorPrimary"
-
-                            android:thumb="@drawable/seek_bar_thumb"
-                            android:thumbTint="@color/colorPrimaryDark" />
-
-
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                </androidx.cardview.widget.CardView>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/cardlanguage"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_1sdp"
-                    android:layout_marginEnd="@dimen/_1sdp"
-                    android:clickable="true"
-                    android:elevation="@dimen/_5sdp"
-                    android:foreground="?android:attr/selectableItemBackground"
-                    app:cardCornerRadius="@dimen/_5sdp"
-                    app:cardElevation="@dimen/_2sdp"
-                    app:cardMaxElevation="@dimen/_3sdp"
-                    app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/card_view_gb"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/cardAlertFire">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
@@ -552,6 +121,7 @@
 
 
 
+
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardWifi"
                     android:layout_width="0dp"
@@ -565,7 +135,7 @@
                     app:cardElevation="@dimen/_2sdp"
                     app:cardMaxElevation="@dimen/_3sdp"
                     app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/card_view_gb"
+                    app:cardBackgroundColor="@color/cbg3"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/cardlanguage">
@@ -608,8 +178,9 @@
 
                 </androidx.cardview.widget.CardView>
 
+
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/cardMotion"
+                    android:id="@+id/cardSmartdevices"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_1sdp"
@@ -621,7 +192,7 @@
                     app:cardElevation="@dimen/_2sdp"
                     app:cardMaxElevation="@dimen/_3sdp"
                     app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/card_view_gb"
+                    app:cardBackgroundColor="@color/cbg3"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/cardWifi">
@@ -633,29 +204,30 @@
                         android:layout_marginBottom="@dimen/_8sdp">
 
                         <ImageView
-                            android:id="@+id/imgMotion"
+                            android:id="@+id/imgsmartdevices"
                             android:layout_width="@dimen/_30sdp"
                             android:layout_height="@dimen/_30sdp"
                             android:layout_marginStart="@dimen/_10sdp"
                             android:layout_marginLeft="@dimen/_10sdp"
-                            android:src="@drawable/motion"
+                            android:src="@drawable/group"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <TextView
-                            android:id="@+id/textMotion"
+                            android:id="@+id/textsmartdevices"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/_10sdp"
-                            android:layout_marginLeft="@dimen/_10sdp"
                             android:gravity="start"
-                            android:text="@string/setup_motion_sensitivity"
-                            android:textStyle="bold"
+                            android:layout_marginTop="@dimen/_5sdp"
+
+                            android:text="@string/entsmart"
                             android:textColor="@color/black"
                             android:textSize="@dimen/_12ssp"
+                            android:textStyle="bold"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toEndOf="@+id/imgMotion"
+                            app:layout_constraintStart_toEndOf="@+id/imgsmartdevices"
                             app:layout_constraintTop_toTopOf="parent" />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -663,7 +235,62 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/cardReset"
+                    android:id="@+id/cardMygroup"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:clickable="true"
+                    android:elevation="@dimen/_5sdp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    app:cardElevation="@dimen/_2sdp"
+                    app:cardMaxElevation="@dimen/_3sdp"
+                    app:cardUseCompatPadding="true"
+                    app:cardBackgroundColor="@color/cbg3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardSmartdevices">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_8sdp">
+
+                        <ImageView
+                            android:id="@+id/imggroup"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:src="@drawable/group"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                               app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textgrp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:gravity="start"
+                            android:layout_marginTop="@dimen/_5sdp"
+
+                            android:text="@string/entgrp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12ssp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/imggroup"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardMyswitch"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_1sdp"
@@ -676,10 +303,10 @@
                     app:cardElevation="@dimen/_2sdp"
                     app:cardMaxElevation="@dimen/_3sdp"
                     app:cardUseCompatPadding="true"
-                    app:cardBackgroundColor="@color/card_view_gb"
+                    app:cardBackgroundColor="@color/cbg3"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/cardMotion">
+                    app:layout_constraintTop_toBottomOf="@+id/cardMygroup">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
@@ -688,29 +315,85 @@
                         android:layout_marginBottom="@dimen/_8sdp">
 
                         <ImageView
-                            android:id="@+id/imgReset"
+                            android:id="@+id/imgMyswitch"
                             android:layout_marginStart="@dimen/_10sdp"
                             android:layout_marginLeft="@dimen/_10sdp"
                             android:layout_width="@dimen/_30sdp"
                             android:layout_height="@dimen/_30sdp"
-                            android:src="@drawable/reset"
+                            android:src="@drawable/ic_switch_on"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <TextView
-                            android:id="@+id/textReset"
+                            android:id="@+id/textMyswitch"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/_10sdp"
                             android:layout_marginLeft="@dimen/_10sdp"
                             android:gravity="start"
-                            android:text="@string/reset"
+                            android:text="@string/entswitch"
                             android:textStyle="bold"
                             android:textColor="@color/black"
                             android:textSize="@dimen/_12ssp"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toEndOf="@+id/imgReset"
+                            app:layout_constraintStart_toEndOf="@+id/imgMyswitch"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardSwctogrp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:clickable="true"
+                    android:elevation="@dimen/_5sdp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    app:cardElevation="@dimen/_2sdp"
+                    app:cardMaxElevation="@dimen/_3sdp"
+                    app:cardUseCompatPadding="true"
+                    app:cardBackgroundColor="@color/cbg3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardMyswitch">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_8sdp">
+
+                        <ImageView
+                            android:id="@+id/imgswctogrp"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:src="@drawable/switchgrp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textswctogrp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:gravity="start"
+                            android:layout_marginTop="@dimen/_5sdp"
+
+                            android:text="@string/swtogrp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12ssp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/imgswctogrp"
                             app:layout_constraintTop_toTopOf="parent" />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>

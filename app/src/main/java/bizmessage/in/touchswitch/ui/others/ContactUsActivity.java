@@ -17,7 +17,7 @@ import androidx.databinding.DataBindingUtil;
 
 import bizmessage.in.touchswitch.LocaleHelper;
 import bizmessage.in.touchswitch.R;
-import bizmessage.in.touchswitch.app.OnlookApplication;
+import bizmessage.in.touchswitch.app.TouchApplication;
 import bizmessage.in.touchswitch.databinding.ActivityContactUsBinding;
 import bizmessage.in.touchswitch.retrofit.WebUtility;
 import bizmessage.in.touchswitch.utils.DialogButtonClickListener;
@@ -129,11 +129,11 @@ public class ContactUsActivity extends AppCompatActivity implements View.OnClick
     private void openWhatsApp(){
         String text;
           try {
-              if (OnlookApplication.SELECTED_DEVICE != null) {
+              if (TouchApplication.SELECTED_DEVICE != null) {
 
 
-                  text = "My Email id is " + PreferenceData.getEmail() + " .My device id : " + OnlookApplication.SELECTED_DEVICE.getDevid() + ". My App version is "+PreferenceData.getAppVersion()+" I need help related to Offer: ";// Replace with your message.
-                  toNumber = "91"+OnlookApplication.SELECTED_DEVICE.getRWhatsapp(); // Replace with mobile phone number without +Sign or leading zeros, but with country code
+                  text = "My Email id is " + PreferenceData.getEmail() + " .My device id : " + TouchApplication.SELECTED_DEVICE.getDevid() + ". My App version is "+PreferenceData.getAppVersion()+" I need help related to Offer: ";// Replace with your message.
+                  toNumber = "91"+TouchApplication.SELECTED_DEVICE.getRWhatsapp(); // Replace with mobile phone number without +Sign or leading zeros, but with country code
 
               }
               else{
@@ -154,9 +154,9 @@ public class ContactUsActivity extends AppCompatActivity implements View.OnClick
     private void openEmailApp(){
         String userDetails;
         try {
-            if (OnlookApplication.SELECTED_DEVICE != null) {
+            if (TouchApplication.SELECTED_DEVICE != null) {
 
-                 userDetails = OnlookApplication.SELECTED_DEVICE.toString();
+                 userDetails = TouchApplication.SELECTED_DEVICE.toString();
             }
             else{
                 userDetails = PreferenceData.getEmail();

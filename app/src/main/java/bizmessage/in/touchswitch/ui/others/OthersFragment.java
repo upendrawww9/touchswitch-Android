@@ -29,7 +29,7 @@ import org.jetbrains.annotations.NotNull;
 import bizmessage.in.touchswitch.LocaleHelper;
 import bizmessage.in.touchswitch.MainActivity;
 import bizmessage.in.touchswitch.R;
-import bizmessage.in.touchswitch.app.OnlookApplication;
+import bizmessage.in.touchswitch.app.TouchApplication;
 import bizmessage.in.touchswitch.databinding.FragmentOthersBinding;
 import bizmessage.in.touchswitch.retrofit.WebServiceCaller;
 import bizmessage.in.touchswitch.retrofit.WebUtility;
@@ -50,7 +50,7 @@ import static bizmessage.in.touchswitch.utils.AppConstant.DBG;
 import static bizmessage.in.touchswitch.utils.Utility.DIALOG_LOGOUT_IDENTIFIER;
 
 public class OthersFragment extends Fragment implements DialogButtonClickListener, View.OnClickListener {
-
+  
     private static final String TAG = OthersFragment.class.getSimpleName();
     FragmentOthersBinding binding;
     final Handler handler = new Handler(Looper.getMainLooper());
@@ -86,7 +86,7 @@ public class OthersFragment extends Fragment implements DialogButtonClickListene
         if(PreferenceData.getlanguage().equalsIgnoreCase("ta")) {
             context = LocaleHelper.setLocale(getActivity(), "ta");
             resources = context.getResources();
-            binding.textBuzz.setTextSize(14);
+  //          binding.textBuzz.setTextSize(14);
             binding.textContactUs.setTextSize(14);
             binding.textChangePassword.setTextSize(14);
         }
@@ -101,34 +101,34 @@ public class OthersFragment extends Fragment implements DialogButtonClickListene
         if(PreferenceData.getlanguage().equalsIgnoreCase("ml")) {
             context = LocaleHelper.setLocale(getActivity(), "ml");
             resources = context.getResources();
-          //  binding.textDownloadReport.setTextSize(13);
+            //  binding.textDownloadReport.setTextSize(13);
         }
         if(PreferenceData.getlanguage().equalsIgnoreCase("en")) {
             context = LocaleHelper.setLocale(getActivity(), "en");
             resources = context.getResources();
         }
 
-        if (OnlookApplication.SELECTED_DEVICE != null) {
+        if (TouchApplication.SELECTED_DEVICE != null) {
 
 
-            binding.textDeviceId.setText(resources.getString(R.string.device)+" - " + OnlookApplication.SELECTED_DEVICE.getNikname()+" : "+OnlookApplication.SELECTED_DEVICE.getSsid());
+            binding.textDeviceId.setText(resources.getString(R.string.device)+" - " + TouchApplication.SELECTED_DEVICE.getNikname()+" : "+TouchApplication.SELECTED_DEVICE.getSsid());
 
         }
-       // Utility.showToast(OnlookApplication.SELECTED_DEVICE.getDevid());
-            binding.textChangePassword.setText(resources.getString(R.string.title_change_user_password));///////////////
+        // Utility.showToast(TouchApplication.SELECTED_DEVICE.getDevid());
+        binding.textChangePassword.setText(resources.getString(R.string.title_change_user_password));///////////////
         binding.textTryItOut.setText(resources.getString(R.string.family_login));///////////////
         binding.textshare.setText(resources.getString(R.string.share_my_app));///////////////
         binding.textHelp1.setText(resources.getString(R.string.title_emergency_number));///////////////
-        binding.textDownloadReport.setText(resources.getString(R.string.title_download_reports));///////////////
+       // binding.textDownloadReport.setText(resources.getString(R.string.title_download_reports));///////////////
 
-        binding.textBuzz.setText(resources.getString(R.string.buzz));///////////////
-        binding.textwhatalert.setText(resources.getString(R.string.whatalert));///////////////
+       // binding.textBuzz.setText(resources.getString(R.string.buzz));///////////////
+       // binding.textwhatalert.setText(resources.getString(R.string.whatalert));///////////////
 
         binding.textLan.setText(resources.getString(R.string.language));///////////////
-         binding.textHelp.setText(resources.getString(R.string.help));///////////////
-       binding.textContactUs.setText(resources.getString(R.string.offers));///////////////
-        binding.textAlarm.setText(resources.getString(R.string.title_alarm));/////////
-        binding.textnoti.setText(resources.getString(R.string.mobile_noti));/////////
+       // binding.textHelp.setText(resources.getString(R.string.help));///////////////
+        binding.textContactUs.setText(resources.getString(R.string.offers));///////////////
+      //  binding.textAlarm.setText(resources.getString(R.string.title_alarm));/////////
+       // binding.textnoti.setText(resources.getString(R.string.mobile_noti));/////////
         binding.textyoutube.setText(resources.getString(R.string.youtube_text));/////////
         binding.textsharedevice.setText(resources.getString(R.string.share_my_dev));/////////
 
@@ -141,7 +141,7 @@ public class OthersFragment extends Fragment implements DialogButtonClickListene
         }
 
 
-       // binding.cardVibrate.setVisibility(View.GONE);
+        // binding.cardVibrate.setVisibility(View.GONE);
 
         if (ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // Request both READ_EXTERNAL_STORAGE and WRITE_EXTERNAL_STORAGE so that the
@@ -155,14 +155,14 @@ public class OthersFragment extends Fragment implements DialogButtonClickListene
             ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION}, 1);
         }
 
-        if (OnlookApplication.SELECTED_DEVICE != null){
+        if (TouchApplication.SELECTED_DEVICE != null){
 
 
-             binding.cardFamilyMember.setEnabled(true);
-            if (OnlookApplication.SELECTED_DEVICE.getShareallow().equalsIgnoreCase("true")) {
+            binding.cardFamilyMember.setEnabled(true);
+            if (TouchApplication.SELECTED_DEVICE.getShareallow().equalsIgnoreCase("true")) {
 
 
-                if (PreferenceData.getLoginid().equalsIgnoreCase(OnlookApplication.SELECTED_DEVICE.getIsshared())) {
+                if (PreferenceData.getLoginid().equalsIgnoreCase(TouchApplication.SELECTED_DEVICE.getIsshared())) {
 
                     binding.cardShareDevice.setVisibility(View.GONE);
                 }
@@ -174,16 +174,16 @@ public class OthersFragment extends Fragment implements DialogButtonClickListene
 
             }
 
-          //  bindingMain.switchTheme.setVisibility(View.GONE);
-          //  bindingMain.txtThemeName.setVisibility(View.GONE);
+            //  bindingMain.switchTheme.setVisibility(View.GONE);
+            //  bindingMain.txtThemeName.setVisibility(View.GONE);
         }else {
 
 
 
-            binding.cardnotset.setVisibility(View.GONE);
+         //   binding.cardnotset.setVisibility(View.GONE);
             binding.cardFamilyMember.setVisibility(View.GONE);
-            binding.cardBuzz.setVisibility(View.GONE);
-            binding.cardDownloadReports.setVisibility(View.GONE);
+           // binding.cardBuzz.setVisibility(View.GONE);
+           // binding.cardDownloadReports.setVisibility(View.GONE);
 
             binding.cardEmergencyNumber.setVisibility(View.GONE);
             binding.textDeviceId.setText("Device : Not Found");
@@ -193,18 +193,18 @@ public class OthersFragment extends Fragment implements DialogButtonClickListene
 
         binding.cardChangePassword.setOnClickListener(this);
         binding.cardFamilyMember.setOnClickListener(this);
-        binding.cardHelp.setOnClickListener(this);
+       // binding.cardHelp.setOnClickListener(this);
         binding.cardContactUs.setOnClickListener(this);
-        binding.cardBuzz.setOnClickListener(this);
-        binding.cardAlarm.setOnClickListener(this);
-        binding.cardnotset.setOnClickListener(this);
+       // binding.cardBuzz.setOnClickListener(this);
+       // binding.cardAlarm.setOnClickListener(this);
+       // binding.cardnotset.setOnClickListener(this);
         binding.cardShareDevice.setOnClickListener(this);
-         binding.cardDownloadReports.setOnClickListener(this);
+      //  binding.cardDownloadReports.setOnClickListener(this);
         binding.cardEmergencyNumber.setOnClickListener(this);
         binding.cardShareApp.setOnClickListener(this);
         binding.cardlanguage.setOnClickListener(this);
         binding.cardYoutube.setOnClickListener(this);
-        binding.cardwhatalert.setOnClickListener(this);
+      //  binding.cardwhatalert.setOnClickListener(this);
         binding.cardCustomer.setOnClickListener(this);
         binding.cardWebcust.setOnClickListener(this);
 
@@ -215,13 +215,13 @@ public class OthersFragment extends Fragment implements DialogButtonClickListene
                 resources.getString(R.string.button_no),
                 OthersFragment.this, DIALOG_LOGOUT_IDENTIFIER, null));
 
-        if (OnlookApplication.SELECTED_DEVICE != null) {
-          //  handleFamilyUser();
+        if (TouchApplication.SELECTED_DEVICE != null) {
+            //  handleFamilyUser();
         }
         else{
             binding.cardFamilyMember.setVisibility(View.GONE);
-            binding.cardBuzz.setVisibility(View.GONE);
-            binding.cardDownloadReports.setVisibility(View.GONE);
+        //    binding.cardBuzz.setVisibility(View.GONE);
+         //   binding.cardDownloadReports.setVisibility(View.GONE);
             binding.cardShareDevice.setVisibility(View.GONE);
             binding.cardEmergencyNumber.setVisibility(View.GONE);
 
@@ -232,8 +232,8 @@ public class OthersFragment extends Fragment implements DialogButtonClickListene
         if (PreferenceData.getLoginid().equalsIgnoreCase(AppConstant.MEMBER_EMAIL)) {
             binding.cardChangePassword.setVisibility(View.GONE);
             binding.cardFamilyMember.setVisibility(View.GONE);
-            binding.cardBuzz.setVisibility(View.GONE);
-            binding.cardDownloadReports.setVisibility(View.GONE);
+          //  binding.cardBuzz.setVisibility(View.GONE);
+          //  binding.cardDownloadReports.setVisibility(View.GONE);
             binding.cardFamilyMember.setVisibility(View.GONE);
 
 
@@ -244,14 +244,14 @@ public class OthersFragment extends Fragment implements DialogButtonClickListene
 
         }
 
-       // Utility.showToast(OnlookApplication.SELECTED_DEVICE.getIsshared());
+        // Utility.showToast(TouchApplication.SELECTED_DEVICE.getIsshared());
 
-        if (OnlookApplication.SELECTED_DEVICE != null) {
-            if (PreferenceData.getLoginid().equalsIgnoreCase(OnlookApplication.SELECTED_DEVICE.getIsshared())) {
+        if (TouchApplication.SELECTED_DEVICE != null) {
+            if (PreferenceData.getLoginid().equalsIgnoreCase(TouchApplication.SELECTED_DEVICE.getIsshared())) {
 
 
-               binding.cardShareDevice.setVisibility(View.GONE);
-               binding.cardChangePassword.setVisibility(View.GONE);
+                binding.cardShareDevice.setVisibility(View.GONE);
+                binding.cardChangePassword.setVisibility(View.GONE);
 
             }
             handleFamilyUser();
@@ -276,18 +276,18 @@ public class OthersFragment extends Fragment implements DialogButtonClickListene
             startActivity(intentDownloadReport);
         }else if (dialogIdentifier == DIALOG_LOGOUT_IDENTIFIER){
             //PreferenceData.clear();
-            if (OnlookApplication.SELECTED_DEVICE != null) {
-                if (PreferenceData.getLoginid().equalsIgnoreCase(OnlookApplication.SELECTED_DEVICE.getIsshared())) {
+            if (TouchApplication.SELECTED_DEVICE != null) {
+                if (PreferenceData.getLoginid().equalsIgnoreCase(TouchApplication.SELECTED_DEVICE.getIsshared())) {
 
 
-                  PreferenceData.clear();
-                 PreferenceData.setLogin(false);
+                    PreferenceData.clear();
+                    PreferenceData.setLogin(false);
 
                 }
             }
 
             PreferenceData.setLogin(false);
-//            OnlookApplication.SELECTED_DEVICE.setDevid("");
+//            TouchApplication.SELECTED_DEVICE.setDevid("");
             Intent intent = new Intent(getActivity(), LoginActivity.class);
             startActivity(intent);
             getActivity().finish();
@@ -309,7 +309,7 @@ public class OthersFragment extends Fragment implements DialogButtonClickListene
     }
 
     private void handleFamilyUser(){
-        if (PreferenceData.getLoginid().equalsIgnoreCase(OnlookApplication.SELECTED_DEVICE.getRFamEmail())) {
+        if (PreferenceData.getLoginid().equalsIgnoreCase(TouchApplication.SELECTED_DEVICE.getRFamEmail())) {
             binding.cardShareDevice.setVisibility(View.GONE);
             binding.cardFamilyMember.setVisibility(View.GONE);
             MainActivity.bindingMain.navView.findViewById(R.id.navigation_add_device).setEnabled(false);
@@ -332,7 +332,7 @@ public class OthersFragment extends Fragment implements DialogButtonClickListene
 
     private void setBuzz() {
         if (!Utility.isNetworkAvailable(getActivity())) {
-            Utility.showSnackBar(binding.cardBuzz, getString(R.string.no_internet_connection));
+            Utility.showSnackBar(binding.cardEmergencyNumber, getString(R.string.no_internet_connection));
         } else {
             Utility.showProgress(getActivity());
             WebServiceCaller.ApiInterface service = WebServiceCaller.getClient();
@@ -343,7 +343,7 @@ public class OthersFragment extends Fragment implements DialogButtonClickListene
                     if (response.isSuccessful()) {
 
                     } else {
-                        Utility.showSnackBar(binding.cardBuzz, response.message());
+                        Utility.showSnackBar(binding.cardEmergencyNumber, response.message());
                     }
                     Utility.hideProgress();
                 }
@@ -363,7 +363,7 @@ public class OthersFragment extends Fragment implements DialogButtonClickListene
 
     private void showNoDeviceFound() {
         //  binding.cardSetting.setEnabled(false);
-      //  Utility.showSnackBar(binding.cardAlerts, getString(R.string.device_not_found));
+        //  Utility.showSnackBar(binding.cardAlerts, getString(R.string.device_not_found));
         Utility.showErrorLong(resources.getString(R.string.message_nodevice));
     }
 
@@ -373,7 +373,7 @@ public class OthersFragment extends Fragment implements DialogButtonClickListene
             case R.id.cardChangePassword:
                 if (PreferenceData.getLoginid().equalsIgnoreCase("demo@onlook.in")){
 
-                     Utility.showToast(resources.getString(R.string.not_for_demo));
+                    Utility.showToast(resources.getString(R.string.not_for_demo));
                 }
                 else {
                     Intent intentUserAccount = new Intent(getActivity(), UserAccountActivity.class);
@@ -396,40 +396,10 @@ public class OthersFragment extends Fragment implements DialogButtonClickListene
                 getActivity().startActivity(sendIntent);
                 break;
 
-            case R.id.cardwhatalert:
-                if (OnlookApplication.SELECTED_DEVICE != null) {
-
-                    if (PreferenceData.getLoginid().equalsIgnoreCase("demo@onlook.in")) {
-                        Utility.showToast(resources.getString(R.string.not_for_demo));
-                    } else {
-                        Intent intnt = new Intent(getActivity(), Whatsalert.class);
-                        startActivity(intnt);
-                        getActivity().overridePendingTransition(0, 0);
-                    }
-                }
-
-                break;
-
-            case R.id.cardAlarm:
-                Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
-                i.putExtra(AlarmClock.EXTRA_MESSAGE, "Onlook Alarm");
-
-                startActivity(i);
-                break;
-
-            case R.id.cardnotset:
-                Intent settingsIntent = new Intent(Settings.ACTION_APP_NOTIFICATION_SETTINGS)
-                        .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-                        .putExtra(Settings.EXTRA_APP_PACKAGE, getActivity().getPackageName())
-                        .putExtra(Settings.EXTRA_CHANNEL_ID, 99);
-                startActivity(settingsIntent);
-
-                break;
-
 
             case R.id.cardFamilyMember:
 
-                if (OnlookApplication.SELECTED_DEVICE != null) {
+                if (TouchApplication.SELECTED_DEVICE != null) {
 
                     if (PreferenceData.getLoginid().equalsIgnoreCase("demo@onlook.in")){
                         Utility.showToast(resources.getString(R.string.not_for_demo));
@@ -457,9 +427,9 @@ public class OthersFragment extends Fragment implements DialogButtonClickListene
 
 
 
-                        Intent intentShareDevice = new Intent(getActivity(), AddCustomer.class);
-                        startActivity(intentShareDevice);
-                        getActivity().overridePendingTransition(0, 0);
+                    Intent intentShareDevice = new Intent(getActivity(), AddCustomer.class);
+                    startActivity(intentShareDevice);
+                    getActivity().overridePendingTransition(0, 0);
 
 
 
@@ -494,7 +464,7 @@ public class OthersFragment extends Fragment implements DialogButtonClickListene
 
             case R.id.cardShareDevice:
 
-                if (OnlookApplication.SELECTED_DEVICE != null) {
+                if (TouchApplication.SELECTED_DEVICE != null) {
 
                     if (PreferenceData.getLoginid().equalsIgnoreCase("demo@onlook.in")){
                         Utility.showToast(resources.getString(R.string.not_for_demo));
@@ -517,7 +487,7 @@ public class OthersFragment extends Fragment implements DialogButtonClickListene
 
 
             case R.id.cardEmergencyNumber:
-                if (OnlookApplication.SELECTED_DEVICE != null) {
+                if (TouchApplication.SELECTED_DEVICE != null) {
 
                     if (PreferenceData.getLoginid().equalsIgnoreCase("demo@onlook.in")){
                         Utility.showToast(resources.getString(R.string.not_for_demo));
@@ -530,7 +500,7 @@ public class OthersFragment extends Fragment implements DialogButtonClickListene
                         getActivity().overridePendingTransition(0, 0);
                     }
 
-                    }
+                }
                 else{
                     showNoDeviceFound();
                 }
@@ -555,63 +525,7 @@ public class OthersFragment extends Fragment implements DialogButtonClickListene
 
 
 
-            case R.id.cardBuzz:
-
-
-                binding.cardBuzz.setEnabled(false);
-                binding.cardBuzz.setCardBackgroundColor(Color.GRAY);
-                handler.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-
-                        binding.cardBuzz.setEnabled(true);
-                        binding.cardBuzz.setCardBackgroundColor(Color.WHITE);
-
-                        //Do something after 100ms
-                    }
-                }, 2500);
-
-                if (OnlookApplication.SELECTED_DEVICE != null) {
-
-                    if (PreferenceData.getLoginid().equalsIgnoreCase("demo@onlook.in")){
-                        Utility.showToast(resources.getString(R.string.not_for_demo));
-
-                    }
-                    else {
-
-                        setBuzz();
-                    }
-                }
-                else{
-                    showNoDeviceFound();
-                }
-
-                break;
-            case R.id.cardDownloadReports:
-                if (OnlookApplication.SELECTED_DEVICE != null) {
-
-                    if (PreferenceData.getLoginid().equalsIgnoreCase("demo@onlook.in")){
-                        Utility.showToast(resources.getString(R.string.not_for_demo));
-
-                    }
-                    else {
-                        Utility.showDialog(getActivity(), resources.getString(R.string.title_confirm_download_report)
-                                , resources.getString(R.string.dialog_message), resources.getString(R.string.button_yes)
-                                , resources.getString(R.string.button_no), this,
-                                Utility.DIALOG_DOWNLOAD_REPORT_IDENTIFIER, "");
-
-
-
-
-
-                    }
-                    }
-                else{
-            showNoDeviceFound();
-        }
-
-                break;
-        }
+         }
     }
 
     public void checkConnection(Context context, DialogButtonClickListener listener) {

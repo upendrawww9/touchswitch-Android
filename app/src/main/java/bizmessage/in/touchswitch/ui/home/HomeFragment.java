@@ -1,12 +1,12 @@
-
 package bizmessage.in.touchswitch.ui.home;
 
+import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.content.res.Resources;
-import android.graphics.Color;
 import android.net.Uri;
 import android.net.wifi.ScanResult;
 import android.net.wifi.WifiManager;
@@ -21,6 +21,7 @@ import android.view.ViewGroup;
 
 
 import androidx.annotation.NonNull;
+import androidx.core.app.ActivityCompat;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
@@ -35,7 +36,7 @@ import java.util.List;
 import bizmessage.in.touchswitch.LocaleHelper;
 import bizmessage.in.touchswitch.MainActivity;
 import bizmessage.in.touchswitch.R;
-import bizmessage.in.touchswitch.app.OnlookApplication;
+import bizmessage.in.touchswitch.app.TouchApplication;
 import bizmessage.in.touchswitch.databinding.FragmentHomeBinding;
 import bizmessage.in.touchswitch.location.LocationUpdatesService;
 import bizmessage.in.touchswitch.model.DashboardRequestResponse;
@@ -44,17 +45,16 @@ import bizmessage.in.touchswitch.permissionManagerViews.Permission;
 import bizmessage.in.touchswitch.permissionManagerViews.PermissionManagerInstance;
 import bizmessage.in.touchswitch.permissionManagerViews.PermissionManagerListener;
 import bizmessage.in.touchswitch.retrofit.WebServiceCaller;
-import bizmessage.in.touchswitch.ui.alerts.AlertListActivity;
+//import bizmessage.in.touchswitch.ui.alerts.AlertListActivity;
+import bizmessage.in.touchswitch.ui.adddevice.AddJustlight;
 import bizmessage.in.touchswitch.ui.auth.LoginActivity;
-import bizmessage.in.touchswitch.ui.mydevice.MyDeviceActivity;
-import bizmessage.in.touchswitch.ui.settings.LedActivity;
-import bizmessage.in.touchswitch.ui.settings.LightOneActivity;
-import bizmessage.in.touchswitch.ui.settings.PlugActivity;
-import bizmessage.in.touchswitch.ui.settings.SettingsActivity;
-import bizmessage.in.touchswitch.ui.settings.SirenActivity;
-import bizmessage.in.touchswitch.ui.settings.TimeAlertSettingActivity;
-import bizmessage.in.touchswitch.ui.settings.VibrationCtrl;
-import bizmessage.in.touchswitch.ui.settings.WifiAndHotSpotActivity;
+//import bizmessage.in.touchswitch.ui.settings.LedActivity;
+import bizmessage.in.touchswitch.ui.settings.TouchDimmer;
+import bizmessage.in.touchswitch.ui.settings.TouchSwitch;
+
+
+//import bizmessage.in.touchswitch.ui.settings.LightTwoActivity;
+
 import bizmessage.in.touchswitch.utils.AppConstant;
 import bizmessage.in.touchswitch.utils.DialogButtonClickListener;
 import bizmessage.in.touchswitch.utils.PreferenceData;
@@ -68,6 +68,11 @@ import retrofit2.Response;
 import static android.content.Context.WIFI_SERVICE;
 import static bizmessage.in.touchswitch.MainActivity.bindingMain;
 import static bizmessage.in.touchswitch.utils.AppConstant.DBG;
+
+import com.vimalcvs.switchdn.DayNightSwitch;
+import com.vimalcvs.switchdn.DayNightSwitchListener;
+import com.vimalcvs.switchdn.DayNightSwitch;
+import com.vimalcvs.switchdn.DayNightSwitchListener;
 
 public class HomeFragment extends Fragment implements View.OnClickListener, PermissionManagerListener, DialogButtonClickListener {
 
@@ -87,138 +92,229 @@ public class HomeFragment extends Fragment implements View.OnClickListener, Perm
         binding = DataBindingUtil.inflate(
                 inflater, R.layout.fragment_home, container, false);
 
-        binding.cardAlertMode.setOnClickListener(this);
-        binding.cardAlerts.setOnClickListener(this);
-        binding.cardLed.setOnClickListener(this);
+        // binding.cardAlertMode.setOnClickListener(this);
+        // binding.cardAlerts.setOnClickListener(this);
+        //     binding.cardLed.setOnClickListener(this);
         binding.cardLight1.setOnClickListener(this);
-        binding.cardLight2.setOnClickListener(this);
-        binding.cardWebView.setOnClickListener(this);
-        binding.cardDeviceStatus.setOnClickListener(this);
+
+
+       // binding.cardWebView.setOnClickListener(this);
+       // binding.cardDeviceStatus.setOnClickListener(this);
         binding.imgLeftArrow.setOnClickListener(this);
         binding.imgRightArrow.setOnClickListener(this);
-        binding.cardSetting.setOnClickListener(this);
-        binding.cardVibration.setOnClickListener(this);
-        binding.cardBuzzer.setOnClickListener(this);
+   //    binding.cardSetting.setOnClickListener(this);
+        // binding.cardVibration.setOnClickListener(this);
+        //binding.cardBuzzer.setOnClickListener(this);
+
 
 //PreferenceData.setDarkTheme(true);
-      //  PreferenceData.setDarkTheme(false);
+        //  PreferenceData.setDarkTheme(false);
 
-        if(PreferenceData.getlanguage().equalsIgnoreCase("hi")) {
+        if (PreferenceData.getlanguage().equalsIgnoreCase("hi")) {
             context = LocaleHelper.setLocale(getActivity(), "hi");
             resources = context.getResources();
-                   }
-        if(PreferenceData.getlanguage().equalsIgnoreCase("ka")) {
+        }
+        if (PreferenceData.getlanguage().equalsIgnoreCase("ka")) {
             context = LocaleHelper.setLocale(getActivity(), "ka");
             resources = context.getResources();
-            binding.textDeviceAlertModeStatus.setTextSize(9);
+            //   binding.textDeviceAlertModeStatus.setTextSize(9);
         }
-        if(PreferenceData.getlanguage().equalsIgnoreCase("ta")) {
+        if (PreferenceData.getlanguage().equalsIgnoreCase("ta")) {
             context = LocaleHelper.setLocale(getActivity(), "ta");
             resources = context.getResources();
-            binding.textDeviceAlertMode.setTextSize(14);
-            binding.textDeviceStatus.setTextSize(15);
-            binding.textDeviceAlertModeStatus.setTextSize(8);
+            // binding.textDeviceAlertMode.setTextSize(14);
+          // binding.textDeviceStatus.setTextSize(15);
+            //  binding.textDeviceAlertModeStatus.setTextSize(8);
 
             binding.textNoDevice.setTextSize(14);
 
 
         }
-        if(PreferenceData.getlanguage().equalsIgnoreCase("te")) {
+        if (PreferenceData.getlanguage().equalsIgnoreCase("te")) {
             context = LocaleHelper.setLocale(getActivity(), "te");
             resources = context.getResources();
         }
-        if(PreferenceData.getlanguage().equalsIgnoreCase("bn")) {
+        if (PreferenceData.getlanguage().equalsIgnoreCase("bn")) {
             context = LocaleHelper.setLocale(getActivity(), "bn");
             resources = context.getResources();
         }
-        if(PreferenceData.getlanguage().equalsIgnoreCase("ml")) {
+        if (PreferenceData.getlanguage().equalsIgnoreCase("ml")) {
             context = LocaleHelper.setLocale(getActivity(), "ml");
             resources = context.getResources();
             binding.textNoDevice.setTextSize(15);
-            binding.textDeviceAlertMode.setTextSize(12);
+            //   binding.textDeviceAlertMode.setTextSize(12);
         }
-        if(PreferenceData.getlanguage().equalsIgnoreCase("en")) {
+        if (PreferenceData.getlanguage().equalsIgnoreCase("en")) {
             context = LocaleHelper.setLocale(getActivity(), "en");
             resources = context.getResources();
         }
 
-        if(PreferenceData.getlanguage().equalsIgnoreCase("mr")) {
+        if (PreferenceData.getlanguage().equalsIgnoreCase("mr")) {
             context = LocaleHelper.setLocale(getActivity(), "mr");
             resources = context.getResources();
         }
 
-        if(PreferenceData.getlanguage().equalsIgnoreCase("gu")) {
+        if (PreferenceData.getlanguage().equalsIgnoreCase("gu")) {
             context = LocaleHelper.setLocale(getActivity(), "gu");
             resources = context.getResources();
         }
 
-        binding.imgWhatsApp.setVisibility(View.GONE);
-        binding.textDeviceAlertMode.setText(resources.getString(R.string.motion_sensor));
-        binding.textDeviceLed.setText(resources.getString(R.string.led));
+       // binding.imgWhatsApp.setVisibility(View.GONE);
+        //  binding.textDeviceAlertMode.setText(resources.getString(R.string.motion_sensor));
+        // binding.textDeviceLed.setText(resources.getString(R.string.led));
+        //  binding.textDeviceLight1.setText(resources.getString(R.string.light_1));
+        //  binding.textDeviceLight2.setText(resources.getString(R.string.light_2));
+        // binding.textDeviceLight3.setText(resources.getString(R.string.settings));
+        // binding.textDeviceAlert.setText(resources.getString(R.string.alerts));
+       // binding.textDeviceStatus.setText(resources.getString(R.string.device_status));
         binding.textDeviceLight1.setText(resources.getString(R.string.light_1));
-        binding.textDeviceLight2.setText(resources.getString(R.string.light_2));
-        binding.textDeviceLight3.setText(resources.getString(R.string.settings));
-        binding.textDeviceAlert.setText(resources.getString(R.string.alerts));
-        binding.textDeviceStatus.setText(resources.getString(R.string.device_status));
-        binding.textDeviceVibration.setText(resources.getString(R.string.vibration));
-        binding.textDeviceBuzzer.setText(resources.getString(R.string.buzzer));
-        binding.imgDeviceshare.setVisibility(View.GONE);
+      //    binding.textSetting.setText(resources.getString(R.string.settings));
 
+        // binding.textDeviceVibration.setText(resources.getString(R.string.vibration));
+        //binding.textDeviceBuzzer.setText(resources.getString(R.string.buzzer));
+        //  binding.imgDeviceshare.setVisibility(View.GONE);
+
+        DayNightSwitch dayNightSwitch1 = (DayNightSwitch)binding.touchdash;
+
+        dayNightSwitch1.setDuration(450);
+        // dayNightSwitch.setIsNight(ThemeSettings.getInstance(this).nightMode);
+        dayNightSwitch1.setListener(new DayNightSwitchListener() {
+            @Override
+            public void onSwitch(boolean touchdash) {
+
+                Utility.showToast(touchdash+" <-TouchDash");
+            }
+        });
 
 
 
         binding.viewPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
             @Override
             public void onPageSelected(int position) {
-                OnlookApplication.SELECTED_DEVICE = OnlookApplication.deviceList.get(position);
-                OnlookApplication.currentDevicePosition = position;
+                TouchApplication.SELECTED_DEVICE = TouchApplication.deviceList.get(position);
+                TouchApplication.currentDevicePosition = position;
                 PreferenceData.setCurrentSelectedPage(position);
 
-                binding.textDeviceAlertCount.setText(OnlookApplication.deviceList.get(position).getAlertsCount());
+                //        binding.textDeviceAlertCount.setText(TouchApplication.deviceList.get(position).getAlertsCount());
                 if (DBG)
-                    Log.d("CURRENT DEVICE POS ", "" + OnlookApplication.currentDevicePosition);
+                    Log.d("CURRENT DEVICE POS ", "" + TouchApplication.currentDevicePosition);
                 if (DBG)
-                    Log.d("CURRENT DEVICE SIZE ", "" + OnlookApplication.deviceList.size());
-                if (OnlookApplication.currentDevicePosition == 0) {
+                    Log.d("CURRENT DEVICE SIZE ", "" + TouchApplication.deviceList.size());
+                if (TouchApplication.currentDevicePosition == 0) {
                     binding.imgLeftArrow.setVisibility(View.GONE);
                 } else {
                     binding.imgLeftArrow.setVisibility(View.VISIBLE);
                 }
-                if (OnlookApplication.currentDevicePosition == OnlookApplication.deviceList.size() - 1) {
+                if (TouchApplication.currentDevicePosition == TouchApplication.deviceList.size() - 1) {
                     binding.imgRightArrow.setVisibility(View.GONE);
                 } else {
                     binding.imgRightArrow.setVisibility(View.VISIBLE);
                 }
 
-                if (OnlookApplication.SELECTED_DEVICE.getLwt().equalsIgnoreCase("planned")) {
+                if (TouchApplication.SELECTED_DEVICE.getLwt().equalsIgnoreCase("planned")) {
                     disableClick();
                 } else {
                     enableClick();
                 }
                 handleFamilyUser();
-                setAlertMode();
 
+                setAlertMode();
             }
         });
 
         permissionManagerInstance = new PermissionManagerInstance(getActivity());
 
         //to remove fragment in backstack so that backbutton will close
-      //  FragmentManager fm =  getActivity().getSupportFragmentManager();
-     //   for (int i = 0; i < fm.getBackStackEntryCount(); ++i) {
-       //     fm.popBackStack();
+        //  FragmentManager fm =  getActivity().getSupportFragmentManager();
+        //   for (int i = 0; i < fm.getBackStackEntryCount(); ++i) {
+        //     fm.popBackStack();
         //}
 
-        getActivity().startService(new Intent(getActivity(),LocationUpdatesService.class));
+        getActivity().startService(new Intent(getActivity(), LocationUpdatesService.class));
 
         getWifiScanList();
         return binding.getRoot();
     }
 
-    private void openWhatsApp(String x){
+    private void setAlertMode() {
+
+        if(TouchApplication.SELECTED_DEVICE.getIsshared().length()>5) {
+
+           // binding.imgDeviceshare.setVisibility(View.VISIBLE);
+
+        }
+        else{
+           // binding.imgDeviceshare.setVisibility(View.GONE);
+        }
+
+        if(TouchApplication.SELECTED_DEVICE.getOffer().equalsIgnoreCase("1")){
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.ilmc.xyz/onlook/setoffer.php?email="+PreferenceData.getEmail()));
+            startActivity(browserIntent);
+        }
+        if(TouchApplication.SELECTED_DEVICE.getOffer().equalsIgnoreCase("2")){
+
+
+            openWhatsApp("1");
+        }
+
+
+        if(  TouchApplication.deviceList.size() >0)
+        {
+            if(PreferenceData.isDarkTheme()){
+                // nothing
+            }
+            else {
+                //   binding.cardSetting.setCardBackgroundColor(Color.parseColor("#fffff0"));
+
+                //    binding.cardAlerts.setCardBackgroundColor(Color.parseColor("#fffff0"));
+            }
+
+
+
+        }
+
+        if(TouchApplication.SELECTED_DEVICE.getRoomtype().equalsIgnoreCase("My Hall") ) {
+    binding.cardLight1.setBackgroundResource(R.drawable.hall1);
+    binding.textDeviceLight1.setText(TouchApplication.SELECTED_DEVICE.getRoomtype());
+        }
+
+        if(TouchApplication.SELECTED_DEVICE.getRoomtype().equalsIgnoreCase("My Bedroom") ) {
+            binding.cardLight1.setBackgroundResource(R.drawable.bedroom1);
+            binding.textDeviceLight1.setText(TouchApplication.SELECTED_DEVICE.getRoomtype());
+        }
+
+
+        ////////////////////222222222
+        if(TouchApplication.SELECTED_DEVICE.getIslighton().equalsIgnoreCase("on") ) {
+      binding.imgDeviceLight1.setImageResource(R.drawable.ledon);
+            if(PreferenceData.isDarkTheme()){
+             //orig   binding.cardLight1.setCardBackgroundColor(Color.parseColor("#d3d3d3"));
+              //  binding.cardLight1.setCardBackgroundColor(Color.parseColor("#000F00"));
+
+            }
+            else {
+             //orig  binding.cardLight1.setCardBackgroundColor(Color.parseColor("#ffdf32"));
+              //  binding.cardLight1.setCardBackgroundColor(Color.parseColor("#000F00"));
+            }
+
+        }
+        else
+        {
+            binding.cardLight1.setCardBackgroundColor(getResources().getColor(R.color.card_view_gb));
+        }
+        /////////////////////////////222222222222
+
+
+
+
+
+
+    }
+
+    private void openWhatsApp(String x) {
 
         WebServiceCaller.ApiInterface service = WebServiceCaller.getClient();
-        Call<ResponseBody> responseCall = service.resetwhatsappoffer( PreferenceData.getEmail(),x);
+        Call<ResponseBody> responseCall = service.resetwhatsappoffer(PreferenceData.getEmail(), x);
 
         responseCall.enqueue(new Callback<ResponseBody>() {
             @Override
@@ -226,16 +322,16 @@ public class HomeFragment extends Fragment implements View.OnClickListener, Perm
                 if (response.isSuccessful()) {
 
                 } else {
-                    Utility.showSnackBar(binding.cardWebView,response.message());
+             //       Utility.showSnackBar(binding.cardWebView, response.message());
                 }
                 Utility.hideProgress();
             }
 
             @Override
             public void onFailure(@NotNull Call<ResponseBody> call, @NotNull Throwable t) {
-                if(DBG) Log.i(TAG, "onFailure: " + t.toString());
+                if (DBG) Log.i(TAG, "onFailure: " + t.toString());
                 Utility.hideProgress();
-                if(t.toString().contains("UnknownHostException")){
+                if (t.toString().contains("UnknownHostException")) {
                     Utility.showToast(resources.getString(R.string.status_website));
                 }
             }
@@ -245,276 +341,31 @@ public class HomeFragment extends Fragment implements View.OnClickListener, Perm
         String text;
         String toNumber;
         try {
-            if (OnlookApplication.SELECTED_DEVICE != null) {
+            if (TouchApplication.SELECTED_DEVICE != null) {
 
 
-                text = "My Email id is " + PreferenceData.getEmail() + " .My device id : " + OnlookApplication.SELECTED_DEVICE.getDevid() + ". My App version is "+PreferenceData.getAppVersion()+" Regarding Offer : ";// Replace with your message.
-                if(OnlookApplication.SELECTED_DEVICE.getCall911().length()>8) {
-                    toNumber = "91" + OnlookApplication.SELECTED_DEVICE.getCall911(); // Replace with mobile phone number without +Sign or leading zeros, but with country code
-                }
-                else{//if user is not set to dealer by mistake it will route to support number
-                    text = "My support Not Set.My Email id is " + PreferenceData.getEmail() + " .My device id : " + OnlookApplication.SELECTED_DEVICE.getDevid() + ". My App version is "+PreferenceData.getAppVersion()+" Regarding Offer : ";// Replace with your message.
+                text = "My Email id is " + PreferenceData.getEmail() + " .My device id : " + TouchApplication.SELECTED_DEVICE.getDevid() + ". My App version is " + PreferenceData.getAppVersion() + " Regarding Offer : ";// Replace with your message.
+                if (TouchApplication.SELECTED_DEVICE.getCall911().length() > 8) {
+                    toNumber = "91" + TouchApplication.SELECTED_DEVICE.getCall911(); // Replace with mobile phone number without +Sign or leading zeros, but with country code
+                } else {//if user is not set to dealer by mistake it will route to support number
+                    text = "My support Not Set.My Email id is " + PreferenceData.getEmail() + " .My device id : " + TouchApplication.SELECTED_DEVICE.getDevid() + ". My App version is " + PreferenceData.getAppVersion() + " Regarding Offer : ";// Replace with your message.
 
                     toNumber = "917900119635"; // Replace with mobile phone number without +Sign or leading zeros, but with country code
 
                 }
-            }
-            else{ // ffor a new user or demo user
-                text = "My Email id is " + PreferenceData.getEmail() + ". My App version is "+PreferenceData.getAppVersion()+" I need Support for : ";// Replace with your message.
+            } else { // ffor a new user or demo user
+                text = "My Email id is " + PreferenceData.getEmail() + ". My App version is " + PreferenceData.getAppVersion() + " I need Support for : ";// Replace with your message.
                 toNumber = "917900119635"; // Replace with mobile phone number without +Sign or leading zeros, but with country code
 
             }
             Intent intent = new Intent(Intent.ACTION_VIEW);
-            intent.setData(Uri.parse("http://api.whatsapp.com/send?phone="+toNumber +"&text="+text));
+            intent.setData(Uri.parse("http://api.whatsapp.com/send?phone=" + toNumber + "&text=" + text));
             startActivity(intent);
-        }
-        catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-
-    private void setAlertMode() {
-
-        if(OnlookApplication.SELECTED_DEVICE.getIsshared().length()>5) {
-
-            binding.imgDeviceshare.setVisibility(View.VISIBLE);
-
-        }
-        else{
-            binding.imgDeviceshare.setVisibility(View.GONE);
-        }
-
-        if(OnlookApplication.SELECTED_DEVICE.getOffer().equalsIgnoreCase("1")){
-            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.ilmc.xyz/onlook/setoffer.php?email="+PreferenceData.getEmail()));
-            startActivity(browserIntent);
-        }
-        if(OnlookApplication.SELECTED_DEVICE.getOffer().equalsIgnoreCase("2")){
-
-
-          openWhatsApp("1");
-        }
-
-
-
-        if (PreferenceData.getLoginid().equalsIgnoreCase(OnlookApplication.SELECTED_DEVICE.getRFamEmail())) {
-         //   binding.textDeviceAlertModeStatus.setText(OnlookApplication.SELECTED_DEVICE.getAlertModef());
-            if (OnlookApplication.SELECTED_DEVICE.getAlertModef().contains("Blocked")) {
-                binding.textDeviceAlertModeStatus.setText(resources.getString(R.string.blocked));
-
-                binding.textDeviceAlertModeStatus.setTextColor(Color.MAGENTA);
-                binding.imgDeviceAlertMode2.setImageDrawable(getResources().getDrawable(R.drawable.ic_silent_icon));
-            } else if (OnlookApplication.SELECTED_DEVICE.getAlertModef().contains("RingMode")) {
-                binding.textDeviceAlertModeStatus.setText(resources.getString(R.string.ring_mode));
-                binding.textDeviceAlertModeStatus.setTextColor(Color.BLUE);
-                binding.imgDeviceAlertMode2.setImageDrawable(getResources().getDrawable(R.drawable.ring));
-
-            } else if (OnlookApplication.SELECTED_DEVICE.getAlertModef().contains("VibrationMode")) {
-                binding.textDeviceAlertModeStatus.setText(resources.getString(R.string.vibration_mode));
-                binding.textDeviceAlertModeStatus.setTextColor(Color.GRAY);
-
-                binding.imgDeviceAlertMode2.setImageDrawable(getResources().getDrawable(R.drawable.ic_action_vibration));
-            }else if (OnlookApplication.SELECTED_DEVICE.getAlertMode().contains("Alerts Off")) {
-                binding.textDeviceAlertModeStatus.setText(resources.getString(R.string.alert_off));
-                binding.imgDeviceAlertMode2.setImageDrawable(getResources().getDrawable(R.drawable.ic_silent_icon));
-            }
-            else {
-                binding.imgDeviceAlertMode2.setImageDrawable(getResources().getDrawable(R.drawable.ic_action_online));
-            }
-        }
-
-
-
-        if(  OnlookApplication.deviceList.size() ==1)
-        {
-         //   binding.cardSetting.setCardBackgroundColor(Color.parseColor("#FFAF89AF"));
-        //    binding.cardAlerts.setCardBackgroundColor(Color.parseColor("#FFB1A2A2"));
-
-        }
-        if(  OnlookApplication.deviceList.size() >0)
-        {
-            if(PreferenceData.isDarkTheme()){
-                // nothing
-            }
-            else {
-             //   binding.cardSetting.setCardBackgroundColor(Color.parseColor("#fffff0"));
-
-            //    binding.cardAlerts.setCardBackgroundColor(Color.parseColor("#fffff0"));
-            }
-
-
-
-        }
-
-
-        if(OnlookApplication.SELECTED_DEVICE.getRActTimer().equalsIgnoreCase("1") && OnlookApplication.SELECTED_DEVICE.getLwt().equalsIgnoreCase("Online")) {
-               if(PreferenceData.isDarkTheme()){
-                binding.cardAlertMode.setCardBackgroundColor(Color.parseColor("#fbeaf3"));
-            }
-else {                             /////////////////////////111111111111111
-                   binding.cardAlertMode.setCardBackgroundColor(Color.parseColor("#F1EDD107"));
-               }
-        }
-        else
-        {
-            binding.cardAlertMode.setCardBackgroundColor(getResources().getColor(R.color.card_view_gb));
-        }
-
-
-
-        if(OnlookApplication.SELECTED_DEVICE.getIsledon().equalsIgnoreCase("on") ) {
-
-            if(PreferenceData.isDarkTheme()){
-                binding.cardLed.setCardBackgroundColor(Color.parseColor("#fbeaf3"));
-            }
-else {                                      //////////////////1111111111111111
-                binding.cardLed.setCardBackgroundColor(Color.parseColor("#F1EDD107"));
-            }
-        }
-        else
-        {
-            binding.cardLed.setCardBackgroundColor(getResources().getColor(R.color.card_view_gb));
-        }
-
-            ////////////////////222222222
-        if(OnlookApplication.SELECTED_DEVICE.getIslighton().equalsIgnoreCase("on") ) {
-
-    if(PreferenceData.isDarkTheme()){
-                binding.cardLight1.setCardBackgroundColor(Color.parseColor("#d3d3d3"));
-            }
-else {
-            binding.cardLight1.setCardBackgroundColor(Color.parseColor("#ffdf32"));
-        }
-
-        }
-        else
-        {
-            binding.cardLight1.setCardBackgroundColor(getResources().getColor(R.color.card_view_gb));
-        }
-         /////////////////////////////222222222222
-        if(OnlookApplication.SELECTED_DEVICE.getIsplughotteron().equalsIgnoreCase("on") ) {
-
-       if(PreferenceData.isDarkTheme()){
-                binding.cardLight2.setCardBackgroundColor(Color.parseColor("#d3d3d3"));
-            }
-else {
-           binding.cardLight2.setCardBackgroundColor(Color.parseColor("#ffdf32"));
-
-
-       }
-        }
-        if(OnlookApplication.SELECTED_DEVICE.getIsplughotteron().equalsIgnoreCase("off") ) {
-            binding.cardLight2.setCardBackgroundColor(getResources().getColor(R.color.card_view_gb));
-        }
-
-
-
-          if(OnlookApplication.SELECTED_DEVICE.getisHooter().equalsIgnoreCase("true")) {
-               binding.imgDeviceLight2.setImageDrawable(getResources().getDrawable(R.drawable.siren));
-           binding.textDeviceLight2.setText(resources.getString(R.string.light_3));
-
-      }
-        if(OnlookApplication.SELECTED_DEVICE.getisHooter().equalsIgnoreCase("false")) {
-              binding.imgDeviceLight2.setImageDrawable(getResources().getDrawable(R.drawable.ic_plug));
-         //    binding.cardLight2.setCardBackgroundColor(getResources().getColor(R.color.card_view_gb));
-           binding.textDeviceLight2.setText(resources.getString(R.string.light_2));
-         }
-
-
-             if(OnlookApplication.SELECTED_DEVICE.getIsbuzzeron().equalsIgnoreCase("on") ) {
-//////////////////////////////////////////////////////////
-           if(PreferenceData.isDarkTheme()){
-                binding.cardBuzzer.setCardBackgroundColor(Color.parseColor("#e8fbfb"));
-            }
-else {
-                               ///////////////////////////////////3333
-               binding.cardBuzzer.setCardBackgroundColor(Color.parseColor("#ffdf32"));
-           }
-        }
-        else
-        {
-            binding.cardBuzzer.setCardBackgroundColor(getResources().getColor(R.color.card_view_gb));
-        }
-
-
-
-        if(OnlookApplication.SELECTED_DEVICE.getisVibratemodel().equalsIgnoreCase("false") || OnlookApplication.SELECTED_DEVICE.getisVibratemodel()==null){
-          // Utility.showToast(resources.getString(R.string.not_ebable));
-        }
-        else {
-            if (OnlookApplication.SELECTED_DEVICE.getRVibAlert().equalsIgnoreCase("true")) {
-
-           if(PreferenceData.isDarkTheme()){
-                binding.cardVibration.setCardBackgroundColor(Color.parseColor("#e8fbfb"));
-            }
-else {
-                          /////////////////////////////////////////////////3333333
-               binding.cardVibration.setCardBackgroundColor(Color.parseColor("#ffdf32"));
-           }
-
-
-            }
-            if (OnlookApplication.SELECTED_DEVICE.getRVibAlert().equalsIgnoreCase("false")) {
-                binding.cardVibration.setCardBackgroundColor(getResources().getColor(R.color.card_view_gb));
-            }
-
-        }
-
-
-
-
-        //     if(  OnlookApplication.SELECTED_DEVICE.getIsplughotteron().equalsIgnoreCase("true")) {
-      //        binding.imgDeviceLight2.setImageDrawable(getResources().getDrawable(R.drawable.siren));
-      //        binding.textDeviceLight2.setText(resources.getString(R.string.light_3));
-
-        //}
-
-       // if(OnlookApplication.SELECTED_DEVICE.getIsplughotteron().equalsIgnoreCase("true")) {
-         //   binding.cardLight2.setCardBackgroundColor(Color.parseColor("#f1c70623"));
-         //   binding.imgDeviceLight2.setImageDrawable(getResources().getDrawable(R.drawable.sirenon));
-       // }
-      //  else{
-        //    binding.cardLight2.setCardBackgroundColor(getResources().getColor(R.color.card_view_gb));
-        //    binding.imgDeviceLight2.setImageDrawable(getResources().getDrawable(R.drawable.siren));
-
-       // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-        if (PreferenceData.getEmail().equalsIgnoreCase(OnlookApplication.SELECTED_DEVICE.getEmail())) {
-
-           // binding.textDeviceAlertModeStatus.setText(OnlookApplication.SELECTED_DEVICE.getAlertMode());
-            if (OnlookApplication.SELECTED_DEVICE.getAlertMode().contains("Blocked")) {
-                binding.textDeviceAlertModeStatus.setText(resources.getString(R.string.blocked));
-                binding.imgDeviceAlertMode2.setImageDrawable(getResources().getDrawable(R.drawable.ic_silent_icon));
-            } else if (OnlookApplication.SELECTED_DEVICE.getAlertMode().contains("RingMode")) {
-                binding.textDeviceAlertModeStatus.setText(resources.getString(R.string.ring_mode));
-                binding.imgDeviceAlertMode2.setImageDrawable(getResources().getDrawable(R.drawable.ring));
-            } else if (OnlookApplication.SELECTED_DEVICE.getAlertMode().contains("VibrationMode")) {
-                binding.textDeviceAlertModeStatus.setText(resources.getString(R.string.vibration_mode));
-                binding.imgDeviceAlertMode2.setImageDrawable(getResources().getDrawable(R.drawable.ic_action_vibration));
-            } else if (OnlookApplication.SELECTED_DEVICE.getAlertMode().contains("SilentMode")) {
-                binding.textDeviceAlertModeStatus.setText(resources.getString(R.string.silent_mode));
-                binding.imgDeviceAlertMode2.setImageDrawable(getResources().getDrawable(R.drawable.ic_action_silent));
-            }else if (OnlookApplication.SELECTED_DEVICE.getAlertMode().contains("Alerts Off")) {
-                binding.textDeviceAlertModeStatus.setText(resources.getString(R.string.alert_off));
-                binding.imgDeviceAlertMode2.setImageDrawable(getResources().getDrawable(R.drawable.ic_silent_icon));
-            }
-
-
-        }
-
-    }
 
     @Override
     public void onResume() {
@@ -523,14 +374,14 @@ else {
         getDashboardData();
 
         bindingMain.navView.findViewById(R.id.navigation_home).setEnabled(false);
-     //   bindingMain.navView.findViewById(R.id.navigation_home).setVisibility(View.GONE);
+        //   bindingMain.navView.findViewById(R.id.navigation_home).setVisibility(View.GONE);
 
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
                 //Do something after 100ms
                 bindingMain.navView.findViewById(R.id.navigation_home).setEnabled(true);
-              //
+                //
 
             }
         }, 5000);
@@ -541,168 +392,105 @@ else {
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.cardAlerts:
+
+            case R.id.card_top_card:
                 if (isDeviceFound) {
-                    Intent intentAlert = new Intent(getActivity(), AlertListActivity.class);
-                    startActivity(intentAlert);
-                    getActivity().overridePendingTransition(0, 0);
-                } else {
-                    showNoDeviceFound();
-                }
-                break;
-            case R.id.cardVibration:
+                Utility.showToast(resources.getString(R.string.message_nodevice));
+                Intent intentLight = new Intent(getContext(), AddJustlight.class);
+                startActivity(intentLight);
 
-
-                 if(!PreferenceData.getLoginid().equalsIgnoreCase("demo@onlook.in") || !PreferenceData.getLoginid().equalsIgnoreCase(OnlookApplication.SELECTED_DEVICE.getRFamEmail())) {
-
-                     if (OnlookApplication.SELECTED_DEVICE != null) {
-
-                     if (OnlookApplication.SELECTED_DEVICE.getisVibratemodel().equalsIgnoreCase("false") || OnlookApplication.SELECTED_DEVICE.getisVibratemodel() == null || OnlookApplication.SELECTED_DEVICE.getLwt().equalsIgnoreCase("planned")) {
-                         Utility.showToast(resources.getString(R.string.not_ebable));
-                     } else {
-                         if (OnlookApplication.SELECTED_DEVICE != null) {
-                             Intent intentSiren2 = new Intent(getActivity(), VibrationCtrl.class);
-                             startActivity(intentSiren2);
-
-                         }
-
-                     }
-                 }
-                }
-                else {
-                     Utility.showToast(resources.getString(R.string.not_ebable));
-                     if (OnlookApplication.SELECTED_DEVICE != null) {
-                         Intent intentSiren2 = new Intent(getActivity(), VibrationCtrl.class);
-                        startActivity(intentSiren2);
-
-                    } else {
-                        showNoDeviceFound();
-                    }
-                }
-                break;
-
-            case R.id.cardBuzzer:
-             //   if (OnlookApplication.SELECTED_DEVICE.getLwt().equalsIgnoreCase("planned")) {
-                if (OnlookApplication.SELECTED_DEVICE != null && !OnlookApplication.SELECTED_DEVICE.getLwt().equalsIgnoreCase("planned")) {
-                    Intent intentSiren1 = new Intent(getActivity(), SirenActivity.class);
-                    startActivity(intentSiren1);
-
-                }
-                else{
-                    showNoDeviceFound();
-                }
-                break;
-
-
-
-            case R.id.cardLed:
-                if (isDeviceFound) {
-                if (!OnlookApplication.SELECTED_DEVICE.getRIsLed().equalsIgnoreCase("true")) {
-                    Utility.showToast(resources.getString(R.string.not_ebable));
-
-                                    }
-
-
-                if(OnlookApplication.SELECTED_DEVICE.getRIsLed().equalsIgnoreCase("true")) {
-
-
-                        Intent intentLed = new Intent(getActivity(), LedActivity.class);
-                        startActivity(intentLed);
-                        getActivity().overridePendingTransition(0, 0);
-                    } else {
-                        Utility.showSnackBar(binding.cardAlerts, resources.getString(R.string.device_not_found));
-                    }
-                } else {
-                    showNoDeviceFound();
-                }
-                break;
-            case R.id.cardLight1:
-                if (isDeviceFound) {
-                if (!OnlookApplication.SELECTED_DEVICE.getRIsSwitch().equalsIgnoreCase("true")) {
-                    Utility.showToast(resources.getString(R.string.not_ebable));
-                    //getActivity().finish();
-
-                }
-
-                if(OnlookApplication.SELECTED_DEVICE.getRIsSwitch().equalsIgnoreCase("true")) {
-
-
-                    Intent intentLight = new Intent(getActivity(), LightOneActivity.class);
-                    startActivity(intentLight);
-                    getActivity().overridePendingTransition(0, 0);
-                } else {
-                    showNoDeviceFound();
-                }
         }
-                else{}
-                break;
-            case R.id.cardLight2:
+        break;
+
+        case R.id.cardLight1:
                 if (isDeviceFound) {
-                if (!OnlookApplication.SELECTED_DEVICE.getRIsPlug().equalsIgnoreCase("true")) {
-                    Utility.showToast(resources.getString(R.string.not_ebable));
-                    //getActivity().finish();
+                    if (!TouchApplication.SELECTED_DEVICE.getRIsSwitch().equalsIgnoreCase("true")) {
+                        Utility.showToast(resources.getString(R.string.not_ebable));
+                        //getActivity().finish();
+
+                    }
+
+                    if(TouchApplication.SELECTED_DEVICE.getShow().equalsIgnoreCase("0")){
+
+                        //Utility.showToast(resources.getString(R.string.message_nodevice));
 
 
-                }
+                        Intent intentLight = new Intent(getActivity(), FirstTimeHotSpotActivity.class);
+                        startActivity(intentLight);
+                        getActivity().overridePendingTransition(0, 0);
 
-if(OnlookApplication.SELECTED_DEVICE.getRIsPlug().equalsIgnoreCase("true")) {
+                    }
 
-        Intent intentLight2 = new Intent(getActivity(), PlugActivity.class);
-        startActivity(intentLight2);
-        getActivity().overridePendingTransition(0, 0);
-    } else {
-        Utility.showSnackBar(binding.cardAlerts, resources.getString(R.string.message_nodevice));
-    }
+                    else {
+                        if(TouchApplication.SELECTED_DEVICE.getTouchtype().equalsIgnoreCase("touchswitch"))
+                        {
+                            Intent intentLight = new Intent(getActivity(), TouchSwitch.class);
+                            startActivity(intentLight);
+                        }
+                        if(TouchApplication.SELECTED_DEVICE.getTouchtype().equalsIgnoreCase("dimmer"))
+                        {
+                            Intent intentDimmer = new Intent(getActivity(), TouchDimmer.class);
+                            startActivity(intentDimmer);
+                        }
+
+                     //   Intent intentLight = new Intent(getActivity(), RoomDetailsActivity.class);
+
+
+                        getActivity().overridePendingTransition(0, 0);
+                    }
+
                 } else {
-                    showNoDeviceFound();
+                 Utility.showToast(resources.getString(R.string.message_nodevice));
+                    Intent intentLight = new Intent(getContext(), AddJustlight.class);
+                    startActivity(intentLight);
+
                 }
                 break;
-            case R.id.cardAlertMode:
-                if (isDeviceFound) {
-                    Intent intentAlertMode = new Intent(getActivity(), TimeAlertSettingActivity.class);
-                    startActivity(intentAlertMode);
-                    getActivity().overridePendingTransition(0, 0);
-                } else {
-                    showNoDeviceFound();
-                }
-                break;
-            case R.id.cardDeviceStatus:
+
+
+         /*
+           case R.id.cardDeviceStatus:
+
                 if (isDeviceFound) {
                     Intent intentDeviceStatus = new Intent(getActivity(), MyDeviceActivity.class);
                     startActivity(intentDeviceStatus);
                     getActivity().overridePendingTransition(0, 0);
                 } else {
                     showNoDeviceFound();
+                    Utility.showToast(resources.getString(R.string.message_nodevice));
+                    Intent intentLight = new Intent(getContext(), AddJustlight.class);
+                    startActivity(intentLight);
                 }
                 break;
+          */
             case R.id.imgLeftArrow:
                 if (DBG)
-                    Log.d("CURRENT DEVICE POS ", "" + OnlookApplication.currentDevicePosition);
+                    Log.d("CURRENT DEVICE POS ", "" + TouchApplication.currentDevicePosition);
                 if (DBG)
-                    Log.d("CURRENT DEVICE SIZE ", "" + OnlookApplication.deviceList.size());
+                    Log.d("CURRENT DEVICE SIZE ", "" + TouchApplication.deviceList.size());
 
-                if (OnlookApplication.currentDevicePosition > 0 && OnlookApplication.currentDevicePosition < OnlookApplication.deviceList.size()) {
-                    binding.viewPager.setCurrentItem(OnlookApplication.currentDevicePosition - 1);
+                if (TouchApplication.currentDevicePosition > 0 && TouchApplication.currentDevicePosition < TouchApplication.deviceList.size()) {
+                    binding.viewPager.setCurrentItem(TouchApplication.currentDevicePosition - 1);
                 }
                 break;
             case R.id.imgRightArrow:
                 if (DBG)
-                    Log.d("CURRENT DEVICE POS ", "" + OnlookApplication.currentDevicePosition);
+                    Log.d("CURRENT DEVICE POS ", "" + TouchApplication.currentDevicePosition);
                 if (DBG)
-                    Log.d("CURRENT DEVICE SIZE ", "" + OnlookApplication.deviceList.size());
-                if (OnlookApplication.currentDevicePosition == 0) {
+                    Log.d("CURRENT DEVICE SIZE ", "" + TouchApplication.deviceList.size());
+                if (TouchApplication.currentDevicePosition == 0) {
                     binding.imgRightArrow.setVisibility(View.GONE);
                 } else {
                     binding.imgRightArrow.setVisibility(View.VISIBLE);
                 }
-                if (OnlookApplication.currentDevicePosition < OnlookApplication.deviceList.size() && OnlookApplication.currentDevicePosition >= 0) {
-                    binding.viewPager.setCurrentItem(OnlookApplication.currentDevicePosition + 1);
+                if (TouchApplication.currentDevicePosition < TouchApplication.deviceList.size() && TouchApplication.currentDevicePosition >= 0) {
+                    binding.viewPager.setCurrentItem(TouchApplication.currentDevicePosition + 1);
                 }
                 break;
-            case R.id.cardSetting:
+          /*  case R.id.cardSetting:
                 if (isDeviceFound) {
-               // if (!PreferenceData.getLoginid().equalsIgnoreCase(AppConstant.MEMBER_EMAIL)) {
-                    if (OnlookApplication.SELECTED_DEVICE.getLwt().equalsIgnoreCase("planned")) {
+                    // if (!PreferenceData.getLoginid().equalsIgnoreCase(AppConstant.MEMBER_EMAIL)) {
+                    if (TouchApplication.SELECTED_DEVICE.getLwt().equalsIgnoreCase("planned")) {
                         Intent intentSettings = new Intent(getActivity(), WifiAndHotSpotActivity.class);
                         intentSettings.putExtra("IS_FROM", 1);
                         startActivity(intentSettings);
@@ -712,29 +500,32 @@ if(OnlookApplication.SELECTED_DEVICE.getRIsPlug().equalsIgnoreCase("true")) {
                         startActivity(intentSettings);
                         getActivity().overridePendingTransition(0, 0);
                     }
-              //  }
+                    //  }
                 } else {
-                    showNoDeviceFound();
+                   // showNoDeviceFound();
+                    Utility.showToast(resources.getString(R.string.message_nodevice));
+                    Intent intentLight = new Intent(getContext(), AddJustlight.class);
+                    startActivity(intentLight);
                 }
                 break;
+                */
+
         }
     }
 
     private void handleFamilyUser() {
-        if (PreferenceData.getLoginid().equalsIgnoreCase(OnlookApplication.SELECTED_DEVICE.getRFamEmail())) {
+        if (PreferenceData.getLoginid().equalsIgnoreCase(TouchApplication.SELECTED_DEVICE.getRFamEmail())) {
             bindingMain.navView.findViewById(R.id.navigation_add_device).setEnabled(false);
         } else if (PreferenceData.getLoginid().equalsIgnoreCase(AppConstant.MEMBER_EMAIL)) {
             bindingMain.navView.findViewById(R.id.navigation_add_device).setEnabled(false);
-        } else if (PreferenceData.getLoginid().equalsIgnoreCase("demo@onlook.in")) {
+        } else if (PreferenceData.getLoginid().equalsIgnoreCase("demo@onload.in")) {
             bindingMain.navView.findViewById(R.id.navigation_add_device).setEnabled(false);
         }
     }
 
     private void showNoDeviceFound() {
-       //  binding.cardSetting.setEnabled(false);
-        Utility.showSnackBar(binding.cardAlerts, resources.getString(R.string.message_nodevice));
-
-
+        //  binding.cardSetting.setEnabled(false);
+        Utility.showSnackBar(binding.cardLight1, resources.getString(R.string.message_nodevice));
 
 
     }
@@ -750,6 +541,16 @@ if(OnlookApplication.SELECTED_DEVICE.getRIsPlug().equalsIgnoreCase("true")) {
         WifiManager wifiManager1 = (WifiManager) getActivity().getApplicationContext().getSystemService(WIFI_SERVICE);
         wifiManager1.startScan();
         if (wifiManager1.isWifiEnabled()) {
+            if (ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                // TODO: Consider calling
+                //    ActivityCompat#requestPermissions
+                // here to request the missing permissions, and then overriding
+                //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+                //                                          int[] grantResults)
+                // to handle the case where the user grants the permission. See the documentation
+                // for ActivityCompat#requestPermissions for more details.
+                return;
+            }
             final List<ScanResult> results1 = wifiManager1.getScanResults();
             if (DBG) Log.i(TAG, "getWifiScanList: " + results1.size());
         }
@@ -796,12 +597,12 @@ if(OnlookApplication.SELECTED_DEVICE.getRIsPlug().equalsIgnoreCase("true")) {
 
         @Override
         public Fragment createFragment(int position) {
-            return DeviceViewFragment.getInstance(position, OnlookApplication.deviceList.get(position));
+            return DeviceViewFragment.getInstance(position, TouchApplication.deviceList.get(position));
         }
 
         @Override
         public int getItemCount() {
-            return OnlookApplication.deviceList.size();
+            return TouchApplication.deviceList.size();
         }
     }
 
@@ -854,7 +655,7 @@ if(OnlookApplication.SELECTED_DEVICE.getRIsPlug().equalsIgnoreCase("true")) {
 
  if(initoffer!=null) {
      if (initoffer.equalsIgnoreCase("1")) {
-         Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.ilmc.xyz/onlook/setoffer.php?initoffer=yes&email=" + PreferenceData.getEmail()));
+         Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.ilmc.xyz/justlight/setoffer.php?initoffer=yes&email=" + PreferenceData.getEmail()));
          startActivity(browserIntent);
      }
      if (initoffer.equalsIgnoreCase("2")) {
@@ -865,7 +666,7 @@ if(OnlookApplication.SELECTED_DEVICE.getRIsPlug().equalsIgnoreCase("true")) {
 
  }
 
-                             OnlookApplication.deviceList = (ArrayList<DashboardRequestResponse.Esp>) dashboardRequestResponse.getEsps();
+                             TouchApplication.deviceList = (ArrayList<DashboardRequestResponse.Esp>) dashboardRequestResponse.getEsps();
                          bindingMain.navView.findViewById(R.id.navigation_home).setEnabled(false);
                    //     bindingMain.navView.findViewById(R.id.navigation_home).setVisibility(View.GONE);
                         handler.postDelayed(new Runnable() {
@@ -887,18 +688,18 @@ if(OnlookApplication.SELECTED_DEVICE.getRIsPlug().equalsIgnoreCase("true")) {
 
                             binding.viewPager.setAdapter(deviceViewSlidePagerAdapter);
                             binding.viewPager.setCurrentItem(0, true);
-                            binding.viewPager.setOffscreenPageLimit(OnlookApplication.deviceList.size());
+                            binding.viewPager.setOffscreenPageLimit(TouchApplication.deviceList.size());
 
                             int currentPageSelected = PreferenceData.getCurrentSelectedPage();
                             binding.viewPager.setCurrentItem(currentPageSelected);
 
-                            DashboardRequestResponse.Esp esp = OnlookApplication.deviceList.get(0);
+                            DashboardRequestResponse.Esp esp = TouchApplication.deviceList.get(0);
 
 
                             PreferenceData.setEmail(esp.getEmail());
 
 
-                            if (!OnlookApplication.deviceList.isEmpty()) {
+                            if (!TouchApplication.deviceList.isEmpty()) {
 
 
                             if(esp.getPlayupdate().equalsIgnoreCase("1")) {
@@ -920,7 +721,7 @@ if(OnlookApplication.SELECTED_DEVICE.getRIsPlug().equalsIgnoreCase("true")) {
                                 bindingMain.switchTheme.setVisibility(View.VISIBLE);
                                 bindingMain.txtThemeName.setVisibility(View.VISIBLE);
 
-                                bindingMain.txtUserName.setText(resources.getString(R.string.onlook_cube));
+                                bindingMain.txtUserName.setText(resources.getString(R.string.justlight_cube));
 
                             }
                             //PreferenceData.setEmail(esp.getEmail());
@@ -939,14 +740,14 @@ if(OnlookApplication.SELECTED_DEVICE.getRIsPlug().equalsIgnoreCase("true")) {
                                 } else if (esp.getRIsPushy().equalsIgnoreCase("reset") || esp.getRFamIspushy().equalsIgnoreCase("reset")) {
 
                             //        new RegisterForPushNotificationsAsync().execute();
-                                    if(PreferenceData.getDeviceToken().isEmpty() && esp.getLwt().equalsIgnoreCase("Online") && !esp.getEmail().equalsIgnoreCase("member@onlook.in")) {
+                                    if(PreferenceData.getDeviceToken().isEmpty() && esp.getLwt().equalsIgnoreCase("Online") && !esp.getEmail().equalsIgnoreCase("member@onload.in")) {
                                      new RegisterForPushNotificationsAsync().execute();
                                  }
 
                                 } else if (esp.getRIsPushy().equalsIgnoreCase("renew") || esp.getRFamIspushy().equalsIgnoreCase("renew")) {
 
                                             new RegisterForPushNotificationsAsync().execute();
-                                 //   if(PreferenceData.getDeviceToken().isEmpty() && esp.getLwt().equalsIgnoreCase("Online") && !esp.getEmail().equalsIgnoreCase("member@onlook.in")) {
+                                 //   if(PreferenceData.getDeviceToken().isEmpty() && esp.getLwt().equalsIgnoreCase("Online") && !esp.getEmail().equalsIgnoreCase("member@onload.in")) {
                                    //     new RegisterForPushNotificationsAsync().execute();
                                    // }
 
@@ -979,16 +780,16 @@ if(OnlookApplication.SELECTED_DEVICE.getRIsPlug().equalsIgnoreCase("true")) {
                             deviceFound("", true);
                             if (((MainActivity) getActivity()).isFromMainActivity == 1) {
                                 ((MainActivity) getActivity()).isFromMainActivity = 0;
-                                binding.cardAlerts.performClick();
+                             //   binding.cardAlerts.performClick();
                             }
                             //setThemeData();
                         } else {
                             bindingMain.txtUserName.setText("Welcome Guest");
                             deviceFound(dashboardRequestResponse.getMessage(), false);
-                            Utility.showSnackBar(binding.imgDeviceAlert, dashboardRequestResponse.getMessage());
+                            Utility.showSnackBar(binding.imgDeviceLight1, dashboardRequestResponse.getMessage());
                         }
                     } else {
-                        Utility.showSnackBar(binding.imgDeviceAlert, response.message());
+                        Utility.showSnackBar(binding.imgDeviceLight1, response.message());
                         if (DBG) Log.i(TAG, "onFailure: " + response.message());
                     }
                     Utility.hideProgress();
@@ -1013,29 +814,32 @@ if(OnlookApplication.SELECTED_DEVICE.getRIsPlug().equalsIgnoreCase("true")) {
     }
 
     private void disableClick() {
-        binding.cardAlerts.setEnabled(false);
-        binding.cardLed.setEnabled(false);
+     //   binding.cardAlerts.setEnabled(false);
+      //  binding.cardLed.setEnabled(false);
         binding.cardLight1.setEnabled(false);
-        binding.cardLight2.setEnabled(false);
-        binding.cardSetting.setEnabled(false);
-        binding.cardAlertMode.setEnabled(false);
-        binding.cardWebView.setEnabled(false);
-        binding.cardDeviceStatus.setEnabled(false);
+
+      //  binding.cardLight2.setEnabled(false);
+       // binding.cardSetting.setEnabled(false);
+       // binding.cardAlertMode.setEnabled(false);
+        //binding.cardWebView.setEnabled(false);
+      //  binding.cardDeviceStatus.setEnabled(false);
     }
 
     private void enableClick() {
-        binding.cardAlerts.setEnabled(true);
-        binding.cardLed.setEnabled(true);
+      //  binding.cardAlerts.setEnabled(true);
+      //  binding.cardLed.setEnabled(true);
         binding.cardLight1.setEnabled(true);
-        binding.cardLight2.setEnabled(true);
-        binding.cardSetting.setEnabled(true);
-        binding.cardAlertMode.setEnabled(true);
-        binding.cardWebView.setEnabled(true);
-        binding.cardDeviceStatus.setEnabled(true);
+       // binding.cardLight1.setBackgroundColor(android.R.color.black);
+      //  binding.cardLight2.setEnabled(true);
+   //     binding.cardSetting.setEnabled(true);
+      //  binding.cardAlertMode.setEnabled(true);
+      //  binding.cardWebView.setEnabled(true);
+        //binding.cardDeviceStatus.setEnabled(true);
     }
 
     private void logout(){
        // PreferenceData.clear();
+
          PreferenceData.setLoginid("");
         Intent intentSettings = new Intent(getActivity(), LoginActivity.class);
                  startActivity(intentSettings);
@@ -1044,12 +848,12 @@ if(OnlookApplication.SELECTED_DEVICE.getRIsPlug().equalsIgnoreCase("true")) {
     private void deviceFound(String message, boolean isFound) {
         isDeviceFound = isFound;
         if (isFound) {
-            binding.imgWhatsApp.setVisibility(View.GONE);
+           // binding.imgWhatsApp.setVisibility(View.GONE);
             binding.textNoDevice.setVisibility(View.GONE);
             binding.imgLeftArrow.setVisibility(View.VISIBLE);
             binding.imgRightArrow.setVisibility(View.VISIBLE);
             binding.viewPager.setVisibility(View.VISIBLE);
-            if (OnlookApplication.deviceList.size() < 2) {
+            if (TouchApplication.deviceList.size() < 2) {
                 binding.imgLeftArrow.setVisibility(View.GONE);
                 binding.imgRightArrow.setVisibility(View.GONE);
             } else {
@@ -1060,11 +864,11 @@ if(OnlookApplication.SELECTED_DEVICE.getRIsPlug().equalsIgnoreCase("true")) {
         } else {
           binding.textNoDevice.setText(resources.getString(R.string.message_nodevice));
 
- binding.imgWhatsApp.setVisibility(View.VISIBLE);
+ //binding.imgWhatsApp.setVisibility(View.VISIBLE);
             binding.imgLeftArrow.setVisibility(View.GONE);
             binding.imgRightArrow.setVisibility(View.GONE);
             binding.textNoDevice.setVisibility(View.VISIBLE);
-            binding.textDeviceAlertModeStatus.setText(resources.getString(R.string.alert_off));
+        //    binding.textDeviceAlertModeStatus.setText(resources.getString(R.string.alert_off));
 
             binding.viewPager.setVisibility(View.GONE);
         }
@@ -1073,7 +877,7 @@ if(OnlookApplication.SELECTED_DEVICE.getRIsPlug().equalsIgnoreCase("true")) {
     private void updateDeviceToken(boolean isRegister) {
 
         if (!Utility.isNetworkAvailable(getActivity())) {
-            Utility.showSnackBar(binding.imgDeviceAlert, getString(R.string.no_internet_connection));
+            Utility.showSnackBar(binding.imgDeviceLight1, getString(R.string.no_internet_connection));
         } else {
             WebServiceCaller.ApiInterface service = WebServiceCaller.getClient();
             @SuppressLint("HardwareIds") String mobile_id = "";
@@ -1108,9 +912,9 @@ if(OnlookApplication.SELECTED_DEVICE.getRIsPlug().equalsIgnoreCase("true")) {
     private String isParent() {
         // Check if isFamily Member access or not.
 
-        if (PreferenceData.getEmail().equalsIgnoreCase(OnlookApplication.deviceList.get(0).getEmail())) {
+        if (PreferenceData.getEmail().equalsIgnoreCase(TouchApplication.deviceList.get(0).getEmail())) {
             return "yes";
-        }else if (PreferenceData.getEmail().equalsIgnoreCase("oper@onlook.in")) {
+        }else if (PreferenceData.getEmail().equalsIgnoreCase("oper@onload.in")) {
             return "yes";
         }
         else if (PreferenceData.getLoginid().equalsIgnoreCase(AppConstant.MEMBER_EMAIL)) {
@@ -1124,7 +928,7 @@ if(OnlookApplication.SELECTED_DEVICE.getRIsPlug().equalsIgnoreCase("true")) {
 
         protected Exception doInBackground(Void... params) {
             try {
-                if (OnlookApplication.deviceList.get(0).getParent().equalsIgnoreCase("0")) {
+                if (TouchApplication.deviceList.get(0).getParent().equalsIgnoreCase("0")) {
                     Pushy.listen(getActivity().getApplicationContext());
                     if (!Pushy.isRegistered(getActivity().getApplicationContext())) {
                         Pushy.toggleFCM(true, getActivity().getApplicationContext());
@@ -1140,7 +944,7 @@ if(OnlookApplication.SELECTED_DEVICE.getRIsPlug().equalsIgnoreCase("true")) {
                  updateDeviceToken(true);
 
                 }
-                if (OnlookApplication.deviceList.get(0).getParent().equalsIgnoreCase("1")) {
+                if (TouchApplication.deviceList.get(0).getParent().equalsIgnoreCase("1")) {
                     if (!Pushy.isRegistered(getActivity().getApplicationContext())) {
                         Pushy.toggleFCM(true, getActivity().getApplicationContext());
                         deviceToken = Pushy.register(getActivity().getApplicationContext());

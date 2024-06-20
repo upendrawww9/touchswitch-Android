@@ -21,7 +21,7 @@ import org.jetbrains.annotations.NotNull;
 import bizmessage.in.touchswitch.LocaleHelper;
 import bizmessage.in.touchswitch.MainActivity;
 import bizmessage.in.touchswitch.R;
-import bizmessage.in.touchswitch.app.OnlookApplication;
+import bizmessage.in.touchswitch.app.TouchApplication;
 import bizmessage.in.touchswitch.databinding.ActivityLanguageBinding;
 import bizmessage.in.touchswitch.retrofit.WebServiceCaller;
 import bizmessage.in.touchswitch.utils.DialogButtonClickListener;
@@ -50,7 +50,7 @@ public class Language extends AppCompatActivity implements View.OnClickListener,
 
       //  binding.textDeviceId.setText(resources.getString(R.string.selected_language_head));
 
-        // binding.textPassword1.setText("Password : "+OnlookApplication.SELECTED_DEVICE.getPaswd());
+        // binding.textPassword1.setText("Password : "+TouchApplication.SELECTED_DEVICE.getPaswd());
         setSupportActionBar(binding.toolbar);
         //getSupportActionBar().setTitle(R.string.language);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -74,10 +74,10 @@ public class Language extends AppCompatActivity implements View.OnClickListener,
 
 
 
-        if (OnlookApplication.SELECTED_DEVICE != null) {
+        if (TouchApplication.SELECTED_DEVICE != null) {
 
-        if (OnlookApplication.SELECTED_DEVICE.getRFamEmail() != null) {
-            if (!OnlookApplication.SELECTED_DEVICE.getRFamEmail().isEmpty()) {
+        if (TouchApplication.SELECTED_DEVICE.getRFamEmail() != null) {
+            if (!TouchApplication.SELECTED_DEVICE.getRFamEmail().isEmpty()) {
                  }
             else{
          //       binding.imgSharefam.setVisibility(View.GONE);
@@ -138,11 +138,11 @@ public class Language extends AppCompatActivity implements View.OnClickListener,
         String text;
 String toNumber;
         try {
-            if (OnlookApplication.SELECTED_DEVICE != null) {
+            if (TouchApplication.SELECTED_DEVICE != null) {
 
 
-                text = "My language set to "+PreferenceData.getlanguage()+" My Email id is " + PreferenceData.getEmail() + " .My device id : " + OnlookApplication.SELECTED_DEVICE.getDevid() + ". My App version is "+PreferenceData.getAppVersion()+" Language  help for ";// Replace with your message.
-                toNumber = "91"+OnlookApplication.SELECTED_DEVICE.getRWhatsapp(); // Replace with mobile phone number without +Sign or leading zeros, but with country code
+                text = "My language set to "+PreferenceData.getlanguage()+" My Email id is " + PreferenceData.getEmail() + " .My device id : " + TouchApplication.SELECTED_DEVICE.getDevid() + ". My App version is "+PreferenceData.getAppVersion()+" Language  help for ";// Replace with your message.
+                toNumber = "91"+TouchApplication.SELECTED_DEVICE.getRWhatsapp(); // Replace with mobile phone number without +Sign or leading zeros, but with country code
 
             }
             else{

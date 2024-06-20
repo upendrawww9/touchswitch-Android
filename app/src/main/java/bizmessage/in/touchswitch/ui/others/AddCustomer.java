@@ -4,21 +4,16 @@ import android.annotation.SuppressLint;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
-import java.util.ArrayList;
-
 import bizmessage.in.touchswitch.R;
 import bizmessage.in.touchswitch.databinding.ActivityNewcustomerBinding;
 import bizmessage.in.touchswitch.retrofit.WebServiceCaller;
-import bizmessage.in.touchswitch.retrofit.WebUtility;
 import bizmessage.in.touchswitch.ui.auth.LoginActivity;
-import bizmessage.in.touchswitch.ui.settings.AutoCompleteAdapter;
 import bizmessage.in.touchswitch.utils.AppConstant;
 import bizmessage.in.touchswitch.utils.DialogButtonClickListener;
 import bizmessage.in.touchswitch.utils.PreferenceData;
@@ -28,7 +23,6 @@ import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import retrofit2.http.Query;
 
 public class AddCustomer extends AppCompatActivity implements View.OnClickListener, DialogButtonClickListener {
 
@@ -54,7 +48,7 @@ public class AddCustomer extends AppCompatActivity implements View.OnClickListen
 
                 }else{
                     if(binding.edtMobileNumber.getText().length()==10 && !Validation.isValidEmail(binding.edtEmail.getText().toString().trim())) {
-                        binding.edtEmail.setText(binding.edtMobileNumber.getText() + "@onlook.in");
+                        binding.edtEmail.setText(binding.edtMobileNumber.getText() + "@onload.in");
                     }
                     }
 

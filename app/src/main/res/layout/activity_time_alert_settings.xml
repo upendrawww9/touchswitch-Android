@@ -61,7 +61,7 @@
                     android:layout_marginEnd="@dimen/_1sdp"
 
                     android:elevation="@dimen/_5sdp"
-                    app:cardBackgroundColor="@color/card_view_gb"
+                    app:cardBackgroundColor="@color/cbg3"
                     android:foreground="?android:attr/selectableItemBackground"
                     app:cardCornerRadius="@dimen/_5sdp"
                     app:cardElevation="@dimen/_2sdp"
@@ -81,7 +81,7 @@
                             android:id="@+id/imgTiming"
                             android:layout_marginStart="@dimen/_10sdp"
                             android:layout_marginTop="@dimen/_2sdp"
-                            android:src="@drawable/dashimg"
+                            android:src="@drawable/plugoff"
                             android:layout_width="@dimen/_30sdp"
                             android:layout_height="@dimen/_30sdp"
                             app:layout_constraintStart_toStartOf="parent"
@@ -274,7 +274,7 @@
                     android:layout_marginEnd="@dimen/_1sdp"
 
                     android:elevation="@dimen/_5sdp"
-                    app:cardBackgroundColor="@color/card_view_gb"
+                    app:cardBackgroundColor="@color/cbg3"
                     android:foreground="?android:attr/selectableItemBackground"
                     app:cardCornerRadius="@dimen/_5sdp"
                     app:cardElevation="@dimen/_2sdp"
@@ -358,7 +358,7 @@
                     android:layout_marginEnd="@dimen/_1sdp"
 
                     android:elevation="@dimen/_5sdp"
-                    app:cardBackgroundColor="@color/card_view_gb"
+                    app:cardBackgroundColor="@color/cbg3"
                     android:foreground="?android:attr/selectableItemBackground"
                     app:cardCornerRadius="@dimen/_5sdp"
                     app:cardElevation="@dimen/_2sdp"
@@ -516,7 +516,7 @@
                     android:layout_marginEnd="@dimen/_1sdp"
 
                     android:elevation="@dimen/_5sdp"
-                    app:cardBackgroundColor="@color/card_view_gb"
+                    app:cardBackgroundColor="@color/cbg3"
                     android:foreground="?android:attr/selectableItemBackground"
                     app:cardCornerRadius="@dimen/_5sdp"
                     app:cardElevation="@dimen/_2sdp"
@@ -675,7 +675,7 @@
                     android:layout_marginEnd="@dimen/_1sdp"
 
                     android:elevation="@dimen/_5sdp"
-                    app:cardBackgroundColor="@color/card_view_gb"
+                    app:cardBackgroundColor="@color/cbg3"
                     android:foreground="?android:attr/selectableItemBackground"
                     app:cardCornerRadius="@dimen/_5sdp"
                     app:cardElevation="@dimen/_2sdp"
@@ -855,7 +855,7 @@
                     android:layout_marginEnd="@dimen/_1sdp"
 
                     android:elevation="@dimen/_5sdp"
-                    app:cardBackgroundColor="@color/card_view_gb"
+                    app:cardBackgroundColor="@color/cbg3"
                     android:foreground="?android:attr/selectableItemBackground"
                     app:cardCornerRadius="@dimen/_5sdp"
                     app:cardElevation="@dimen/_2sdp"
@@ -998,7 +998,7 @@
 
 
                     android:elevation="@dimen/_5sdp"
-                    app:cardBackgroundColor="@color/card_view_gb"
+                    app:cardBackgroundColor="@color/cbg3"
                     android:foreground="?android:attr/selectableItemBackground"
                     app:cardCornerRadius="@dimen/_5sdp"
                     app:cardElevation="@dimen/_2sdp"
@@ -1150,7 +1150,7 @@
                     android:layout_marginBottom="@dimen/_80sdp"
 
                     android:elevation="@dimen/_5sdp"
-                    app:cardBackgroundColor="@color/card_view_gb"
+                    app:cardBackgroundColor="@color/cbg3"
                     android:foreground="?android:attr/selectableItemBackground"
                     app:cardCornerRadius="@dimen/_5sdp"
                     app:cardElevation="@dimen/_2sdp"

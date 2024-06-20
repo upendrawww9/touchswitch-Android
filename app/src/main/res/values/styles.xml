@@ -55,6 +55,9 @@
             <item name="android:background">@drawable/button_primary_bg</item>
         </style>-->
 
+
+
+
     <style name="AppTheme.Dialog" parent="Theme.AppCompat.Light.Dialog.Alert">
         <item name="colorAccent">@color/colorPrimary</item>
         <item name="android:textColor">@color/black</item>

@@ -49,12 +49,12 @@
     <uses-permission android:name="com.google.android.gms.permission.AD_ID" tools:node="remove"/>
 
     <application
-        android:name="bizmessage.in.touchswitch.app.OnlookApplication"
+        android:name="bizmessage.in.touchswitch.app.TouchApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/round"
         android:label="@string/app_name"
         android:requestLegacyExternalStorage="true"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/round"
         android:supportsRtl="true"
         android:hardwareAccelerated="false"
         android:theme="@style/AppTheme"
@@ -107,6 +107,7 @@
             android:screenOrientation="portrait" />
 
 
+
         <activity
             android:name="bizmessage.in.touchswitch.ui.others.ShareDevice"
             android:screenOrientation="portrait"
@@ -135,8 +136,9 @@
             android:launchMode="singleTask"
             android:theme="@style/Theme.Transparent" />
 
+
         <activity
-            android:name="bizmessage.in.touchswitch.ui.alerts.AlertListActivity"
+            android:name="bizmessage.in.touchswitch.ui.home.FirstTimeHotSpotActivity"
             android:screenOrientation="portrait" />
 
         <activity
@@ -183,61 +185,46 @@
             android:name="bizmessage.in.touchswitch.ui.others.Whatsalert"
             android:screenOrientation="portrait" />
 
-        <activity
-            android:name="bizmessage.in.touchswitch.ui.settings.TimeAlertSettingActivity"
-            android:screenOrientation="portrait" />
+
 
         <activity
             android:name="bizmessage.in.touchswitch.ui.settings.WifiAndHotSpotActivity"
             android:screenOrientation="portrait" />
 
-        <activity
-            android:name="bizmessage.in.touchswitch.ui.settings.MotionControlSettingsActivity"
-            android:screenOrientation="portrait" />
-
-        <activity
-            android:name="bizmessage.in.touchswitch.ui.settings.LedActivity"
-            android:screenOrientation="portrait" />
 
 
         <activity
-            android:name="bizmessage.in.touchswitch.ui.settings.SirenActivity"
+            android:name="bizmessage.in.touchswitch.ui.settings.TouchDimmer"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name="bizmessage.in.touchswitch.ui.settings.VibrationCtrl"
-            android:screenOrientation="portrait" />
-
-
-        <activity
-            android:name="bizmessage.in.touchswitch.ui.settings.LightOneActivity"
+            android:name="bizmessage.in.touchswitch.ui.settings.TouchSwitch"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name="bizmessage.in.touchswitch.ui.settings.PlugActivity"
+            android:name="bizmessage.in.touchswitch.ui.adddevice.AddJustlight"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="bizmessage.in.touchswitch.ui.settings.Mygroup"
             android:screenOrientation="portrait" />
 
+        <activity
+            android:name="bizmessage.in.touchswitch.ui.settings.MySmartdevices"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="bizmessage.in.touchswitch.ui.settings.SwitctoGrp"
+            android:screenOrientation="portrait" />
 
 
         <activity
             android:name="bizmessage.in.touchswitch.notification.MySwipeclose"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName="bizmessage.in.touchswitch.MainActivity"
             android:screenOrientation="portrait" />
 
-        <receiver
-            android:name=".notification.PushReceiver"
-            android:exported="true">
-            <intent-filter>
-                <!-- Do not modify this -->
-                <action android:name="pushy.me" />
-            </intent-filter>
-            <intent-filter>
-                <!-- Do not modify this -->
-                <action android:name="pushy.me" />
-            </intent-filter>
-        </receiver>
 
-        <service android:name=".notification.RingtonePlayingService" android:stopWithTask="false"/>
+
+        <service android:name="bizmessage.in.touchswitch.notification.RingtonePlayingService" android:stopWithTask="false"/>
 
         <provider
             android:name="androidx.core.content.FileProvider"
@@ -260,55 +247,21 @@
         </service>
 
         <!-- Incoming push notifications will invoke the following BroadcastReceiver -->
-        <receiver
-            android:name=".ui.settings.PushReceiver"
-            android:exported="false">
-            <intent-filter>
-                <!-- Do not modify this -->
-                <action android:name="pushy.me" />
-            </intent-filter>
-            <intent-filter>
-                <!-- Do not modify this -->
-                <action android:name="pushy.me" />
-            </intent-filter>
-        </receiver>
 
         <!-- Pushy Update Receiver -->
         <!-- Do not modify - internal BroadcastReceiver that restarts the listener service -->
-        <receiver
-            android:name="me.pushy.sdk.receivers.PushyUpdateReceiver"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="android.intent.action.PACKAGE_REPLACED" />
-                <data android:scheme="package" />
-            </intent-filter>
-        </receiver>
-        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+                 <uses-library android:name="org.apache.http.legacy" android:required="false"/>
         <!-- Pushy Boot Receiver -->
         <!-- Do not modify - internal BroadcastReceiver that restarts the listener service -->
-        <receiver
-            android:name="me.pushy.sdk.receivers.PushyBootReceiver"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-
-            </intent-filter>
-        </receiver>
 
         <!-- Pushy Socket Service -->
         <!-- Do not modify - internal service -->
-        <service android:name="me.pushy.sdk.services.PushySocketService" android:stopWithTask="false" />
 
         <!-- Pushy Job Service (added in Pushy SDK 1.0.35) -->
         <!-- Do not modify - internal service -->
-        <service
-            android:name="me.pushy.sdk.services.PushyJobService"
-            android:exported="true"
-            android:stopWithTask="false"
-            android:permission="android.permission.BIND_JOB_SERVICE" />
 
         <service
-            android:name=".notification.MyFirebaseMessagingService"
+            android:name="bizmessage.in.touchswitch.notification.MyFirebaseMessagingService"
             android:stopWithTask="false"
             android:exported="false">
 
@@ -321,7 +274,7 @@
             android:directBootAware="true"
             android:enabled="true"
             android:exported="true"
-            android:name=".MillionBootReceiver" android:stopWithTask="false">
+            android:name="bizmessage.in.touchswitch.MillionBootReceiver" android:stopWithTask="false">
             <intent-filter>
 
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
@@ -329,7 +282,7 @@
         </receiver>
 
         <service
-            android:name=".location.LocationUpdatesService"
+            android:name="bizmessage.in.touchswitch.location.LocationUpdatesService"
             android:stopWithTask="false"
             android:enabled="true"
             android:exported="true" />

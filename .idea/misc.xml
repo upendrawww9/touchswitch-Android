@@ -3,12 +3,49 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android/Justlight/app/src/main/res/layout/activity_Add_Justlight.xml" value="0.1" />
+        <entry key="..\:/Android/Justlight/app/src/main/res/layout/activity_add_Justlight.xml" value="0.1" />
+        <entry key="..\:/Android/Justlight/app/src/main/res/layout/activity_addlight.xml" value="0.1" />
+        <entry key="..\:/Android/Justlight/app/src/main/res/layout/activity_firsttime_hotspot.xml" value="0.1" />
+        <entry key="..\:/Android/Justlight/app/src/main/res/layout/activity_main.xml" value="0.11197916666666667" />
+        <entry key="..\:/Android/Justlight/app/src/main/res/layout/activity_settings.xml" value="0.14479166666666668" />
+        <entry key="..\:/Android/Justlight/app/src/main/res/layout/activity_user_account.xml" value="0.1375" />
+        <entry key="..\:/Android/Justlight/app/src/main/res/layout/fragment_add_device.xml" value="0.11770833333333333" />
+        <entry key="..\:/Android/Justlight/app/src/main/res/layout/fragment_device_view.xml" value="0.1" />
+        <entry key="..\:/Android/Justlight/app/src/main/res/layout/fragment_home.xml" value="0.16770833333333332" />
+        <entry key="..\:/Android/Justlight/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1046875" />
         <entry key="..\:/Android/Onlook-Android-App-/app/src/main/res/layout/fragment_others.xml" value="0.1" />
         <entry key="..\:/Android/Onlook/app/src/main/res/layout/activity_newcustomer.xml" value="0.1640625" />
-        <entry key="..\:/Android/Onlook/app/src/main/res/layout/activity_settings.xml" value="0.1" />
-        <entry key="..\:/Android/Onlook/app/src/main/res/layout/fragment_home.xml" value="0.121875" />
         <entry key="..\:/Android/Onlook/app/src/main/res/layout/fragment_others.xml" value="0.1" />
-        <entry key="..\:/Android/Onlook/app/src/main/res/menu/bottom_nav_menu.xml" value="0.13072916666666667" />
+        <entry key="..\:/Android/Switch-Onload/app/src/main/res/layout/activity_alerts_list.xml" value="0.1" />
+        <entry key="..\:/Android/Switch-Onload/app/src/main/res/layout/activity_contact_us.xml" value="0.1" />
+        <entry key="..\:/Android/Switch-Onload/app/src/main/res/layout/activity_family_member.xml" value="0.335" />
+        <entry key="..\:/Android/Switch-Onload/app/src/main/res/layout/activity_language.xml" value="0.1" />
+        <entry key="..\:/Android/Switch-Onload/app/src/main/res/layout/activity_led.xml" value="0.1" />
+        <entry key="..\:/Android/Switch-Onload/app/src/main/res/layout/activity_light_one.xml" value="0.1" />
+        <entry key="..\:/Android/Switch-Onload/app/src/main/res/layout/activity_login.xml" value="0.1796875" />
+        <entry key="..\:/Android/Switch-Onload/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
+        <entry key="..\:/Android/Switch-Onload/app/src/main/res/layout/activity_plug.xml" value="0.15208333333333332" />
+        <entry key="..\:/Android/Switch-Onload/app/src/main/res/layout/activity_registration.xml" value="0.1" />
+        <entry key="..\:/Android/Switch-Onload/app/src/main/res/layout/activity_settings.xml" value="0.1" />
+        <entry key="..\:/Android/Switch-Onload/app/src/main/res/layout/activity_splash.xml" value="0.12708333333333333" />
+        <entry key="..\:/Android/Switch-Onload/app/src/main/res/layout/fragment_add_device.xml" value="0.1015625" />
+        <entry key="..\:/Android/Switch-Onload/app/src/main/res/layout/fragment_device_view.xml" value="0.1" />
+        <entry key="..\:/Android/Switch-Onload/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Android/Switch-Onload/app/src/main/res/layout/fragment_others.xml" value="0.1" />
+        <entry key="..\:/Android/TouchSwitch2/app/src/main/res/drawable/custom_seekbar.xml" value="0.1" />
+        <entry key="..\:/Android/TouchSwitch2/app/src/main/res/drawable/ic_arrow_back_black_24dp.xml" value="0.1" />
+        <entry key="..\:/Android/TouchSwitch2/app/src/main/res/drawable/ic_circle.xml" value="0.1" />
+        <entry key="..\:/Android/TouchSwitch2/app/src/main/res/drawable/ic_double_bed.xml" value="0.1" />
+        <entry key="..\:/Android/TouchSwitch2/app/src/main/res/drawable/ic_science_thermometer.xml" value="0.1" />
+        <entry key="..\:/Android/TouchSwitch2/app/src/main/res/drawable/ic_settings_black_24dp.xml" value="0.1" />
+        <entry key="..\:/Android/TouchSwitch2/app/src/main/res/drawable/thumb.xml" value="0.1" />
+        <entry key="..\:/Android/TouchSwitch2/app/src/main/res/layout/activity_light_one.xml" value="0.1" />
+        <entry key="..\:/Android/TouchSwitch2/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Android/TouchSwitch2/app/src/main/res/layout/activity_room_details.xml" value="0.10416666666666667" />
+        <entry key="..\:/Android/TouchSwitch2/app/src/main/res/layout/activity_touchdimmer.xml" value="0.16770833333333332" />
+        <entry key="..\:/Android/TouchSwitch2/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Android/TouchSwitch2/app/src/main/res/layout/single_room_row.xml" value="0.10416666666666667" />
         <entry key="..\:/Android/onlook/app/src/main/res/layout/activity_contact_us.xml" value="0.1" />
         <entry key="..\:/Android/onlook/app/src/main/res/layout/activity_family_member.xml" value="0.23385416666666667" />
         <entry key="..\:/Android/onlook/app/src/main/res/layout/activity_language.xml" value="0.19947916666666668" />

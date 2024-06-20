@@ -10,7 +10,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import static bizmessage.in.touchswitch.utils.AppConstant.DBG;
 
 import bizmessage.in.touchswitch.MainActivity;
-import bizmessage.in.touchswitch.ui.auth.LoginActivity;
 
 
 public class MySwipeclose extends AppCompatActivity {

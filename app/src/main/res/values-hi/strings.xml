@@ -4,7 +4,7 @@
     <string name="device"  >डिवाइस</string>
 <string name="device_id">डआईडी : </string>
 <string name="device_name">स्थान : </string>
-<string name="onlook_status">स्टेटस :</string>
+<string name="onload_status">स्टेटस :</string>
 <string name="wifi_strength">वाईफाई: </string>
     <string name="battery_strength">बैटरी : </string>
     <string name="lowbattery_alert">ऑनलुक में कम बैटरी</string>
@@ -17,7 +17,7 @@
     <string name="light_3">	सायरन</string>
 <string name="settings">सेटप</string>
 <string name="alerts">अलर्टस</string>
-<string name="device_status">ऑनलुक डिवाइस स्टेटस</string>
+<string name="device_status">स्मार्ट डिवाइस स्थिति</string>
 <!-- Dashboard Menu End -->
 <!-- Light Control -->
 <string name="title_light_one">होम लाइट</string>
@@ -307,8 +307,8 @@
 <!-- LOGIN END -->
 
 <!-- ADD NEW DEVICE INFO -->
-<string name="newdev_add_head">ऐड ओनलूक डिवाइस</string>
-<string name="scan_description">एप्लिकेशन में डिवाइस जोड़ने के लिए कृपया बारकोड को ऑनलुक बॉक्स पर स्कैन करें स्कैन शुरू करने के लिए ऑन क्लिक करें</string>
+<string name="newdev_add_head">जस्ट लाइट जोड़ें</string>
+<string name="scan_description">कृपया एप्लिकेशन में डिवाइस जोड़ने के लिए बॉक्स के साथ दिया गया SSID और पासवर्ड दर्ज करें।\n\n जोड़ने के लिए बटन पर क्लिक करें।.</string>
 
 <string name="button_scan_barcode">स्कैन बरकड़े</string>
 <string name="not_proper_device">डिवाइस आईडी गलत है। कृपया पुन: प्रयास करें</string>
@@ -342,6 +342,11 @@
 <string name="forgot_password_head">फॉरगॉट पासवर्ड</string>
 <string name="forgot_password_text" >नोटिफिकेशन पाने के लिए कृपायाअपना ईमेल दर्ज करें</string>
 <string name="button_recover_my_account" >कंटिन्यू</string>
+
+    <string name="ssidonbox"> बॉक्स पर हॉटस्पॉट एसएसआईडी दर्ज करें </string>
+    <string name="passwdonbox"> बॉक्स पर हॉटस्पॉट पासवर्ड डालें </string>
+
+
 
 <string name="message_login_fail">लॉगिन फ़ैल कृपाया सही ईमेल और पासवर्ड डाले</string>
 
@@ -423,9 +428,22 @@
 
     <string name="dark_theme">रात थीम्स</string>
     <string name="light_theme">दिन थीम्स</string>
-    <string name="onlook_cube">ऑनलुक स्मार्ट क्यूब</string>
-    <string name="onlook_sub">ओनलुक सब्सक्रिप्शन समाप्त</string>
+    <string name="justlight_cube">स्मार्ट बल्ब</string>
+    <string name="justlight_sub">ओनलुक सब्सक्रिप्शन समाप्त</string>
     <string name="sub_end">दिनांक</string>
+
+    <string name="switch1">स्विच 1</string>
+    <string name="switch2">स्विच 2</string>
+    <string name="switch3">स्विच 3</string>
+
+    <string name="entsmart">मेरे स्मार्ट उपकरण</string>
+    <string name="entgrp">समूह</string>
+    <string name="entswitch">मेरे स्विच</string>
+    <string name="swtogrp">समूह स्विच</string>
+
+
+
+
 
     <string name="not_for_demo">डेमो उपयोगकर्ता के लिए नहीं</string>
 

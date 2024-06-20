@@ -16,7 +16,7 @@ import androidx.databinding.DataBindingUtil;
 import bizmessage.in.touchswitch.LocaleHelper;
 import bizmessage.in.touchswitch.MainActivity;
 import bizmessage.in.touchswitch.R;
-import bizmessage.in.touchswitch.app.OnlookApplication;
+import bizmessage.in.touchswitch.app.TouchApplication;
 import bizmessage.in.touchswitch.databinding.ActivitySharedevBinding;
 import bizmessage.in.touchswitch.retrofit.WebServiceCaller;
 import bizmessage.in.touchswitch.retrofit.WebUtility;
@@ -111,7 +111,7 @@ public class ShareDevice extends AppCompatActivity implements View.OnClickListen
             resources = context.getResources();
         }
 
-        binding.textDeviceId.setText(resources.getString(R.string.device)+" - " + OnlookApplication.SELECTED_DEVICE.getNikname()+" : "+OnlookApplication.SELECTED_DEVICE.getSsid());
+        binding.textDeviceId.setText(resources.getString(R.string.device)+" - " + TouchApplication.SELECTED_DEVICE.getNikname()+" : "+TouchApplication.SELECTED_DEVICE.getSsid());
 
         getSupportActionBar().setTitle(resources.getString(R.string.share_my_dev));
 
@@ -124,11 +124,11 @@ public class ShareDevice extends AppCompatActivity implements View.OnClickListen
        handleFamilyUser();
 
 
-        if(OnlookApplication.SELECTED_DEVICE.getIsshared().length() > 5)
+        if(TouchApplication.SELECTED_DEVICE.getIsshared().length() > 5)
 
         {
 
-            binding.edtShareDev.setText(OnlookApplication.SELECTED_DEVICE.getIsshared());
+            binding.edtShareDev.setText(TouchApplication.SELECTED_DEVICE.getIsshared());
          //   binding.textStatusInfo.setText("Status :  Device Shared");
             binding.textStatusInfo.setTextColor(Color.parseColor("#f1c70623"));
             binding.textStatusInfo.setText(resources.getString(R.string.share_start));/////////////
@@ -150,7 +150,7 @@ public class ShareDevice extends AppCompatActivity implements View.OnClickListen
     }
 
     private void handleFamilyUser(){
-        if (PreferenceData.getLoginid().equalsIgnoreCase(OnlookApplication.SELECTED_DEVICE.getRFamEmail())) {
+        if (PreferenceData.getLoginid().equalsIgnoreCase(TouchApplication.SELECTED_DEVICE.getRFamEmail())) {
            binding.btnSharedev.setVisibility(View.GONE);
            binding.imgSharedev.setVisibility(View.GONE);
         }else if (PreferenceData.getLoginid().equalsIgnoreCase(AppConstant.MEMBER_EMAIL)){
@@ -169,7 +169,7 @@ public class ShareDevice extends AppCompatActivity implements View.OnClickListen
             //    if (binding.edtShareDev.getText().length() >5) {
 
 
-                if(OnlookApplication.SELECTED_DEVICE.getIsshared().length() > 5)
+                if(TouchApplication.SELECTED_DEVICE.getIsshared().length() > 5)
                 {
                     sharemyDevice(PreferenceData.getDevshare(),"delete");
 
@@ -214,7 +214,7 @@ public class ShareDevice extends AppCompatActivity implements View.OnClickListen
             case R.id.imgSharedev:
                 Intent sendIntent = new Intent();
                 sendIntent.setAction(Intent.ACTION_SEND);
-                sendIntent.putExtra(Intent.EXTRA_TEXT,"Onlook Device Share \n\n Deviec ID:"+OnlookApplication.SELECTED_DEVICE.getSsid()+"\n\nLogin Details\nLogin id: "+binding.edtShareDev.getText().toString().trim()+ "\n Password :"+binding.edtShareDev.getText().toString().trim()+"\n\n\n Download app at: \n https://play.google.com/store/apps/details?id=" + getApplicationContext().getPackageName()+"\n Donot Share this. Please note alerts stop coming when owner stops sharing, sharing will be deactivated automatically in 7 days");
+                sendIntent.putExtra(Intent.EXTRA_TEXT,"Onlook Device Share \n\n Deviec ID:"+TouchApplication.SELECTED_DEVICE.getSsid()+"\n\nLogin Details\nLogin id: "+binding.edtShareDev.getText().toString().trim()+ "\n Password :"+binding.edtShareDev.getText().toString().trim()+"\n\n\n Download app at: \n https://play.google.com/store/apps/details?id=" + getApplicationContext().getPackageName()+"\n Donot Share this. Please note alerts stop coming when owner stops sharing, sharing will be deactivated automatically in 7 days");
                 sendIntent.setType("text/plain");
                 sendIntent.setFlags(FLAG_ACTIVITY_NEW_TASK);
                 getApplicationContext().startActivity(sendIntent);
@@ -242,7 +242,7 @@ public class ShareDevice extends AppCompatActivity implements View.OnClickListen
             WebServiceCaller.ApiInterface service = WebServiceCaller.getClient();
             Call<ResponseBody> responseCall = service.shareDevice(
                     binding.edtShareDev.getText().toString().trim(),
-                    OnlookApplication.SELECTED_DEVICE.getSsid(),
+                    TouchApplication.SELECTED_DEVICE.getSsid(),
                     PreferenceData.getEmail(),
                     Build.MANUFACTURER,
                     Build.BRAND,
@@ -268,7 +268,7 @@ public class ShareDevice extends AppCompatActivity implements View.OnClickListen
 
                                      Intent sendIntent = new Intent();
                                      sendIntent.setAction(Intent.ACTION_SEND);
-                                     sendIntent.putExtra(Intent.EXTRA_TEXT,"Onlook Device Share \n\n Deviec ID:"+OnlookApplication.SELECTED_DEVICE.getSsid()+"\n\nLogin Details\nLogin id: "+binding.edtShareDev.getText().toString().trim()+ "\n Password :"+binding.edtShareDev.getText().toString().trim()+"\n\n\n Download app at: \n https://play.google.com/store/apps/details?id=" + getApplicationContext().getPackageName()+"\n Donot Share this. Please note alerts stop coming when owner stops sharing, sharing will be deactivated automatically in 7 days");
+                                     sendIntent.putExtra(Intent.EXTRA_TEXT,"Onlook Device Share \n\n Deviec ID:"+TouchApplication.SELECTED_DEVICE.getSsid()+"\n\nLogin Details\nLogin id: "+binding.edtShareDev.getText().toString().trim()+ "\n Password :"+binding.edtShareDev.getText().toString().trim()+"\n\n\n Download app at: \n https://play.google.com/store/apps/details?id=" + getApplicationContext().getPackageName()+"\n Donot Share this. Please note alerts stop coming when owner stops sharing, sharing will be deactivated automatically in 7 days");
                                      sendIntent.setType("text/plain");
                                      sendIntent.setFlags(FLAG_ACTIVITY_NEW_TASK);
                                      getApplicationContext().startActivity(sendIntent);

@@ -20,7 +20,7 @@ import org.jetbrains.annotations.NotNull;
 import bizmessage.in.touchswitch.LocaleHelper;
 import bizmessage.in.touchswitch.MainActivity;
 import bizmessage.in.touchswitch.R;
-import bizmessage.in.touchswitch.app.OnlookApplication;
+import bizmessage.in.touchswitch.app.TouchApplication;
 import bizmessage.in.touchswitch.databinding.ActivityTryItOutBinding;
 import bizmessage.in.touchswitch.retrofit.WebServiceCaller;
 import bizmessage.in.touchswitch.retrofit.WebUtility;
@@ -58,13 +58,13 @@ public class EmergencyCalling extends AppCompatActivity implements View.OnClickL
 
 
         binding.txtCallEdit.setOnClickListener(this);
-        if (OnlookApplication.SELECTED_DEVICE != null) {
-            binding.edtEmergencyNumber.setText(OnlookApplication.SELECTED_DEVICE.getCall911());
+        if (TouchApplication.SELECTED_DEVICE != null) {
+            binding.edtEmergencyNumber.setText(TouchApplication.SELECTED_DEVICE.getCall911());
          }
 
 
 
-        if (PreferenceData.getLoginid().equalsIgnoreCase(OnlookApplication.SELECTED_DEVICE.getRFamEmail())) {
+        if (PreferenceData.getLoginid().equalsIgnoreCase(TouchApplication.SELECTED_DEVICE.getRFamEmail())) {
             binding.txtCallEdit.setEnabled(false);
         }
         if (PreferenceData.getLoginid().equalsIgnoreCase(AppConstant.MEMBER_EMAIL)) {
@@ -109,8 +109,8 @@ public class EmergencyCalling extends AppCompatActivity implements View.OnClickL
             resources = context.getResources();
         }
 
-        if (OnlookApplication.SELECTED_DEVICE != null) {
-            binding.textDeviceId.setText(resources.getString(R.string.device)+" - " + OnlookApplication.SELECTED_DEVICE.getNikname()+" : "+OnlookApplication.SELECTED_DEVICE.getSsid());
+        if (TouchApplication.SELECTED_DEVICE != null) {
+            binding.textDeviceId.setText(resources.getString(R.string.device)+" - " + TouchApplication.SELECTED_DEVICE.getNikname()+" : "+TouchApplication.SELECTED_DEVICE.getSsid());
         }
 
         getSupportActionBar().setTitle(resources.getString(R.string.title_emergency));

@@ -24,7 +24,7 @@ https://stackoverflow.com/questions/71155187/android-paho-mqtt-crashes-android-1
         /*??????????????????????????????????????????? LOGS  */
 
 
-        /*?????????????? LOG=FALSE   */     versionCode 153
+        /*?????????????? LOG=FALSE   */     versionCode 3
 
 
 
@@ -41,7 +41,7 @@ https://stackoverflow.com/questions/71155187/android-paho-mqtt-crashes-android-1
         //********    // Is this set public static final boolean DBG=true;
 
 
-        versionName "Onlook-01"
+        versionName "Touch-01"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -99,6 +99,8 @@ dependencies {
 //new mqtt library that supports android 12
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'com.github.hannesa2:paho.mqtt.android:3.3.5'
+
+    implementation 'com.github.vimalcvs:Day-Night-Switch:1.0.3'
 
 
 

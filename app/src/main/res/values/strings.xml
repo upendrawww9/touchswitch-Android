@@ -1,6 +1,6 @@
 <resources>
 
-    <string name="app_name"  translatable="false">Onlook</string>
+    <string name="app_name"  translatable="false">TouchGrand</string>
     <string name="title_setup"  translatable="false">Setup</string>
     <string name="msg_token_fmt"  translatable="false">Setup</string>
 
@@ -10,11 +10,11 @@
     <string name="device_id">ID: </string>
 
     <string name="device_name">	Location : </string>
-    <string name="onlook_status">Status : </string>
+    <string name="onload_status">Status : </string>
     <string name="wifi_strength">WiFi Power : </string>
     <string name="battery_strength">Battery : </string>
 
-    <string name="youtube_text"> Onlook Help On Youtube </string>
+    <string name="youtube_text"> Youtube Help </string>
 
     <string name="whatalert"> Alerts On Whatsapp </string>
     <string name="whatsnumber"> Whatsapp Number: 98458xxxxx  </string>
@@ -33,7 +33,7 @@
 
     <string name="settings">	Setup</string>
     <string name="alerts">	Alerts</string>
-    <string name="device_status">Onlook Device Status</string>
+    <string name="device_status">Smart Device Status</string>
     <string name="lowbattery_alert">Low Battery in Onlook </string>
 
     <!-- Dashboard Menu End -->
@@ -458,8 +458,8 @@ h
 
 
     <!-- ADD NEW DEVICE INFO -->
-    <string name="newdev_add_head">ADD ONLOOK DEVICE</string>
-    <string name="scan_description">Please scan the barcode on the onlook box to add device in Application.\n\n Click on button to start scan.</string>
+    <string name="newdev_add_head">Add Just Light</string>
+    <string name="scan_description">Please Enter SSID and Password given with the  box to add device in Application.\n\n Click on button to add.</string>
     <string name="button_scan_barcode">Scan Barcode</string>
     <string name="not_proper_device">Not Proper device id, Please Try Again.</string>
     <string name="message_device_add">Device Added successfully!</string>
@@ -528,6 +528,10 @@ h
     <string name="forgot_password_text">Enter your email address here \nto receive further instructions.</string>
     <string name="button_recover_my_account">Continue</string>
 
+    <string name="ssidonbox">Enter Hotspot SSID on the Box</string>
+    <string name="passwdonbox">Enter Hotspot Password on the Box</string>
+
+
     <string name="message_login_fail">Login fail! Enter valid user email and password.</string>
 
     <string name="device_online">Your Device is Online On</string>
@@ -555,9 +559,23 @@ h
 
 
     <string name="pushy_time">Alert Time</string>
-    <string name="onlook_cube">Onlook Smart Cube</string>
-    <string name="onlook_sub">Onlook Subscription Ends</string>
+    <string name="justlight_cube">Smart Bulb</string>
+    <string name="justlight_sub">Onlook Subscription Ends</string>
     <string name="sub_end">On </string>
+
+    <string name="switch1">Switch 1</string>
+    <string name="switch2">Switch 2</string>
+    <string name="switch3">Switch 3</string>
+
+    <string name="entsmart">My Smart Devices</string>
+    <string name="entgrp">My Groups</string>
+    <string name="entswitch">My Switches</string>
+    <string name="swtogrp">Group Switches</string>
+
+
+
+
+
 
     <!--pushy alert end-->
 

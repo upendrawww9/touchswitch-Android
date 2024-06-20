@@ -5,6 +5,11 @@
     <!-- <color name="colorPrimary">#0B7C8E</color>  red color-->
 
     <color name="navy">#021430</color>
+    <color name="cbg1">#E7E7E7</color>
+    <color name="cbg">#E6E8FA</color>
+    <color name="cbg3">#EDF2F8</color>
+    <color name="cbg4">#EDF1FE</color>
+    <color name="cbg5">#CDCDDB</color>
 
     <color name="colorPrimaryDark">#1C1D1E</color>
     <color name="colorAccent">#F9FCFF</color>

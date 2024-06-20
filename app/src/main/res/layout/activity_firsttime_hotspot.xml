@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background"
+        tools:context=".ui.settings.SettingsFragment">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <TextView
+            android:id="@+id/text_device_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:text="Device "
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_device_id">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardTiming"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+
+                    android:elevation="@dimen/_5sdp"
+                    app:cardBackgroundColor="@color/cbg3"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    app:cardElevation="@dimen/_2sdp"
+                    app:cardMaxElevation="@dimen/_3sdp"
+                    app:cardUseCompatPadding="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_8sdp">
+
+                        <ImageView
+                            android:id="@+id/imgTiming"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:src="@drawable/ic_action_wifi_spot"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textTiming"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:gravity="start"
+                           android:text="@string/wifi_hotspot_setup"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_12ssp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/imgTiming"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <View
+                            android:id="@+id/viewLine"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@color/dark_gray"
+                            app:layout_constraintTop_toBottomOf="@+id/textTiming" />
+
+                        <TextView
+                            android:id="@+id/textNetworkName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:gravity="start"
+                            android:textIsSelectable="true"
+                           android:text="@string/wifi_hotspot_netname"
+                            android:textStyle="bold"
+
+                            android:background="@color/white1"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14ssp"
+
+                            app:layout_constraintStart_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/viewLine" />
+
+
+                        <TextView
+                            android:id="@+id/textNetworkName_info"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_200sdp"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:gravity="start"
+                            android:textIsSelectable="true"
+                            android:text="9000000"
+
+                            android:textStyle="bold"
+                            android:background="@color/white1"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp"
+                            app:layout_constraintStart_toEndOf="@+id/textNetworkName"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/viewLine" />
+
+
+
+                        <TextView
+                            android:id="@+id/textPassword"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:gravity="start"
+                            android:background="@color/white1"
+                            android:text="@string/wifi_hotspot_password"
+                            android:textIsSelectable="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14ssp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textNetworkName" />
+
+                        <TextView
+                            android:id="@+id/textPassword_info"
+                            android:layout_width="0dp"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_200sdp"
+                            android:layout_marginTop="@dimen/_19sdp"
+                            android:gravity="start"
+                            android:textIsSelectable="true"
+                            android:text="98989898"
+                            android:textSize="@dimen/_14ssp"
+                            android:background="@color/white1"
+                            android:textColor="@color/black"
+
+                            app:layout_constraintStart_toEndOf="@+id/textPassword"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textNetworkName_info" />
+
+                        <TextView
+                            android:id="@+id/textwifihotspotdesc"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:gravity="start"
+                            android:text="@string/wifi_hotspot_desc"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12ssp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textPassword" />
+
+
+                        <Button
+                            android:id="@+id/btnWifiSettings"
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:layout_width="@dimen/_150sdp"
+                            android:layout_height="@dimen/_45sdp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_7sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:background="@drawable/shape"
+                            android:gravity="center"
+                            android:layout_marginBottom="@dimen/_20sdp"
+
+                            android:minWidth="@dimen/_250sdp"
+                            android:padding="@dimen/_5sdp"
+                           android:text="@string/wifi_hotspot_btn"
+                            android:paddingTop="@dimen/_8sdp"
+                            android:paddingBottom="@dimen/_25sdp"
+
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/_10ssp"
+
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textwifihotspotdesc"  />
+
+
+                        <View
+                            android:id="@+id/viewLineAlertType1"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="24dp"
+                            android:background="@color/light_gray"
+                            app:layout_constraintTop_toBottomOf="@+id/btnWifiSettings"
+                            tools:layout_editor_absoluteX="-16dp" />
+
+                        <TextView
+                            android:id="@+id/textContinue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:gravity="start"
+                           android:text="@string/wifi_hotspot_continue"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_14ssp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/viewLineAlertType1" />
+
+                        <Button
+                            android:id="@+id/btnContinue"
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:layout_width="@dimen/_150sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:gravity="center"
+                            android:minWidth="@dimen/_250sdp"
+                            android:padding="@dimen/_2sdp"
+                            android:background="@drawable/shape"
+                            android:text="@string/wifi_hotspot_btn_continue"
+                            android:textColor="@android:color/white"
+                           android:textSize="@dimen/_12ssp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textContinue" />
+
+
+
+
+
+
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardHelp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_550sdp"
+                    android:layout_below="@+id/text_device_id"
+                    app:cardBackgroundColor="@color/cbg3"
+                    android:layout_marginStart="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+
+                    android:elevation="@dimen/_5sdp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    app:cardElevation="@dimen/_2sdp"
+                    app:cardMaxElevation="@dimen/_3sdp"
+                    app:cardUseCompatPadding="true">
+
+
+
+
+
+
+
+
+                            <TextView
+                                android:id="@+id/txtssidd"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginTop="@dimen/_1sdp"
+                                android:text="Hotspot Help screen"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="bold"
+                                android:visibility="visible" />
+
+
+
+                        <ImageView
+                            android:id="@+id/help"
+                            android:layout_marginBottom="@dimen/_50sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_450sdp"
+                            android:layout_marginTop="@dimen/_19sdp"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            android:src="@drawable/hothelp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</layout>

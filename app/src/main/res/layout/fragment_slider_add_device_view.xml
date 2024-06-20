@@ -22,7 +22,7 @@
             android:layout_marginTop="@dimen/_2sdp"
             app:cardCornerRadius="@dimen/_15sdp"
             android:background="@color/transparent1"
-            app:cardBackgroundColor="@color/card_view_gb"
+            app:cardBackgroundColor="@color/cbg3"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

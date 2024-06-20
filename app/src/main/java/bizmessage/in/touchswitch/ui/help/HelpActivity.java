@@ -21,14 +21,12 @@ import androidx.databinding.DataBindingUtil;
 
 import bizmessage.in.touchswitch.LocaleHelper;
 import bizmessage.in.touchswitch.R;
-import bizmessage.in.touchswitch.app.OnlookApplication;
+import bizmessage.in.touchswitch.app.TouchApplication;
 import bizmessage.in.touchswitch.databinding.ActivityHelpBinding;
 import bizmessage.in.touchswitch.retrofit.WebUtility;
 import bizmessage.in.touchswitch.utils.DialogButtonClickListener;
 import bizmessage.in.touchswitch.utils.PreferenceData;
 import bizmessage.in.touchswitch.utils.Utility;
-
-import static bizmessage.in.touchswitch.utils.AppConstant.DBG;
 
 public class HelpActivity extends AppCompatActivity implements View.OnClickListener, DialogButtonClickListener {
 
@@ -139,15 +137,15 @@ public class HelpActivity extends AppCompatActivity implements View.OnClickListe
     private void openWhatsApp(){
         String text;
         try {
-            if (OnlookApplication.SELECTED_DEVICE != null) {
+            if (TouchApplication.SELECTED_DEVICE != null) {
 
 
-                text = "My Email id is " + PreferenceData.getEmail() + " .My device id : " + OnlookApplication.SELECTED_DEVICE.getDevid() + ". My App version is "+PreferenceData.getAppVersion()+" Support I Need : ";// Replace with your message.
-                if(OnlookApplication.SELECTED_DEVICE.getCall911().length()>8) {
-                    toNumber = "91" + OnlookApplication.SELECTED_DEVICE.getRWhatsapp(); // Replace with mobile phone number without +Sign or leading zeros, but with country code
+                text = "My Email id is " + PreferenceData.getEmail() + " .My device id : " + TouchApplication.SELECTED_DEVICE.getDevid() + ". My App version is "+PreferenceData.getAppVersion()+" Support I Need : ";// Replace with your message.
+                if(TouchApplication.SELECTED_DEVICE.getCall911().length()>8) {
+                    toNumber = "91" + TouchApplication.SELECTED_DEVICE.getRWhatsapp(); // Replace with mobile phone number without +Sign or leading zeros, but with country code
                 }
                 else{//if user is not set to dealer by mistake it will route to support number
-                    text = "My support Not Set.My Email id is " + PreferenceData.getEmail() + " .My device id : " + OnlookApplication.SELECTED_DEVICE.getDevid() + ". My App version is "+PreferenceData.getAppVersion()+" Support I Need : ";// Replace with your message.
+                    text = "My support Not Set.My Email id is " + PreferenceData.getEmail() + " .My device id : " + TouchApplication.SELECTED_DEVICE.getDevid() + ". My App version is "+PreferenceData.getAppVersion()+" Support I Need : ";// Replace with your message.
 
                     toNumber = "917900119635"; // Replace with mobile phone number without +Sign or leading zeros, but with country code
 

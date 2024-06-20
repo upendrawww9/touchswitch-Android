@@ -15,7 +15,7 @@ import androidx.databinding.DataBindingUtil;
 
 import bizmessage.in.touchswitch.LocaleHelper;
 import bizmessage.in.touchswitch.R;
-import bizmessage.in.touchswitch.app.OnlookApplication;
+import bizmessage.in.touchswitch.app.TouchApplication;
 import bizmessage.in.touchswitch.databinding.ActivityFamilyMemberBinding;
 import bizmessage.in.touchswitch.retrofit.WebServiceCaller;
 import bizmessage.in.touchswitch.retrofit.WebUtility;
@@ -92,7 +92,7 @@ public class FamilyMemberActivity extends AppCompatActivity implements View.OnCl
             resources = context.getResources();
         }
 
-        binding.textDeviceId.setText(resources.getString(R.string.device)+" - " + OnlookApplication.SELECTED_DEVICE.getNikname()+" : "+OnlookApplication.SELECTED_DEVICE.getSsid());
+        binding.textDeviceId.setText(resources.getString(R.string.device)+" - " + TouchApplication.SELECTED_DEVICE.getNikname()+" : "+TouchApplication.SELECTED_DEVICE.getSsid());
 
         getSupportActionBar().setTitle(resources.getString(R.string.title_family_member));
 
@@ -112,14 +112,14 @@ public class FamilyMemberActivity extends AppCompatActivity implements View.OnCl
 
      //   binding.textStatusFamilyadd.setText(resources.getString(R.string.family_member_status));///////////////
 
-        binding.textPassword1Info.setText(OnlookApplication.SELECTED_DEVICE.getPaswd());
+        binding.textPassword1Info.setText(TouchApplication.SELECTED_DEVICE.getPaswd());
 
 
 
 
-        if (OnlookApplication.SELECTED_DEVICE.getRFamEmail() != null) {
-            if (!OnlookApplication.SELECTED_DEVICE.getRFamEmail().isEmpty()) {
-                binding.edtFamilyMemberEmail.setText(OnlookApplication.SELECTED_DEVICE.getRFamEmail());
+        if (TouchApplication.SELECTED_DEVICE.getRFamEmail() != null) {
+            if (!TouchApplication.SELECTED_DEVICE.getRFamEmail().isEmpty()) {
+                binding.edtFamilyMemberEmail.setText(TouchApplication.SELECTED_DEVICE.getRFamEmail());
                // binding.edtPassword.setText(PreferenceData.getFamilyPassword());
                 binding.edtFamilyMemberEmail.setClickable(false);
                 binding.edtFamilyMemberEmail.setEnabled(false);
@@ -163,11 +163,11 @@ public class FamilyMemberActivity extends AppCompatActivity implements View.OnCl
                 case R.id.imgShare:
                     Intent sendIntent = new Intent();
                     sendIntent.setAction(Intent.ACTION_SEND);
-                    sendIntent.putExtra(Intent.EXTRA_TEXT,"Onlook Light Control Login \nEmail: member@onlook.in\n Password: "+OnlookApplication.SELECTED_DEVICE.getPaswd()+"\n Download app at: \n https://play.google.com/store/apps/details?id=" + getApplicationContext().getPackageName()+"\n Donot Share this. Please delete this message");
+                    sendIntent.putExtra(Intent.EXTRA_TEXT,"Onlook Light Control Login \nEmail: member@onload.in\n Password: "+TouchApplication.SELECTED_DEVICE.getPaswd()+"\n Download app at: \n https://play.google.com/store/apps/details?id=" + getApplicationContext().getPackageName()+"\n Donot Share this. Please delete this message");
                     sendIntent.setType("text/plain");
                     sendIntent.setFlags(FLAG_ACTIVITY_NEW_TASK);
                     getApplicationContext().startActivity(sendIntent);
-//OnlookApplication.SELECTED_DEVICE.getPaswd()
+//TouchApplication.SELECTED_DEVICE.getPaswd()
 
                     break;
 
@@ -178,7 +178,7 @@ public class FamilyMemberActivity extends AppCompatActivity implements View.OnCl
                        sendIntentfam.setAction(Intent.ACTION_SEND);
 
                            sendIntentfam.putExtra(Intent.EXTRA_TEXT, "Onlook Alert Control Login \n " +
-                                   "Email: " + OnlookApplication.SELECTED_DEVICE.getRFamEmail() + "\n Password: "+OnlookApplication.SELECTED_DEVICE.getFampass() + "\n Download app at: \n https://play.google.com/store/apps/details?id=" + getApplicationContext().getPackageName() + "\n Donot Share this. Please delete this message");
+                                   "Email: " + TouchApplication.SELECTED_DEVICE.getRFamEmail() + "\n Password: "+TouchApplication.SELECTED_DEVICE.getFampass() + "\n Download app at: \n https://play.google.com/store/apps/details?id=" + getApplicationContext().getPackageName() + "\n Donot Share this. Please delete this message");
 
 
                        sendIntentfam.setType("text/plain");
@@ -222,8 +222,8 @@ public class FamilyMemberActivity extends AppCompatActivity implements View.OnCl
                             ResponseBody responseBody = response.body();
                             String responseStatus = responseBody.string();
                             if (responseStatus.contains(AppConstant.API_STATUS_SUCCESS)) {
-                                OnlookApplication.SELECTED_DEVICE.setRFamEmail(binding.edtFamilyMemberEmail.getText().toString().trim());
-                                OnlookApplication.SELECTED_DEVICE.setFampass(binding.edtPassword.getText().toString().trim());
+                                TouchApplication.SELECTED_DEVICE.setRFamEmail(binding.edtFamilyMemberEmail.getText().toString().trim());
+                                TouchApplication.SELECTED_DEVICE.setFampass(binding.edtPassword.getText().toString().trim());
                                 PreferenceData.setFamilyPassword(binding.edtPassword.getText().toString().trim());
                                 binding.imgSharefam.setVisibility(View.VISIBLE);
                                //  Utility.showSnackBar(binding.appBarLayout, getString(R.string.email_sent_to) + binding.edtFamilyMemberEmail.getText().toString().trim() + getString(R.string.for_aproval));
