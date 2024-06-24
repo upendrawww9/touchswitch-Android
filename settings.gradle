@@ -1,2 +1,4 @@
 include ':app'
-rootProject.name = "TouchSwitch2"
+
+rootProject.name = "TouchSwitch"
+include ':library'

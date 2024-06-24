@@ -16,7 +16,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3823c98c-5e5e-4615-bb4a-9dc42fe55b84" name="Changes" comment="Justlight">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_touchswitch.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -28,103 +27,12 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/google-services.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/release/output-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/release/output-metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/Flexible.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/LocaleHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/MainActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/MillionBootReceiver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/NotificationWorker.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/app/JustlightApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/enums/Count.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/enums/FitActionRequestCode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/enums/FontSize.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/enums/MediaType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/enums/ResponseType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/enums/UserType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/location/LocationUpdatesService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/location/Loutils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/model/AddDeviceRequestResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/model/AlertsRequestResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/model/DashboardRequestResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/model/GetUserResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/model/LightModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/model/LoginRequestResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/model/SwitchSetting.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/model/SwitchSettingResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/model/TimeAlertSetting.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/model/TimeAlertsSettingResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/model/YoutubeRequestResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/notification/MyFirebaseMessagingService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/notification/MySwipeclose.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/notification/PushReceiver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/notification/RingtonePlayingService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/permissionManagerViews/Permission.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/permissionManagerViews/PermissionManagerActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/permissionManagerViews/PermissionManagerInstance.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/permissionManagerViews/PermissionManagerListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/retrofit/WebServiceCaller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/retrofit/WebUtility.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/adddevice/AddDeviceFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/adddevice/AddDeviceViewModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/adddevice/AddJustlight.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/adddevice/SliderAddDeviceViewFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/auth/ForgotPasswordActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/auth/LoginActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/auth/RegistrationActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/auth/SplashActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/help/HelpActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/home/DeviceViewFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/home/DeviceViewModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/home/FirstTimeHotSpotActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/home/HomeFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/home/HomeViewModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/mydevice/MyDeviceActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/others/AddCustomer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/others/ContactUsActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/others/Dealerclients.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/others/EmergencyCalling.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/others/FamilyMemberActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/others/Language.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/others/OthersFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/others/OthersViewModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/others/ShareDevice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/others/UserAccountActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/others/Whatsalert.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/others/youtube/YoutubeHelp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/others/youtube/adapter/YoutubeRecyclerAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/others/youtube/base/BaseViewHolder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/others/youtube/model/YoutubeVideo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/settings/AutoCompleteAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/settings/LightOneActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/settings/MySmartdevices.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/settings/Mygroup.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/settings/SettingsActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/settings/SwitctoGrp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/ui/settings/WifiAndHotSpotActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/utils/AppConstant.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/utils/DialogButtonClickListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/utils/PreferenceData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/utils/SharedPreferenceUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/utils/Utility.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/justlight/utils/Validation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bigdevice.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_addlight.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_addlight.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_light_one.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_add_device.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_add_device.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/mobile_navigation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/mobile_navigation.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/touchswitch/ui/settings/TouchDimmer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/bizmessage/in/touchswitch/ui/settings/TouchDimmer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_touchdimmer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_touchdimmer.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -132,7 +40,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[RZ8NA217BTB]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -146,7 +54,7 @@
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Onload App" type="f1a62948:ProjectNode" />
+                <item name="TouchSwitch" type="f1a62948:ProjectNode" />
               </path>
             </expand>
             <select />
@@ -201,7 +109,7 @@
     <property name="android-custom-viewD:/Android/TouchSwitch2/app/src/main/java/bizmessage/in/touchswitch/utils/SwitchButton.java_SELECTED" value="SwitchButton" />
     <property name="android-custom-viewD:/Android/TouchSwitch2/app/src/main/java/bizmessage/in/touchswitch/utils/SwitchButton.java_SwitchButton_DIMENSIONS" value="1080&#10;1920" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/bb/SeekBarExample" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout" />
     <property name="settings.editor.selected.configurable" value="memory.settings" />
   </component>
   <component name="RecentsManager">
@@ -220,9 +128,66 @@
       <recent name="bizmessage.in.justlight.ui.auth" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Android App.app">
+    <configuration name="Touch_Switch.app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="Touch_Switch.app.main" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
-      <module name="TouchSwitch2.app.main" />
+      <module name="TouchSwitch.app.main" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />

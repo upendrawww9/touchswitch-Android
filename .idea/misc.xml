@@ -63,6 +63,10 @@
         <entry key="..\:/Android/onlook/app/src/main/res/layout/fragment_others.xml" value="0.30052083333333335" />
         <entry key="..\:/Android/onlook/app/src/main/res/layout/layout_popup_loading.xml" value="0.2421875" />
         <entry key="..\:/Android/onlook/app/src/main/res/xml/network_security_config.xml" value="0.1234375" />
+        <entry key="..\:/Android/touchswitch-Android/app/src/main/res/drawable/thumb.xml" value="0.1" />
+        <entry key="..\:/Android/touchswitch-Android/app/src/main/res/layout/activity_edittouchdimmer.xml" value="0.1265625" />
+        <entry key="..\:/Android/touchswitch-Android/app/src/main/res/layout/activity_touchdimmer.xml" value="0.16770833333333332" />
+        <entry key="..\:/Android/touchswitch-Android/app/src/main/res/layout/fragment_others.xml" value="0.16770833333333332" />
       </map>
     </option>
   </component>

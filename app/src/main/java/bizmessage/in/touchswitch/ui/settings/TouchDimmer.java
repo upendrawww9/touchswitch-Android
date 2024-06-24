@@ -26,6 +26,11 @@ import androidx.databinding.DataBindingUtil;
 import com.vimalcvs.switchdn.DayNightSwitch;
 import com.vimalcvs.switchdn.DayNightSwitchListener;
 
+import com.vimalcvs.switchdn.DayNightSwitch;
+import com.vimalcvs.switchdn.DayNightSwitchAnimListener;
+import com.vimalcvs.switchdn.DayNightSwitchListener;
+
+
 import org.eclipse.paho.client.mqttv3.DisconnectedBufferOptions;
 import org.eclipse.paho.client.mqttv3.IMqttActionListener;
 import org.eclipse.paho.client.mqttv3.IMqttDeliveryToken;

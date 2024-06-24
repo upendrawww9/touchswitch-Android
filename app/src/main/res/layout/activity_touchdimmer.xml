@@ -236,9 +236,9 @@
                     app:cardMaxElevation="@dimen/_3sdp"
                     app:cardUseCompatPadding="true"
                     app:cardBackgroundColor="@color/cbg3"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    >
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -262,16 +262,16 @@
                                 <ImageView
                                     android:layout_width="60dp"
                                     android:layout_height="60dp"
-                                    android:background="@drawable/ic_double_bed" />
+                                    android:background="@drawable/ledlight" />
 
                                 <TextView
                                     android:id="@+id/title1"
-                                    android:layout_width="match_parent"
+                                    android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginLeft="10dp"
-                                    android:text="Main Light"
+                                    android:text="Light"
                                     android:textColor="@color/black"
-                                    android:textSize="20dp"
+                                    android:textSize="30dp"
                                     android:textStyle="bold" />
                             </LinearLayout>
 
@@ -301,15 +301,15 @@
 
 
 
-
-
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardroom2"
                     android:layout_width="0dp"
+
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_128sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
                     android:layout_marginStart="@dimen/_1sdp"
                     android:layout_marginEnd="@dimen/_1sdp"
+                    app:layout_constraintTop_toBottomOf="@+id/cardroom1"
 
                     android:elevation="@dimen/_5sdp"
                     android:foreground="?android:attr/selectableItemBackground"
@@ -318,30 +318,72 @@
                     app:cardMaxElevation="@dimen/_3sdp"
                     app:cardUseCompatPadding="true"
                     app:cardBackgroundColor="@color/cbg3"
-                    app:layout_constraintEnd_toEndOf="parent"
+
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
-
-                    <TextView
-                        android:id="@+id/textViewSelectdSizeOfArray"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-
-
-
-                        android:layout_marginBottom="19dp"
-                        android:text="Fan Dimmer"
-                        android:textAlignment="center"
-                        android:textColor="@color/black"
-                        android:textSize="25dp" />
-
+                   >
 
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:padding="10dp"
+                            android:weightSum="10">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="90dp"
+                                    android:background="@drawable/fan2" />
+
+                                <TextView
+                                    android:id="@+id/title2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="Fan"
+                                    android:textColor="@color/black"
+                                    android:textSize="30dp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8"
+                            android:layout_marginTop="30dp"
+                            android:gravity="right">
+
+                            <com.vimalcvs.switchdn.DayNightSwitch
+
+                                android:id="@+id/touch2"
+
+                                android:layout_width="70dp"
+                                android:layout_height="33dp"
+                                android:layout_gravity="right" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
                         <TextView
                             android:id="@+id/textViewSelectSizeOfArray"
-                            android:layout_width="273dp"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_above="@+id/seekbar"
                             android:layout_alignParentStart="true"
@@ -356,9 +398,9 @@
                         <SeekBar
                             android:id="@+id/seekbar"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_height="50dp"
                             android:layout_centerInParent="true"
+                            android:layout_marginTop="@dimen/_1sdp"
                             android:indeterminate="false"
                             android:max="5"
                             android:progress="10"
@@ -371,9 +413,9 @@
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentRight="true"
-                            android:layout_marginTop="@dimen/_105sdp"
                             android:layout_alignParentBottom="true"
                             android:layout_marginLeft="0dp"
+                            android:layout_marginTop="@dimen/_50sdp"
                             android:layout_marginRight="0dp"
                             android:layout_marginBottom="199dp"
                             android:padding="10dp"
