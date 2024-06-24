@@ -115,7 +115,7 @@ public class TouchDimmer extends AppCompatActivity implements SensorEventListene
         binding.toolbar.setNavigationOnClickListener(v -> finish());
 //        binding.imgSwitch.setVisibility(View.GONE);
   //      binding.imgSwitchBulb.setVisibility(View.GONE);
-
+  binding.dimmersettings.setOnClickListener(this);
         Utility.showProgress(this);
         SwitchButton sw= new SwitchButton(this);
         sw.setOnClickListener(this);
@@ -552,6 +552,12 @@ PreferenceData.setisLighton(true);
             case R.id.ivBack:
                 Utility.hideProgress();
                 onBackPressed();
+                break;
+
+            case R.id.dimmersettings:
+                Intent intent = new Intent(TouchDimmer.this, EditTouchDimmer.class);
+                startActivity(intent);
+
                 break;
 
 

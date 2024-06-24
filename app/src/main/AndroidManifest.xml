@@ -192,7 +192,9 @@
             android:screenOrientation="portrait" />
 
 
-
+        <activity
+            android:name="bizmessage.in.touchswitch.ui.settings.EditTouchDimmer"
+            android:screenOrientation="portrait" />
         <activity
             android:name="bizmessage.in.touchswitch.ui.settings.TouchDimmer"
             android:screenOrientation="portrait" />

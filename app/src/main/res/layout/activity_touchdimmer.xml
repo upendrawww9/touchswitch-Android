@@ -6,13 +6,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/background"
 
         android:orientation="vertical">
 
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/appBarLayout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:theme="@style/AppTheme.AppBarOverlay"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -30,7 +31,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="165dp"
             android:background="@drawable/background">
 
             <LinearLayout
@@ -85,12 +86,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
-                        android:layout_weight="
-                            9"
+                        android:layout_weight="9"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="30dp"
+                            android:id="@+id/dimmersettings"
+                            android:layout_width="wrap_content"
                             android:layout_height="30dp"
                             android:background="@drawable/ic_settings_black_24dp" />
                     </LinearLayout>
@@ -219,26 +220,28 @@
 
 
 
-
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardroom1"
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
 
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="@dimen/_1sdp"
                     android:layout_marginStart="@dimen/_1sdp"
                     android:layout_marginEnd="@dimen/_1sdp"
 
-                    android:elevation="@dimen/_5sdp"
+                    android:elevation="@dimen/_15sdp"
                     android:foreground="?android:attr/selectableItemBackground"
-                    app:cardCornerRadius="@dimen/_5sdp"
+                    app:cardCornerRadius="@dimen/_15sdp"
                     app:cardElevation="@dimen/_2sdp"
                     app:cardMaxElevation="@dimen/_3sdp"
                     app:cardUseCompatPadding="true"
                     app:cardBackgroundColor="@color/cbg3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
 
 
-                    >
+
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -260,9 +263,10 @@
                                 android:orientation="horizontal">
 
                                 <ImageView
-                                    android:layout_width="60dp"
-                                    android:layout_height="60dp"
-                                    android:background="@drawable/ledlight" />
+                                    android:layout_width="40dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/bulb" />
 
                                 <TextView
                                     android:id="@+id/title1"
@@ -270,6 +274,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginLeft="10dp"
                                     android:text="Light"
+                                    android:layout_marginTop="10dp"
                                     android:textColor="@color/black"
                                     android:textSize="30dp"
                                     android:textStyle="bold" />
@@ -288,10 +293,10 @@
                             <com.vimalcvs.switchdn.DayNightSwitch
 
                                 android:id="@+id/touch1"
-
-                                android:layout_width="70dp"
+                                android:layout_marginRight="30dp"
+                                android:layout_width="100dp"
                                 android:layout_height="33dp"
-                                android:layout_gravity="right" />
+                                android:layout_gravity="center"/>
 
                         </LinearLayout>
                     </RelativeLayout>
@@ -311,9 +316,9 @@
                     android:layout_marginEnd="@dimen/_1sdp"
                     app:layout_constraintTop_toBottomOf="@+id/cardroom1"
 
-                    android:elevation="@dimen/_5sdp"
+                    android:elevation="@dimen/_15sdp"
                     android:foreground="?android:attr/selectableItemBackground"
-                    app:cardCornerRadius="@dimen/_5sdp"
+                    app:cardCornerRadius="@dimen/_15sdp"
                     app:cardElevation="@dimen/_2sdp"
                     app:cardMaxElevation="@dimen/_3sdp"
                     app:cardUseCompatPadding="true"
@@ -342,12 +347,14 @@
                                 android:orientation="horizontal">
 
                                 <ImageView
-                                    android:layout_width="80dp"
-                                    android:layout_height="90dp"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="10dp"
                                     android:background="@drawable/fan2" />
 
                                 <TextView
                                     android:id="@+id/title2"
+                                    android:layout_marginTop="10dp"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginLeft="10dp"
@@ -371,63 +378,65 @@
 
                                 android:id="@+id/touch2"
 
-                                android:layout_width="70dp"
+                                android:layout_marginRight="30dp"
+                                android:layout_width="100dp"
                                 android:layout_height="33dp"
-                                android:layout_gravity="right" />
+                                android:layout_gravity="center" />
 
                         </LinearLayout>
-                    </RelativeLayout>
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
 
-                        <TextView
-                            android:id="@+id/textViewSelectSizeOfArray"
+                        <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_above="@+id/seekbar"
-                            android:layout_alignParentStart="true"
-                            android:layout_alignParentEnd="true"
+                            android:layout_height="match_parent">
 
-                            android:layout_marginBottom="9dp"
-                            android:text=""
-                            android:textAlignment="center"
-                            android:textColor="@color/black"
-                            android:textSize="15dp" />
+                            <TextView
+                                android:id="@+id/textViewSelectSizeOfArray"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_above="@+id/seekbar"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentEnd="true"
 
-                        <SeekBar
-                            android:id="@+id/seekbar"
-                            android:layout_width="match_parent"
-                            android:layout_height="50dp"
-                            android:layout_centerInParent="true"
-                            android:layout_marginTop="@dimen/_1sdp"
-                            android:indeterminate="false"
-                            android:max="5"
-                            android:progress="10"
-                            android:progressDrawable="@drawable/custom_seekbar"
-                            android:thumb="@drawable/thumb" />
+                                android:layout_marginBottom="9dp"
+                                android:text=""
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
 
-                        <TextView
-                            android:id="@+id/progress"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentRight="true"
-                            android:layout_alignParentBottom="true"
-                            android:layout_marginLeft="0dp"
-                            android:layout_marginTop="@dimen/_50sdp"
-                            android:layout_marginRight="0dp"
-                            android:layout_marginBottom="199dp"
-                            android:padding="10dp"
-                            android:text="0"
-                            android:textAlignment="center"
-                            android:textColor="@color/black"
-                            android:textSize="30dp"
-                            android:textStyle="bold">
+                            <SeekBar
+                                android:id="@+id/seekbar"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="@dimen/_1sdp"
+                                android:indeterminate="false"
+                                android:max="5"
+                                android:progress="10"
+                                android:progressDrawable="@drawable/custom_seekbar"
+                                android:thumb="@drawable/thumb" />
 
-                        </TextView>
+                            <TextView
+                                android:id="@+id/progress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="@dimen/_50sdp"
+                                android:layout_marginRight="0dp"
+                                android:layout_marginBottom="199dp"
+                                android:padding="10dp"
+                                android:text="0"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="30dp"
+                                android:textStyle="bold">
+
+                            </TextView>
 
 
+                        </RelativeLayout>
                     </RelativeLayout>
 
 

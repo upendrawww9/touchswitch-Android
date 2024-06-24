@@ -6,13 +6,13 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
+        android:background="@drawable/background"
         android:orientation="vertical">
 
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/appBarLayout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:theme="@style/AppTheme.AppBarOverlay"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -30,7 +30,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="165dp"
             android:background="@drawable/background">
 
             <LinearLayout
@@ -202,8 +202,8 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/_20sdp"
-            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_2sdp"
 
             android:fillViewport="true"
             app:layout_constraintEnd_toEndOf="parent"
@@ -224,14 +224,14 @@
                     android:id="@+id/cardroom1"
                     android:layout_width="0dp"
 
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="@dimen/_1sdp"
                     android:layout_marginStart="@dimen/_1sdp"
                     android:layout_marginEnd="@dimen/_1sdp"
 
-                    android:elevation="@dimen/_5sdp"
+                    android:elevation="@dimen/_15sdp"
                     android:foreground="?android:attr/selectableItemBackground"
-                    app:cardCornerRadius="@dimen/_5sdp"
+                    app:cardCornerRadius="@dimen/_15sdp"
                     app:cardElevation="@dimen/_2sdp"
                     app:cardMaxElevation="@dimen/_3sdp"
                     app:cardUseCompatPadding="true"
@@ -288,10 +288,10 @@
                             <com.vimalcvs.switchdn.DayNightSwitch
 
                                 android:id="@+id/touch1"
-
-                                android:layout_width="70dp"
+                                android:layout_marginRight="30dp"
+                                android:layout_width="100dp"
                                 android:layout_height="33dp"
-                                android:layout_gravity="right" />
+                                android:layout_gravity="center" />
 
                         </LinearLayout>
                     </RelativeLayout>
@@ -306,21 +306,21 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardroom2"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_128sdp"
+                    android:layout_height="100dp"
+                    app:layout_constraintTop_toBottomOf="@+id/cardroom1"
+
                     android:layout_marginStart="@dimen/_1sdp"
                     android:layout_marginEnd="@dimen/_1sdp"
 
-                    android:elevation="@dimen/_5sdp"
+                    android:elevation="@dimen/_15sdp"
                     android:foreground="?android:attr/selectableItemBackground"
-                    app:cardCornerRadius="@dimen/_5sdp"
+                    app:cardCornerRadius="@dimen/_15sdp"
                     app:cardElevation="@dimen/_2sdp"
                     app:cardMaxElevation="@dimen/_3sdp"
                     app:cardUseCompatPadding="true"
                     app:cardBackgroundColor="@color/cbg3"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
+                    >
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -370,9 +370,10 @@
 
                                 android:id="@+id/touch2"
 
-                                android:layout_width="70dp"
+                                android:layout_marginRight="30dp"
+                                android:layout_width="100dp"
                                 android:layout_height="33dp"
-                                android:layout_gravity="right" />
+                                android:layout_gravity="center"/>
 
                         </LinearLayout>
                     </RelativeLayout>
@@ -384,21 +385,22 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardroom3"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_228sdp"
+                    android:layout_height="100dp"
+                    app:layout_constraintTop_toBottomOf="@+id/cardroom2"
+
                     android:layout_marginStart="@dimen/_1sdp"
                     android:layout_marginEnd="@dimen/_1sdp"
 
-                    android:elevation="@dimen/_5sdp"
+                    android:elevation="@dimen/_15sdp"
                     android:foreground="?android:attr/selectableItemBackground"
-                    app:cardCornerRadius="@dimen/_5sdp"
+                    app:cardCornerRadius="@dimen/_15sdp"
                     app:cardElevation="@dimen/_2sdp"
                     app:cardMaxElevation="@dimen/_3sdp"
                     app:cardUseCompatPadding="true"
                     app:cardBackgroundColor="@color/cbg3"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
+
+                   >
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -447,9 +449,10 @@
 
                                 android:id="@+id/touch3"
 
-                                android:layout_width="70dp"
+                                android:layout_marginRight="30dp"
+                                android:layout_width="100dp"
                                 android:layout_height="33dp"
-                                android:layout_gravity="right" />
+                                android:layout_gravity="center" />
 
                         </LinearLayout>
 
@@ -462,22 +465,23 @@
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardroom4"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_308sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    app:layout_constraintTop_toBottomOf="@+id/cardroom3"
+
                     android:layout_marginStart="@dimen/_1sdp"
                     android:layout_marginEnd="@dimen/_1sdp"
 
-                    android:elevation="@dimen/_5sdp"
+                    android:elevation="@dimen/_15sdp"
                     android:foreground="?android:attr/selectableItemBackground"
-                    app:cardCornerRadius="@dimen/_5sdp"
+                    app:cardCornerRadius="@dimen/_15sdp"
                     app:cardElevation="@dimen/_2sdp"
                     app:cardMaxElevation="@dimen/_3sdp"
                     app:cardUseCompatPadding="true"
                     app:cardBackgroundColor="@color/cbg3"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
+                    >
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -528,9 +532,10 @@
 
                                 android:id="@+id/touch4"
 
-                                android:layout_width="70dp"
+                                android:layout_marginRight="30dp"
+                                android:layout_width="100dp"
                                 android:layout_height="33dp"
-                                android:layout_gravity="right" />
+                                android:layout_gravity="center"/>
 
                         </LinearLayout>
 
